@@ -20,7 +20,7 @@ from site_web.views import index
 urlpatterns = [
     path('',index, name="index"),
     path('admin/', admin.site.urls),
-    path('dashboard/', include('dashboard.urls'))
+    path('dashboard/', include('dashboard.urls')),
     path('account/',include("account.urls")),
     path('home/', include("home.urls")),
 ]
