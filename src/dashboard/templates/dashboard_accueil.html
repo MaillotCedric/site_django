@@ -1,10 +1,62 @@
-<h2>Projet : O2.projet Oho</h2>
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Projet : O2</h2>
 
 <!-- Lien vers la page 'Historique' -->
-<a href="">Historique</a>
+<!-- <a href="">Historique</a> -->
+<div class="card" style="width: 18rem;">
+    <div class="card-body">
+        <h5 class="card-title">
+            <a href="">Historique</a>
+        </h5>
+        <p class="card-text">
+            <i class="bi-stopwatch" style="font-size: 2rem; color: cornflowerblue;"></i>
+        </p>
+    </div>
+</div>
+
 <!-- Lien vers la page 'Graphique' -->
-<a href="">Graphique</a>
+<!-- <a href="">Graphique</a> -->
+<div class="card" style="width: 18rem;">
+    <div class="card-body">
+        <h5 class="card-title">
+            <a href="">Graphique</a>
+        </h5>
+        <p class="card-text">
+            <i class="bi-bar-chart" style="font-size: 2rem; color: cornflowerblue;"></i>
+        </p>
+    </div>
+</div>
+
 <!-- Bouton qui va lancer le SCRAP du projet affiché -->
-<button>Relevé</button>
+<!-- <button>Relevé</button> -->
+<div class="card" style="width: 18rem;">
+    <div class="card-body">
+        <h5 class="card-title">
+            <button type="button" class="btn btn-primary">Relevé</button>
+        </h5>
+        <p class="card-text">
+            <i class="bi bi-arrow-down-circle" style="font-size: 2rem; color: cornflowerblue;"></i>
+        </p>
+    </div>
+</div>
+
 <!-- Lien vers la page 'Détails des derniers relevés' -->
-<a href="">Détails derniers relevés</a>
+<!-- <a href="">Détails derniers relevés</a> -->
+<div class="card" style="width: 18rem;">
+    <div class="card-body">
+        <h5 class="card-title">
+            <a href="">Détails derniers relevés</a>
+        </h5>
+        <p class="card-text">
+            <i class="bi bi-file-earmark-text" style="font-size: 2rem; color: cornflowerblue;"></i>
+        </p>
+    </div>
+</div>
+
+<!-- Bouton de retour vers la page d'accueil privée -->
+<!-- <button> -->
+<a type="button" class="btn btn-warning" href="../home">Retour</a>
+<!-- </button> -->
+{% endblock %}
