@@ -16,6 +16,7 @@ def releve(request):
     from bs4 import BeautifulSoup
     import csv 
     from cleantext import clean
+    from .models import Members
 
     def getSoupObject(domain, url_path): # Va sur la page et renvoie son contenu
         thread_url = urlunparse(('https', domain, url_path, "", "", "")) # construct the url to access the posts for each thread
@@ -177,6 +178,9 @@ def releve(request):
             writer = csv.writer(contenu_des_posts)
             for elements in all_thread_posts:
                 writer.writerow(elements)
+                #Entré dans BDD
+                entreBdd = Members(title = elements[0], content = elements[1])
+                entreBdd.save()
             contenu_des_posts.close()
 
             #Extraction vers BDD
