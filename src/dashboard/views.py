@@ -30,7 +30,10 @@ def releve(request):
 
         for page_posts_content in thread_results:
             body_content = page_posts_content.get_text()   
+            entreComs = Members(content = body_content)
+            entreComs.save()
             posts_content.append(body_content)
+
         return posts_content
 
     def getNextPageUrl(soup): # Passe à la page de commentaire suivant dans un thread
@@ -179,8 +182,8 @@ def releve(request):
             for elements in all_thread_posts:
                 writer.writerow(elements)
                 #Entré dans BDD
-                entreBdd = Members(title = elements[0], content = elements[1])
-                entreBdd.save()
+                #entreBdd = Members(title = elements[0], content = elements[1])
+                #entreBdd.save()
             contenu_des_posts.close()
 
             #Extraction vers BDD
@@ -201,4 +204,4 @@ def releve(request):
     log.write('Total posts scrappé: ' + str(logTotalPosts))
     log.write(logFin)
     print(logFin)
-    #ferner logs !!
+    log.close()
