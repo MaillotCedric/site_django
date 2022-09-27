@@ -116,7 +116,7 @@ def releve(request):
 
     x = 0
     derPage = 2 # Valeur 2 permet seulement d'entrer dans la boucle, modifié systematiquement à la suite
-    while x < 2 : #Déterminer le nombre de pages à scrapper manuellement #ici derPage à mettre!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    while x < derPage : #Déterminer le nombre de pages à scrapper manuellement #ici derPage à mettre!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
         x += 1
 
         #Aller sur la page -----------------------
