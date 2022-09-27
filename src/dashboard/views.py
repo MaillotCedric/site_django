@@ -16,6 +16,15 @@ def releve(request):
     from bs4 import BeautifulSoup
     import csv 
     from cleantext import clean
+    
+    from dashboard.models import Threads
+    from dashboard.models import Comments
+    from dashboard.models import Projet
+    from dashboard.models import Histo
+
+    
+    id_de_thread_a_traitee = 288
+    
 
     def getSoupObject(domain, url_path): # Va sur la page et renvoie son contenu
         thread_url = urlunparse(('https', domain, url_path, "", "", "")) # construct the url to access the posts for each thread
@@ -29,6 +38,9 @@ def releve(request):
 
         for page_posts_content in thread_results:
             body_content = page_posts_content.get_text()   
+            #Entrée bdd table Comments
+            entreComment = Comments(comment = body_content, threadId_id = id_de_thread_a_traitee )
+            entreComment.save()
             posts_content.append(body_content)
         return posts_content
 
@@ -81,7 +93,7 @@ def releve(request):
         return dateDebut
 
 
-
+    nbRelThreads = 0
 
 
     #Création fichiers logs.txt
@@ -98,7 +110,7 @@ def releve(request):
 
 
     x = 0
-    derPage = 2
+    derPage = 2 # Valeur 2 permet seulement d'entrer dans la boucle, modifié systematiquement à la suite
     while x < derPage : #Déterminer le nombre de pages à scrapper manuellement
         x += 1
 
@@ -134,6 +146,11 @@ def releve(request):
 
         # get all threads titles and urls
         threads = recupInfoThreads(results,threads)
+        
+        #icicicicicicicicicicicicicicicicicciciicciiciiiiiiiiiiiiiiiiccccccccccccccccciiiiiiiiiiiiiiii Entrée BDD Table Threads
+        for elt in threads:
+            entreeThreads = Threads(nomThread = elt[0], projetId_id = 1 ) #projetId_id ? #ajouter dynamisme id projet non fixe
+            entreeThreads.save()
 
         #Emoji à enlever
         
@@ -161,6 +178,8 @@ def releve(request):
                 soupObject = getSoupObject(domain, next_page_url_path)
                 thread_posts = getPostsFromPage(soupObject, thread_posts)
                 next_page_url = getNextPageUrl(soupObject)
+            
+            id_de_thread_a_traitee += 1
                 
             logNbPosts = f'Nombre de post extrait du thread "{thread[0]}": {len(thread_posts)}' # Logs
             all_thread_posts.append((thread[0], thread_posts)) # adding tuples with the title of a thread and the array containing all the posts content of a thread, pas compris
@@ -182,7 +201,10 @@ def releve(request):
             #Extraction vers BDD
         
         logNbThreads = "Nombre de threads scrappé:" + str(len(all_thread_posts))
+        nbRelThreads += len(all_thread_posts)
         print(logNbThreads)
+
+
         
         #logs
         log.write(logNbThreads + '\n')
@@ -197,9 +219,21 @@ def releve(request):
     log.write('Total posts scrappé: ' + str(logTotalPosts))
     log.write(logFin)
     print(logFin)
-    #ferner logs !!
+    #fermer logs !!
+    
+    dateRelev = donnerDate()
+    nbRelCom = str(logTotalPosts)
+    
+    entreeHisto = Histo(dateRel = dateRelev, nbThreadsRel = nbRelThreads, nbCommRel = nbRelCom, projetId_id = 3 )
+    entreeHisto.save()
+    
     # template = loader.get_template('dashboard_accueil.html')
     # return HttpResponse(template.render())
+    
+    
+    
+    
+    
     if not request.user.is_authenticated:
         return redirect('login')
     return render(request, 'dashboard_accueil.html')
