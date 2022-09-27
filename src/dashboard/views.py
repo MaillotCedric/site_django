@@ -1,3 +1,4 @@
+from re import T
 from sqlite3 import Date
 from django.shortcuts import render, redirect
 from django.http import HttpResponse
@@ -40,7 +41,7 @@ def releve(request):
         for page_posts_content in thread_results:
             body_content = page_posts_content.get_text()   
             #Entrée bdd table Comments
-            entreComment = Comments(comment = body_content, threadId_id = id_de_thread_a_traitee )
+            entreComment = Comments(comment = body_content, threadId_id = der_id_de_thread )
             entreComment.save()
             posts_content.append(body_content)
         return posts_content
@@ -109,6 +110,9 @@ def releve(request):
     # Permet threads épinglés scrappé que une fois
     threadsEpinglés = 0 
 
+    der_id_de_thread = (Threads.objects.last()).idThread
+    der_id_de_thread = der_id_de_thread + 1
+    print(der_id_de_thread)
 
     x = 0
     derPage = 2 # Valeur 2 permet seulement d'entrer dans la boucle, modifié systematiquement à la suite
@@ -149,6 +153,10 @@ def releve(request):
         threads = recupInfoThreads(results,threads)
         
         #icicicicicicicicicicicicicicicicicciciicciiciiiiiiiiiiiiiiiiccccccccccccccccciiiiiiiiiiiiiiii Entrée BDD Table Threads
+        
+        
+        
+
         for elt in threads:
             entreeThreads = Threads(nomThread = elt[0], projetId_id = 1 ) #projetId_id ? #ajouter dynamisme id projet non fixe
             entreeThreads.save()
@@ -181,7 +189,10 @@ def releve(request):
                 next_page_url = getNextPageUrl(soupObject)
             
             id_de_thread_a_traitee += 1
-                
+
+            
+            der_id_de_thread += 1
+
             logNbPosts = f'Nombre de post extrait du thread "{thread[0]}": {len(thread_posts)}' # Logs
             all_thread_posts.append((thread[0], thread_posts)) # adding tuples with the title of a thread and the array containing all the posts content of a thread, pas compris
             
