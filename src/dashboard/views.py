@@ -1,3 +1,4 @@
+from sqlite3 import Date
 from django.shortcuts import render, redirect
 from django.http import HttpResponse
 from django.template import loader
@@ -23,7 +24,7 @@ def releve(request):
     from dashboard.models import Histo
 
     
-    id_de_thread_a_traitee = 288
+    id_de_thread_a_traitee = 1678
     
 
     def getSoupObject(domain, url_path): # Va sur la page et renvoie son contenu
@@ -111,7 +112,7 @@ def releve(request):
 
     x = 0
     derPage = 2 # Valeur 2 permet seulement d'entrer dans la boucle, modifié systematiquement à la suite
-    while x < derPage : #Déterminer le nombre de pages à scrapper manuellement
+    while x < 2 : #Déterminer le nombre de pages à scrapper manuellement #ici derPage à mettre!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
         x += 1
 
         #Aller sur la page -----------------------
@@ -221,10 +222,10 @@ def releve(request):
     print(logFin)
     #fermer logs !!
     
-    dateRelev = donnerDate()
+    dateRelev = datetime.datetime.now()
     nbRelCom = str(logTotalPosts)
     
-    entreeHisto = Histo(dateRel = dateRelev, nbThreadsRel = nbRelThreads, nbCommRel = nbRelCom, projetId_id = 3 )
+    entreeHisto = Histo(dateRel = dateRelev, nbThreadsRel = nbRelThreads, nbCommRel = nbRelCom, projetId_id = 1, status = True )
     entreeHisto.save()
     
     # template = loader.get_template('dashboard_accueil.html')

@@ -1,0 +1,41 @@
+URL de la page qui va être traitée: https://community.o2.co.uk/t5/Discussions-Feedback/bd-p/4
+nombre de post extrait du thread "community platform bugs, issues and suggestions": 34
+nombre de post extrait du thread "guide updates": 39
+nombre de post extrait du thread "o2 customer service/live chat positive feedback archive!": 112
+nombre de post extrait du thread "next day delivery": 2
+nombre de post extrait du thread "australia": 3
+nombre de post extrait du thread "customer services": 2
+nombre de post extrait du thread "wifi calling moto g31": 2
+nombre de post extrait du thread "fraud alert!": 17
+nombre de post extrait du thread "positive feedback": 6
+nombre de post extrait du thread "new to 02": 2
+nombre de post extrait du thread "poor service in store": 8
+nombre de post extrait du thread "esim qr code via email.": 6
+nombre de post extrait du thread "upgrade": 3
+Nombre de threads scrappé:13
+URL de la page qui va être traitée: https://community.o2.co.uk/t5/Discussions-Feedback/bd-p/4/page/2
+nombre de post extrait du thread "o2 data network unavailable for hours at a time at many popular summer leisure destinations": 15
+nombre de post extrait du thread "upgrade": 4
+nombre de post extrait du thread "customer feedback": 7
+nombre de post extrait du thread "considering my options after a stolen device": 9
+nombre de post extrait du thread "scam alert": 2
+nombre de post extrait du thread "court action": 2
+nombre de post extrait du thread "changes to 02 software": 3
+nombre de post extrait du thread "imei barred when phone lost. now its been found o2 cannot reinstate my network on my phones handset": 60
+nombre de post extrait du thread "board": 2
+nombre de post extrait du thread "o2 travel inclusive not working abroad": 7
+Nombre de threads scrappé:10
+URL de la page qui va être traitée: https://community.o2.co.uk/t5/Discussions-Feedback/bd-p/4/page/3
+nombre de post extrait du thread "scam": 7
+nombre de post extrait du thread "why is the o2 network so bad?": 13
+nombre de post extrait du thread "rubbish customer service": 2
+nombre de post extrait du thread "upgrade tariff process horrific": 3
+nombre de post extrait du thread "pay up front for life cancelled by o2!!": 142
+nombre de post extrait du thread "starlink connectivity for o2": 2
+nombre de post extrait du thread "logging out of website account": 2
+nombre de post extrait du thread "coverage map a work of fiction?": 2
+nombre de post extrait du thread "feedback about o2.": 2
+nombre de post extrait du thread "new customer with issues": 6
+Nombre de threads scrappé:10
+Total posts scrappé: 528Fin
+Scrapping terminé à 27_Sep_2022_14_32_58_679348
