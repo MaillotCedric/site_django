@@ -23,10 +23,10 @@ def releve(request):
     from dashboard.models import Comments
     from dashboard.models import Projet
     from dashboard.models import Histo
-
+    import logging
     
     id_de_thread_a_traitee = 1678
-    
+    logging.basicConfig(level=logging.DEBUG)
 
     def getSoupObject(domain, url_path): # Va sur la page et renvoie son contenu
         thread_url = urlunparse(('https', domain, url_path, "", "", "")) # construct the url to access the posts for each thread
