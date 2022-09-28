@@ -210,7 +210,7 @@ def releve(request):
 
 #graph
 
-def graph(request):
+def pagegraph(request):
   template = loader.get_template('pagegraph.html')
   return HttpResponse(template.render())
  
