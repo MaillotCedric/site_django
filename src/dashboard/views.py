@@ -2,6 +2,7 @@ from ast import Yield
 from cProfile import label
 from cgi import test
 from datetime import date
+from http.client import ImproperConnectionState
 from re import T, template
 from sqlite3 import Date
 from turtle import goto
@@ -42,6 +43,10 @@ def releve(request):
     from dashboard.models import Projet
     from dashboard.models import Histo
     import logging
+    
+    from threading import Thread
+    import subprocess
+    from time import sleep
     
     id_de_thread_a_traitee = 1678
     logging.basicConfig(level=logging.WARNING, filename="script.log", filemode="a",format='%(asctime)s - %(levelname)s - %(message)s')
@@ -118,22 +123,28 @@ def releve(request):
         statut.save()
 
     def testDeCo(URLe):
-        req = Request(URLe)
-        try:
-            response = urlopen(req)
-        except HTTPError as e:
-            nouveauStatutReleve("Echec")
-            print('The server couldn\'t fulfill the request.')
-            print('Error code: ', e.code)
-            return  redirect("index")
-        except URLError as e:
-            nouveauStatutReleve("Echec")
-            print('We failed to reach a server.(yield)')
-            print('Reason: ', e.reason)
-            return  redirect("index")
-            print("return ne break pas")
-        else:
-            print ('Website is working fine')
+        while True:
+            req = Request(URLe)
+            try:
+                response = urlopen(req)
+            except HTTPError as e:
+                nouveauStatutReleve("Echec")
+                print('The server couldn\'t fulfill the request.')
+                print('Error code: ', e.code)
+                sleep(0.5)
+                return  redirect("index")
+            except URLError as e:
+                nouveauStatutReleve("Echec")
+                print('We failed to reach a server.(yield)')
+                print('Reason: ', e.reason)
+                sleep(0.5)
+                return  redirect("index")
+                print("return ne break pas")
+            else:
+                print ('Website is working fine def')
+                sleep(3)
+
+    
 
     nbRelThreads = 0
     
@@ -150,7 +161,9 @@ def releve(request):
     #Url de la page en cours de scraping
     URL = "https://community.o2.co.uk/t5/Discussions-Feedback/bd-p/4"
 
-    
+    #daemon = Thread(target=testDeCo(URL), daemon=True, name='Monitor')
+    #daemon.start()
+    #print("test")
 
     #c = Client()
     #response = c.get(URL)
@@ -211,7 +224,7 @@ def releve(request):
         else:
             print ('Website is working fine')
         #--------------------------------------------------------------------------
-
+        
 
             
         
@@ -334,7 +347,6 @@ def releve(request):
     
     nouveauStatutReleve("Terminé le " + str(dateRelev))
     
-    label .end
 
     if not request.user.is_authenticated:
         return redirect('login')
