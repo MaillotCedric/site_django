@@ -8,6 +8,7 @@
       <tr>
         <th scope="col">Projet</th>
         <th scope="col">Date du dernier relevé</th>
+        <th scope="col">Etat du dernier relevé</th>
         <th scope="col">Nombre total de relevés</th>
       </tr>
     </thead>
@@ -18,6 +19,11 @@
           {% language 'fr' %}
           <th scope="col">{{projet.dateRel | date:"d F Y"}}</th>
           {% endlanguage %}
+          {% if projet.status %}
+          <td><i class="bi bi-check-lg"></i></td>
+          {% else %}
+            <td><i class="bi bi-exclamation-triangle"></i></td>
+          {% endif %}
           <th scope="col">{{projet.nbThreadsRel}}</th>
         </tr>
       {% endfor %}
