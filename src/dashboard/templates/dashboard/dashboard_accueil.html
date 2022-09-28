@@ -1,0 +1,142 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="container text-center my-2">
+    <!-- Titre page -->
+    <div class="row">
+        <div class="col">
+            <h2>Projet : {{ projet.initial }}</h2>
+        </div>
+    </div>
+    <!-- Cartes -->
+    <div class="row">
+        <!-- Historique -->
+        <div class="col-md-6 col-sm-12 my-2">
+            <a href="" class="text-decoration-none">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            Historique
+                        </h5>
+                        <p class="card-text">
+                            <i class="bi-stopwatch" style="font-size: 2rem;"></i>
+                        </p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <!-- Graphique -->
+        <div class="col-md-6 col-sm-12 my-2">
+            <a href="" class="text-decoration-none">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            Graphique
+                        </h5>
+                        <p class="card-text">
+                            <i class="bi-bar-chart" style="font-size: 2rem;"></i>
+                        </p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <!-- Relevé -->
+        <div class="col-md-6 col-sm-12 my-2">
+            <a href="releve/" class="text-decoration-none">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            Relevé
+                        </h5>
+                        <p class="card-text">
+                            <i class="bi bi-arrow-down-circle" style="font-size: 2rem;"></i>
+                        </p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <!-- Détails derniers relevés -->
+        <div class="col-md-6 col-sm-12 my-2">
+            <a href="" class="text-decoration-none">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            Détails derniers relevés
+                        </h5>
+                        <p class="card-text">
+                            <i class="bi bi-file-earmark-text" style="font-size: 2rem;"></i>
+                        </p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="row text-end">
+        <div class="col">
+            <a type="button" class="btn btn-warning" href="../">Retour</a>
+        </div>
+    </div>
+</div>
+
+<!-- <h2>Projet : {{ projet.initial }}</h2> -->
+
+<!-- Lien vers la page 'Historique' -->
+<!-- <a href="">Historique</a> -->
+<!-- <div class="card" style="width: 18rem;">
+    <div class="card-body">
+        <h5 class="card-title">
+            <a href="">Historique</a>
+        </h5>
+        <p class="card-text">
+            <i class="bi-stopwatch" style="font-size: 2rem; color: cornflowerblue;"></i>
+        </p>
+    </div>
+</div> -->
+
+<!-- Lien vers la page 'Graphique' -->
+<!-- <a href="">Graphique</a> -->
+<!-- <div class="card" style="width: 18rem;">
+    <div class="card-body">
+        <h5 class="card-title">
+            <a href="">Graphique</a>
+        </h5>
+        <p class="card-text">
+            <i class="bi-bar-chart" style="font-size: 2rem; color: cornflowerblue;"></i>
+        </p>
+    </div>
+</div> -->
+
+<!-- Bouton qui va lancer le SCRAP du projet affiché -->
+<!-- <button>Relevé</button> -->
+<!-- <div class="card" style="width: 18rem;">
+    <div class="card-body">
+        <h5 class="card-title">
+            <button type="button" class="btn btn-primary">
+                <a href="releve/">Relevé</a>
+            </button>
+        </h5>
+        <p class="card-text">
+            <i class="bi bi-arrow-down-circle" style="font-size: 2rem; color: cornflowerblue;"></i>
+        </p>
+    </div>
+</div> -->
+
+<!-- Lien vers la page 'Détails des derniers relevés' -->
+<!-- <a href="">Détails derniers relevés</a> -->
+<!-- <div class="card" style="width: 18rem;">
+    <div class="card-body">
+        <h5 class="card-title">
+            <a href="">Détails derniers relevés</a>
+        </h5>
+        <p class="card-text">
+            <i class="bi bi-file-earmark-text" style="font-size: 2rem; color: cornflowerblue;"></i>
+        </p>
+    </div>
+</div> -->
+
+<!-- Bouton de retour vers la page d'accueil privée -->
+<!-- <button> -->
+<!-- <a type="button" class="btn btn-warning" href="../">Retour</a> -->
+<!-- </button> -->
+{% endblock %}
