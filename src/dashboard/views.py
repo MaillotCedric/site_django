@@ -1,14 +1,20 @@
-from re import T
+from re import T, template
 from sqlite3 import Date
 from django.shortcuts import render, redirect
 from django.http import HttpResponse
 from django.template import loader
 
+from dashboard.models import Statut
+
 # Create your views here.
 def index(request):
     # return HttpResponse("Page dashboard !")
+    statut = Statut.objects.all().get(idStatut = 1).statut #idStatut = 1 => projet o2, rendre dynamique ?
     template = loader.get_template('dashboard_accueil.html')
-    return HttpResponse(template.render())
+    context = {
+        'statut' : statut
+    }
+    return HttpResponse(template.render(context, request))
 
 def releve(request):
     import datetime
@@ -96,7 +102,12 @@ def releve(request):
 
 
     nbRelThreads = 0
-
+    
+    #Statut du relevé------
+    statutReleve = "En cours"
+    statut = Statut.objects.all().get(idStatut = 1) #idStatut = 1 => projet o2, rendre dynamique ?
+    statut.statut = statutReleve
+    statut.save()
 
     #Création fichiers logs.txt
     dateDebut = donnerDate()
@@ -129,8 +140,11 @@ def releve(request):
         log.write(logPageTraitee + "\n")
         #pas .close tte suite...ou si plus simple non ?
 
+        
         domain = urlparse(URL).netloc
         page = requests.get(URL)
+        print(str(page))
+
 
         #Récup contenu de la page-----------------
         soup = BeautifulSoup(page.content, "html.parser")
@@ -244,9 +258,18 @@ def releve(request):
     # return HttpResponse(template.render())
     
     
-    
-    
+    statutReleve = "Terminé"
+    statut = Statut.objects.all().get(idStatut = 1) #idStatut = 1 => projet o2, rendre dynamique ?
+    statut.statut = statutReleve
+    statut.save()
     
     if not request.user.is_authenticated:
         return redirect('login')
-    return render(request, 'dashboard_accueil.html')
+    return redirect('index')
+    #return render(request, 'dashboard_accueil.html')
+    
+    #template = loader.get_template('dashboard_accueil.html')
+    #context ={
+    #    'statut' : statutReleve,
+    #}
+    #return HttpResponse(template.render(context, request))

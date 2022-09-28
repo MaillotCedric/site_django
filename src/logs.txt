@@ -343,3 +343,300 @@ nombre de post extrait du thread "spam call": 2
  Début 
 28_Sep_2022_08_32_38_176357
 URL de la page qui va être traitée: https://community.o2.co.uk/t5/Discussions-Feedback/bd-p/4
+
+ Début 
+28_Sep_2022_09_11_21_470490
+URL de la page qui va être traitée: https://community.o2.co.uk/t5/Discussions-Feedback/bd-p/4
+
+ Début 
+28_Sep_2022_09_12_42_242533
+URL de la page qui va être traitée: https://community.o2.co.uk/t5/Discussions-Feedback/bd-p/4
+
+ Début 
+28_Sep_2022_09_25_00_855026
+URL de la page qui va être traitée: https://community.o2.co.uk/t5/Discussions-Feedback/bd-p/4
+nombre de post extrait du thread "community platform bugs, issues and suggestions": 34
+nombre de post extrait du thread "guide updates": 39
+nombre de post extrait du thread "o2 customer service/live chat positive feedback archive!": 112
+nombre de post extrait du thread "fraudulent account using my identity": 5
+nombre de post extrait du thread "complaints department": 14
+nombre de post extrait du thread "spam call": 2
+nombre de post extrait du thread "next day delivery": 2
+nombre de post extrait du thread "australia": 3
+nombre de post extrait du thread "customer services": 2
+nombre de post extrait du thread "wifi calling moto g31": 2
+nombre de post extrait du thread "fraud alert!": 17
+nombre de post extrait du thread "positive feedback": 6
+nombre de post extrait du thread "new to 02": 2
+Nombre de threads scrappé:13
+URL de la page qui va être traitée: https://community.o2.co.uk/t5/Discussions-Feedback/bd-p/4/page/2
+nombre de post extrait du thread "poor service in store": 8
+nombre de post extrait du thread "esim qr code via email.": 6
+nombre de post extrait du thread "upgrade": 3
+nombre de post extrait du thread "o2 data network unavailable for hours at a time at many popular summer leisure destinations": 15
+nombre de post extrait du thread "upgrade": 4
+nombre de post extrait du thread "customer feedback": 7
+nombre de post extrait du thread "considering my options after a stolen device": 9
+nombre de post extrait du thread "scam alert": 2
+nombre de post extrait du thread "court action": 2
+nombre de post extrait du thread "changes to 02 software": 3
+Nombre de threads scrappé:10
+Total posts scrappé: 299
+ Fin
+Scrapping terminé à 28_Sep_2022_09_26_24_497111
+ Début 
+28_Sep_2022_09_27_49_086817
+URL de la page qui va être traitée: https://community.o2.co.uk/t5/Discussions-Feedback/bd-p/4
+nombre de post extrait du thread "community platform bugs, issues and suggestions": 34
+nombre de post extrait du thread "guide updates": 39
+nombre de post extrait du thread "o2 customer service/live chat positive feedback archive!": 112
+nombre de post extrait du thread "fraudulent account using my identity": 5
+nombre de post extrait du thread "complaints department": 14
+nombre de post extrait du thread "spam call": 2
+nombre de post extrait du thread "next day delivery": 2
+nombre de post extrait du thread "australia": 3
+nombre de post extrait du thread "customer services": 2
+nombre de post extrait du thread "wifi calling moto g31": 2
+nombre de post extrait du thread "fraud alert!": 17
+nombre de post extrait du thread "positive feedback": 6
+nombre de post extrait du thread "new to 02": 2
+Nombre de threads scrappé:13
+URL de la page qui va être traitée: https://community.o2.co.uk/t5/Discussions-Feedback/bd-p/4/page/2
+nombre de post extrait du thread "poor service in store": 8
+nombre de post extrait du thread "esim qr code via email.": 6
+nombre de post extrait du thread "upgrade": 3
+nombre de post extrait du thread "o2 data network unavailable for hours at a time at many popular summer leisure destinations": 15
+nombre de post extrait du thread "upgrade": 4
+nombre de post extrait du thread "customer feedback": 7
+nombre de post extrait du thread "considering my options after a stolen device": 9
+nombre de post extrait du thread "scam alert": 2
+nombre de post extrait du thread "court action": 2
+nombre de post extrait du thread "changes to 02 software": 3
+Nombre de threads scrappé:10
+Total posts scrappé: 299
+ Fin
+Scrapping terminé à 28_Sep_2022_09_29_10_441441
+ Début 
+28_Sep_2022_09_30_02_516626
+URL de la page qui va être traitée: https://community.o2.co.uk/t5/Discussions-Feedback/bd-p/4
+nombre de post extrait du thread "community platform bugs, issues and suggestions": 34
+nombre de post extrait du thread "guide updates": 39
+nombre de post extrait du thread "o2 customer service/live chat positive feedback archive!": 112
+nombre de post extrait du thread "fraudulent account using my identity": 5
+nombre de post extrait du thread "complaints department": 14
+nombre de post extrait du thread "spam call": 2
+nombre de post extrait du thread "next day delivery": 2
+nombre de post extrait du thread "australia": 3
+nombre de post extrait du thread "customer services": 2
+nombre de post extrait du thread "wifi calling moto g31": 2
+nombre de post extrait du thread "fraud alert!": 17
+nombre de post extrait du thread "positive feedback": 6
+nombre de post extrait du thread "new to 02": 2
+Nombre de threads scrappé:13
+URL de la page qui va être traitée: https://community.o2.co.uk/t5/Discussions-Feedback/bd-p/4/page/2
+nombre de post extrait du thread "poor service in store": 8
+nombre de post extrait du thread "esim qr code via email.": 6
+nombre de post extrait du thread "upgrade": 3
+nombre de post extrait du thread "o2 data network unavailable for hours at a time at many popular summer leisure destinations": 15
+nombre de post extrait du thread "upgrade": 4
+nombre de post extrait du thread "customer feedback": 7
+nombre de post extrait du thread "considering my options after a stolen device": 9
+nombre de post extrait du thread "scam alert": 2
+nombre de post extrait du thread "court action": 2
+nombre de post extrait du thread "changes to 02 software": 3
+Nombre de threads scrappé:10
+Total posts scrappé: 299
+ Fin
+Scrapping terminé à 28_Sep_2022_09_31_22_832331
+ Début 
+28_Sep_2022_09_32_40_050680
+URL de la page qui va être traitée: https://community.o2.co.uk/t5/Discussions-Feedback/bd-p/4
+nombre de post extrait du thread "community platform bugs, issues and suggestions": 34
+nombre de post extrait du thread "guide updates": 39
+nombre de post extrait du thread "o2 customer service/live chat positive feedback archive!": 112
+nombre de post extrait du thread "fraudulent account using my identity": 5
+nombre de post extrait du thread "complaints department": 14
+nombre de post extrait du thread "spam call": 2
+nombre de post extrait du thread "next day delivery": 2
+nombre de post extrait du thread "australia": 3
+nombre de post extrait du thread "customer services": 2
+nombre de post extrait du thread "wifi calling moto g31": 2
+nombre de post extrait du thread "fraud alert!": 17
+nombre de post extrait du thread "positive feedback": 6
+nombre de post extrait du thread "new to 02": 2
+Nombre de threads scrappé:13
+URL de la page qui va être traitée: https://community.o2.co.uk/t5/Discussions-Feedback/bd-p/4/page/2
+nombre de post extrait du thread "poor service in store": 8
+nombre de post extrait du thread "esim qr code via email.": 6
+nombre de post extrait du thread "upgrade": 3
+nombre de post extrait du thread "o2 data network unavailable for hours at a time at many popular summer leisure destinations": 15
+nombre de post extrait du thread "upgrade": 4
+nombre de post extrait du thread "customer feedback": 7
+nombre de post extrait du thread "considering my options after a stolen device": 9
+nombre de post extrait du thread "scam alert": 2
+nombre de post extrait du thread "court action": 2
+nombre de post extrait du thread "changes to 02 software": 3
+Nombre de threads scrappé:10
+Total posts scrappé: 299
+ Fin
+Scrapping terminé à 28_Sep_2022_09_34_01_373993
+ Début 
+28_Sep_2022_10_08_03_401749
+URL de la page qui va être traitée: https://community.o2.co.uk/t5/Discussions-Feedback/bd-p/4
+nombre de post extrait du thread "community platform bugs, issues and suggestions": 34
+nombre de post extrait du thread "guide updates": 39
+nombre de post extrait du thread "o2 customer service/live chat positive feedback archive!": 112
+nombre de post extrait du thread "fraudulent account using my identity": 5
+nombre de post extrait du thread "complaints department": 14
+nombre de post extrait du thread "spam call": 2
+nombre de post extrait du thread "next day delivery": 2
+nombre de post extrait du thread "australia": 3
+nombre de post extrait du thread "customer services": 2
+nombre de post extrait du thread "wifi calling moto g31": 2
+nombre de post extrait du thread "fraud alert!": 17
+nombre de post extrait du thread "positive feedback": 6
+nombre de post extrait du thread "new to 02": 2
+Nombre de threads scrappé:13
+URL de la page qui va être traitée: https://community.o2.co.uk/t5/Discussions-Feedback/bd-p/4/page/2
+nombre de post extrait du thread "poor service in store": 8
+nombre de post extrait du thread "esim qr code via email.": 6
+nombre de post extrait du thread "upgrade": 3
+nombre de post extrait du thread "o2 data network unavailable for hours at a time at many popular summer leisure destinations": 15
+nombre de post extrait du thread "upgrade": 4
+nombre de post extrait du thread "customer feedback": 7
+nombre de post extrait du thread "considering my options after a stolen device": 9
+nombre de post extrait du thread "scam alert": 2
+nombre de post extrait du thread "court action": 2
+nombre de post extrait du thread "changes to 02 software": 3
+Nombre de threads scrappé:10
+Total posts scrappé: 299
+ Fin
+Scrapping terminé à 28_Sep_2022_10_09_26_733560
+ Début 
+28_Sep_2022_10_12_05_039014
+URL de la page qui va être traitée: https://community.o2.co.uk/t5/Discussions-Feedback/bd-p/4
+nombre de post extrait du thread "community platform bugs, issues and suggestions": 34
+nombre de post extrait du thread "guide updates": 39
+nombre de post extrait du thread "o2 customer service/live chat positive feedback archive!": 112
+nombre de post extrait du thread "fraudulent account using my identity": 5
+nombre de post extrait du thread "complaints department": 14
+nombre de post extrait du thread "spam call": 2
+nombre de post extrait du thread "next day delivery": 2
+nombre de post extrait du thread "australia": 3
+nombre de post extrait du thread "customer services": 2
+nombre de post extrait du thread "wifi calling moto g31": 2
+nombre de post extrait du thread "fraud alert!": 17
+nombre de post extrait du thread "positive feedback": 6
+nombre de post extrait du thread "new to 02": 2
+Nombre de threads scrappé:13
+URL de la page qui va être traitée: https://community.o2.co.uk/t5/Discussions-Feedback/bd-p/4/page/2
+nombre de post extrait du thread "poor service in store": 8
+nombre de post extrait du thread "esim qr code via email.": 6
+nombre de post extrait du thread "upgrade": 3
+nombre de post extrait du thread "o2 data network unavailable for hours at a time at many popular summer leisure destinations": 15
+nombre de post extrait du thread "upgrade": 4
+nombre de post extrait du thread "customer feedback": 7
+nombre de post extrait du thread "considering my options after a stolen device": 9
+nombre de post extrait du thread "scam alert": 2
+nombre de post extrait du thread "court action": 2
+nombre de post extrait du thread "changes to 02 software": 3
+Nombre de threads scrappé:10
+Total posts scrappé: 299
+ Fin
+Scrapping terminé à 28_Sep_2022_10_13_29_746033
+ Début 
+28_Sep_2022_10_14_56_891706
+URL de la page qui va être traitée: https://community.o2.co.uk/t5/Discussions-Feedback/bd-p/4
+nombre de post extrait du thread "community platform bugs, issues and suggestions": 34
+nombre de post extrait du thread "guide updates": 39
+nombre de post extrait du thread "o2 customer service/live chat positive feedback archive!": 112
+nombre de post extrait du thread "fraudulent account using my identity": 5
+nombre de post extrait du thread "complaints department": 14
+nombre de post extrait du thread "spam call": 2
+nombre de post extrait du thread "next day delivery": 2
+nombre de post extrait du thread "australia": 3
+nombre de post extrait du thread "customer services": 2
+nombre de post extrait du thread "wifi calling moto g31": 2
+nombre de post extrait du thread "fraud alert!": 17
+nombre de post extrait du thread "positive feedback": 6
+nombre de post extrait du thread "new to 02": 2
+Nombre de threads scrappé:13
+URL de la page qui va être traitée: https://community.o2.co.uk/t5/Discussions-Feedback/bd-p/4/page/2
+nombre de post extrait du thread "poor service in store": 8
+nombre de post extrait du thread "esim qr code via email.": 6
+nombre de post extrait du thread "upgrade": 3
+nombre de post extrait du thread "o2 data network unavailable for hours at a time at many popular summer leisure destinations": 15
+nombre de post extrait du thread "upgrade": 4
+nombre de post extrait du thread "customer feedback": 7
+nombre de post extrait du thread "considering my options after a stolen device": 9
+nombre de post extrait du thread "scam alert": 2
+nombre de post extrait du thread "court action": 2
+nombre de post extrait du thread "changes to 02 software": 3
+Nombre de threads scrappé:10
+Total posts scrappé: 299
+ Fin
+Scrapping terminé à 28_Sep_2022_10_16_18_344295
+ Début 
+28_Sep_2022_10_21_25_487958
+URL de la page qui va être traitée: https://community.o2.co.uk/t5/Discussions-Feedback/bd-p/4
+nombre de post extrait du thread "community platform bugs, issues and suggestions": 34
+nombre de post extrait du thread "guide updates": 39
+nombre de post extrait du thread "o2 customer service/live chat positive feedback archive!": 112
+nombre de post extrait du thread "fraudulent account using my identity": 5
+nombre de post extrait du thread "complaints department": 14
+nombre de post extrait du thread "spam call": 2
+nombre de post extrait du thread "next day delivery": 2
+nombre de post extrait du thread "australia": 3
+nombre de post extrait du thread "customer services": 2
+nombre de post extrait du thread "wifi calling moto g31": 2
+nombre de post extrait du thread "fraud alert!": 17
+nombre de post extrait du thread "positive feedback": 6
+nombre de post extrait du thread "new to 02": 2
+Nombre de threads scrappé:13
+URL de la page qui va être traitée: https://community.o2.co.uk/t5/Discussions-Feedback/bd-p/4/page/2
+nombre de post extrait du thread "poor service in store": 8
+nombre de post extrait du thread "esim qr code via email.": 6
+nombre de post extrait du thread "upgrade": 3
+nombre de post extrait du thread "o2 data network unavailable for hours at a time at many popular summer leisure destinations": 15
+nombre de post extrait du thread "upgrade": 4
+nombre de post extrait du thread "customer feedback": 7
+nombre de post extrait du thread "considering my options after a stolen device": 9
+nombre de post extrait du thread "scam alert": 2
+nombre de post extrait du thread "court action": 2
+nombre de post extrait du thread "changes to 02 software": 3
+Nombre de threads scrappé:10
+Total posts scrappé: 299
+ Fin
+Scrapping terminé à 28_Sep_2022_10_22_46_382563
+ Début 
+28_Sep_2022_10_27_09_265681
+URL de la page qui va être traitée: https://community.o2.co.uk/t5/Discussions-Feedback/bd-p/4
+nombre de post extrait du thread "community platform bugs, issues and suggestions": 34
+nombre de post extrait du thread "guide updates": 39
+nombre de post extrait du thread "o2 customer service/live chat positive feedback archive!": 112
+nombre de post extrait du thread "fraudulent account using my identity": 5
+nombre de post extrait du thread "complaints department": 14
+nombre de post extrait du thread "spam call": 2
+nombre de post extrait du thread "next day delivery": 2
+nombre de post extrait du thread "australia": 3
+nombre de post extrait du thread "customer services": 2
+nombre de post extrait du thread "wifi calling moto g31": 2
+nombre de post extrait du thread "fraud alert!": 17
+nombre de post extrait du thread "positive feedback": 6
+nombre de post extrait du thread "new to 02": 2
+Nombre de threads scrappé:13
+URL de la page qui va être traitée: https://community.o2.co.uk/t5/Discussions-Feedback/bd-p/4/page/2
+nombre de post extrait du thread "poor service in store": 8
+nombre de post extrait du thread "esim qr code via email.": 6
+nombre de post extrait du thread "upgrade": 3
+nombre de post extrait du thread "o2 data network unavailable for hours at a time at many popular summer leisure destinations": 15
+nombre de post extrait du thread "upgrade": 4
+nombre de post extrait du thread "customer feedback": 7
+nombre de post extrait du thread "considering my options after a stolen device": 9
+nombre de post extrait du thread "scam alert": 2
+nombre de post extrait du thread "court action": 2
+nombre de post extrait du thread "changes to 02 software": 3
+Nombre de threads scrappé:10
+Total posts scrappé: 299
+ Fin
+Scrapping terminé à 28_Sep_2022_10_28_29_202522
