@@ -1,5 +1,11 @@
+from ast import Yield
+from cProfile import label
+from cgi import test
+from datetime import date
 from re import T, template
 from sqlite3 import Date
+from turtle import goto
+from urllib import response
 from django.shortcuts import render, redirect
 from django.http import HttpResponse
 from django.template import loader
@@ -24,7 +30,13 @@ def releve(request):
     from bs4 import BeautifulSoup
     import csv 
     from cleantext import clean
+    #from django.test import Client
     
+    import urllib.request
+    from urllib.request import Request, urlopen
+    from urllib.error import URLError, HTTPError
+    
+
     from dashboard.models import Threads
     from dashboard.models import Comments
     from dashboard.models import Projet
@@ -100,14 +112,34 @@ def releve(request):
         dateDebut = str(dateLogsDay) + "_" + str(dateLogsMonth) + "_" + str(dateLogsYear) + "_" + str(dateLogsHour) + "_" + str(dateLogsMinute) + "_" + str(dateLogsSecond) + "_" + str(dateLogsMicrosecond)
         return dateDebut
 
+    def nouveauStatutReleve(nouveauSatut): #ajouter id du projet en parametre pour dynamisme
+        statut = Statut.objects.all().get(idStatut = 1) #idStatut = 1 => projet o2, rendre dynamique ?
+        statut.statut = nouveauSatut
+        statut.save()
+
+    def testDeCo(URLe):
+        req = Request(URLe)
+        try:
+            response = urlopen(req)
+        except HTTPError as e:
+            nouveauStatutReleve("Echec")
+            print('The server couldn\'t fulfill the request.')
+            print('Error code: ', e.code)
+            return  redirect("index")
+        except URLError as e:
+            nouveauStatutReleve("Echec")
+            print('We failed to reach a server.(yield)')
+            print('Reason: ', e.reason)
+            return  redirect("index")
+            print("return ne break pas")
+        else:
+            print ('Website is working fine')
 
     nbRelThreads = 0
     
     #Statut du relevé------
-    statutReleve = "En cours"
-    statut = Statut.objects.all().get(idStatut = 1) #idStatut = 1 => projet o2, rendre dynamique ?
-    statut.statut = statutReleve
-    statut.save()
+    nouveauStatutReleve("En cours")
+
 
     #Création fichiers logs.txt
     dateDebut = donnerDate()
@@ -117,6 +149,12 @@ def releve(request):
 
     #Url de la page en cours de scraping
     URL = "https://community.o2.co.uk/t5/Discussions-Feedback/bd-p/4"
+
+    
+
+    #c = Client()
+    #response = c.get(URL)
+    #print(response.status_code)
 
     logTotalPosts = 0
 
@@ -140,11 +178,47 @@ def releve(request):
         log.write(logPageTraitee + "\n")
         #pas .close tte suite...ou si plus simple non ?
 
+        #Vérifier connexion au site essai 1------------------
+        #testCo1 = urllib.request.urlopen(URL).getcode()
+        #print(testCo1)
+        #if testCo1 != 200:
+        #    nouveauStatutReleve("Echec!!!!!")
+        #    log.write("Code erreur" + str(testCo1))
+        #    return redirect('index')
+
+        #Vérifier connexion au site essai 2--------------------
+        #r = requests.head(URL).status_code
+        #print(r)
+
+
+        #Vérifier connexion au site essai 3----------------------
+
+        #---------------------------------------------------------------------------
+        #testDeCo(URL)
+        req = Request(URL)
+        try:
+            response = urlopen(req)
+        except HTTPError as e:
+            nouveauStatutReleve("Echec")
+            print('The server couldn\'t fulfill the request.')
+            print('Error code: ', e.code)
+            return redirect ('index')
+        except URLError as e:
+            nouveauStatutReleve("Echec")
+            print('We failed to reach a server.ici')
+            print('Reason: ', e.reason)
+            return redirect('index')
+        else:
+            print ('Website is working fine')
+        #--------------------------------------------------------------------------
+
+
+            
         
         domain = urlparse(URL).netloc
         page = requests.get(URL)
-        print(str(page))
 
+        
 
         #Récup contenu de la page-----------------
         soup = BeautifulSoup(page.content, "html.parser")
@@ -185,7 +259,7 @@ def releve(request):
 
         # get all post content for each thread
         all_thread_posts = [] # Contient tout les threads (et comm?)
-        for thread in threads:
+        for thread in threads:      
             thread_posts = []
             thread_url_path = thread[1]
             soupObject = getSoupObject(domain, thread_url_path) # Va sur la page du thread  et renvoie le contenu de la page 
@@ -258,11 +332,10 @@ def releve(request):
     # return HttpResponse(template.render())
     
     
-    statutReleve = "Terminé"
-    statut = Statut.objects.all().get(idStatut = 1) #idStatut = 1 => projet o2, rendre dynamique ?
-    statut.statut = statutReleve
-    statut.save()
+    nouveauStatutReleve("Terminé le " + str(dateRelev))
     
+    label .end
+
     if not request.user.is_authenticated:
         return redirect('login')
     return redirect('index')
