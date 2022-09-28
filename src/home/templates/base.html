@@ -15,9 +15,9 @@
             <a class="navbar-brand">Telephonica</a>
             <form class="d-flex">
                 {% if user.is_authenticated %}
-                    <button class="btn btn-light ms-3"><a href="{% url 'logout' %}">Se deconecter</a></button>
+                    <button class="btn btn-light ms-3"><a href="{% url 'logout' %}">Déconnexion</a></button>
                 {% else %}
-                    <button class="btn btn-light ms-3"><a href="../account/login">Se connecter</a></button>
+                    <button class="btn btn-light ms-3"><a href="../account/login">Connexion</a></button>
                 {% endif %}
             </form>
         </div>
@@ -28,7 +28,3 @@
     </section>
 </body>
 </html>
-
-
-
-

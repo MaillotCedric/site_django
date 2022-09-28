@@ -50,14 +50,11 @@ def log_user(request):
             firstname = user.first_name
             return redirect('home')
         else:
-            messages.error(request,"Mauvaise authentification")
+            messages.error(request,"Erreur d'authentification ...")
             return redirect('login')
     return render(request, 'account/login.html')
 
 def log_out(request):
     logout(request)
-    messages.success(request, "Vous avez bien etait déconecté")
-    return redirect('home')
-
-    
-    
+    # messages.success(request, "Vous avez bien etait déconecté")
+    return redirect('home')    
