@@ -10,11 +10,25 @@
       </tr>
     </thead>
     <tbody>
+<<<<<<< .merge_file_ga0OZW
       {% for projet in projets %}
         <tr>
           <th scope="col"><a href="../dashboard/{{projet.initial}}">{{projet.projetId}}</a></th>
           <th scope="col">{{projet.dateRel}}</th>
           <th scope="col">{{projet.nbThreadsRel}}</th>
+=======
+      <tr>
+            <th scope="row">1</th>
+            <th scope="col"><a href="dashboard/1">O2</a></th>
+            <th scope="col">25/08</th>
+            <td>40</td>
+        </tr>
+        <tr>
+            <th scope="row">2</th>
+            <th scope="col"><a href="dashboard/2">TF2</a></th>
+            <th scope="col">28/08</th>
+            <td>12</td>
+>>>>>>> .merge_file_Z2s5jH
         </tr>
       {% endfor %}
     </tbody>
