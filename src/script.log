@@ -1,0 +1,367 @@
+2022-09-28 08:01:22,897 - DEBUG - Starting new HTTPS connection (1): community.o2.co.uk:443
+2022-09-28 08:01:24,433 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/bd-p/4 HTTP/1.1" 200 23199
+2022-09-28 08:01:24,650 - DEBUG - Starting new HTTPS connection (1): community.o2.co.uk:443
+2022-09-28 08:01:25,375 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/Community-platform-bugs-issues-and-suggestions/td-p/1550804/jump-to/first-unread-message HTTP/1.1" 302 0
+2022-09-28 08:01:26,258 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/Community-platform-bugs-issues-and-suggestions/m-p/1550804 HTTP/1.1" 200 None
+2022-09-28 08:01:26,731 - DEBUG - Starting new HTTPS connection (1): community.o2.co.uk:443
+2022-09-28 08:01:28,078 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/Community-platform-bugs-issues-and-suggestions/td-p/1550804/page/2 HTTP/1.1" 200 None
+2022-09-28 08:01:28,612 - DEBUG - Starting new HTTPS connection (1): community.o2.co.uk:443
+2022-09-28 08:01:29,918 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/Community-platform-bugs-issues-and-suggestions/td-p/1550804/page/3 HTTP/1.1" 200 None
+2022-09-28 08:01:30,407 - DEBUG - Starting new HTTPS connection (1): community.o2.co.uk:443
+2022-09-28 08:01:31,488 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/Community-platform-bugs-issues-and-suggestions/td-p/1550804/page/4 HTTP/1.1" 200 44587
+2022-09-28 08:01:31,843 - DEBUG - Starting new HTTPS connection (1): community.o2.co.uk:443
+2022-09-28 08:01:32,556 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/Guide-Updates/td-p/1363682/jump-to/first-unread-message HTTP/1.1" 302 0
+2022-09-28 08:01:33,396 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/Guide-Updates/m-p/1363682 HTTP/1.1" 200 None
+2022-09-28 08:01:33,822 - DEBUG - Starting new HTTPS connection (1): community.o2.co.uk:443
+2022-09-28 08:01:35,149 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/Guide-Updates/td-p/1363682/page/2 HTTP/1.1" 200 None
+2022-09-28 08:01:35,667 - DEBUG - Starting new HTTPS connection (1): community.o2.co.uk:443
+2022-09-28 08:01:37,026 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/Guide-Updates/td-p/1363682/page/3 HTTP/1.1" 200 None
+2022-09-28 08:01:37,631 - DEBUG - Starting new HTTPS connection (1): community.o2.co.uk:443
+2022-09-28 08:01:38,819 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/Guide-Updates/td-p/1363682/page/4 HTTP/1.1" 200 49460
+2022-09-28 08:01:39,273 - DEBUG - Starting new HTTPS connection (1): community.o2.co.uk:443
+2022-09-28 08:01:39,994 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/O2-Customer-Service-Live-Chat-positive-feedback-archive/td-p/1125286/jump-to/first-unread-message HTTP/1.1" 302 0
+2022-09-28 08:01:40,870 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/O2-Customer-Service-Live-Chat-positive-feedback-archive/m-p/1125286 HTTP/1.1" 200 40312
+2022-09-28 08:01:41,299 - DEBUG - Starting new HTTPS connection (1): community.o2.co.uk:443
+2022-09-28 08:01:42,646 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/O2-Customer-Service-Live-Chat-positive-feedback-archive/td-p/1125286/page/2 HTTP/1.1" 200 42757
+2022-09-28 08:01:43,140 - DEBUG - Starting new HTTPS connection (1): community.o2.co.uk:443
+2022-09-28 08:01:44,509 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/O2-Customer-Service-Live-Chat-positive-feedback-archive/td-p/1125286/page/3 HTTP/1.1" 200 44668
+2022-09-28 08:01:44,964 - DEBUG - Starting new HTTPS connection (1): community.o2.co.uk:443
+2022-09-28 08:01:46,242 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/O2-Customer-Service-Live-Chat-positive-feedback-archive/td-p/1125286/page/4 HTTP/1.1" 200 42940
+2022-09-28 08:01:46,808 - DEBUG - Starting new HTTPS connection (1): community.o2.co.uk:443
+2022-09-28 08:01:48,278 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/O2-Customer-Service-Live-Chat-positive-feedback-archive/td-p/1125286/page/5 HTTP/1.1" 200 42867
+2022-09-28 08:01:48,809 - DEBUG - Starting new HTTPS connection (1): community.o2.co.uk:443
+2022-09-28 08:01:50,258 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/O2-Customer-Service-Live-Chat-positive-feedback-archive/td-p/1125286/page/6 HTTP/1.1" 200 42584
+2022-09-28 08:01:50,734 - DEBUG - Starting new HTTPS connection (1): community.o2.co.uk:443
+2022-09-28 08:01:52,207 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/O2-Customer-Service-Live-Chat-positive-feedback-archive/td-p/1125286/page/7 HTTP/1.1" 200 42498
+2022-09-28 08:01:52,668 - DEBUG - Starting new HTTPS connection (1): community.o2.co.uk:443
+2022-09-28 08:01:53,954 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/O2-Customer-Service-Live-Chat-positive-feedback-archive/td-p/1125286/page/8 HTTP/1.1" 200 42839
+2022-09-28 08:01:54,505 - DEBUG - Starting new HTTPS connection (1): community.o2.co.uk:443
+2022-09-28 08:01:55,927 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/O2-Customer-Service-Live-Chat-positive-feedback-archive/td-p/1125286/page/9 HTTP/1.1" 200 41355
+2022-09-28 08:01:56,401 - DEBUG - Starting new HTTPS connection (1): community.o2.co.uk:443
+2022-09-28 08:01:57,717 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/O2-Customer-Service-Live-Chat-positive-feedback-archive/td-p/1125286/page/10 HTTP/1.1" 200 40849
+2022-09-28 08:01:58,186 - DEBUG - Starting new HTTPS connection (1): community.o2.co.uk:443
+2022-09-28 08:01:59,220 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/O2-Customer-Service-Live-Chat-positive-feedback-archive/td-p/1125286/page/11 HTTP/1.1" 200 32154
+2022-09-28 08:01:59,525 - DEBUG - Starting new HTTPS connection (1): community.o2.co.uk:443
+2022-09-28 08:02:00,243 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/Fraudulent-Account-using-my-Identity/td-p/1575901/jump-to/first-unread-message HTTP/1.1" 302 0
+2022-09-28 08:02:00,908 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/Fraudulent-Account-using-my-Identity/m-p/1575901 HTTP/1.1" 200 43685
+2022-09-28 08:02:01,275 - DEBUG - Starting new HTTPS connection (1): community.o2.co.uk:443
+2022-09-28 08:02:02,098 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/Complaints-Department/td-p/1575797/jump-to/first-unread-message HTTP/1.1" 302 0
+2022-09-28 08:02:02,962 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/Complaints-Department/m-p/1575797 HTTP/1.1" 200 51773
+2022-09-28 08:02:03,501 - DEBUG - Starting new HTTPS connection (1): community.o2.co.uk:443
+2022-09-28 08:02:04,654 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/Complaints-Department/td-p/1575797/page/2 HTTP/1.1" 200 44456
+2022-09-28 08:02:05,038 - DEBUG - Starting new HTTPS connection (1): community.o2.co.uk:443
+2022-09-28 08:02:05,754 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/Spam-call/td-p/1575786/jump-to/first-unread-message HTTP/1.1" 302 0
+2022-09-28 08:02:06,419 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/Spam-call/m-p/1575786 HTTP/1.1" 200 39167
+2022-09-28 08:02:06,679 - DEBUG - Starting new HTTPS connection (1): community.o2.co.uk:443
+2022-09-28 08:02:07,434 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/Next-Day-Delivery/td-p/1575568/jump-to/first-unread-message HTTP/1.1" 302 0
+2022-09-28 08:02:08,037 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/Next-Day-Delivery/m-p/1575568 HTTP/1.1" 200 39960
+2022-09-28 08:02:08,364 - DEBUG - Starting new HTTPS connection (1): community.o2.co.uk:443
+2022-09-28 08:02:09,104 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/Australia/td-p/1575501/jump-to/first-unread-message HTTP/1.1" 302 0
+2022-09-28 08:02:09,793 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/Australia/m-p/1575501 HTTP/1.1" 200 41115
+2022-09-28 08:02:10,132 - DEBUG - Starting new HTTPS connection (1): community.o2.co.uk:443
+2022-09-28 08:02:10,889 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/Customer-services/td-p/1575489/jump-to/first-unread-message HTTP/1.1" 302 0
+2022-09-28 08:02:11,473 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/Customer-services/m-p/1575489 HTTP/1.1" 200 39256
+2022-09-28 08:02:11,810 - DEBUG - Starting new HTTPS connection (1): community.o2.co.uk:443
+2022-09-28 08:02:12,546 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/WiFi-calling-Moto-g31/td-p/1574285/jump-to/first-unread-message HTTP/1.1" 302 0
+2022-09-28 08:02:13,186 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/WiFi-calling-Moto-g31/m-p/1574285 HTTP/1.1" 200 39666
+2022-09-28 08:02:13,470 - DEBUG - Starting new HTTPS connection (1): community.o2.co.uk:443
+2022-09-28 08:02:14,265 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/Fraud-Alert/td-p/1574978/jump-to/first-unread-message HTTP/1.1" 302 0
+2022-09-28 08:02:15,168 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/Fraud-Alert/m-p/1574978 HTTP/1.1" 200 None
+2022-09-28 08:02:15,631 - DEBUG - Starting new HTTPS connection (1): community.o2.co.uk:443
+2022-09-28 08:02:16,870 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/Fraud-Alert/td-p/1574978/page/2 HTTP/1.1" 200 49771
+2022-09-28 08:02:17,400 - DEBUG - Starting new HTTPS connection (1): community.o2.co.uk:443
+2022-09-28 08:02:18,122 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/Positive-feedback/td-p/1528153/jump-to/first-unread-message HTTP/1.1" 302 0
+2022-09-28 08:02:18,881 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/Positive-feedback/m-p/1528153 HTTP/1.1" 200 43859
+2022-09-28 08:02:19,253 - DEBUG - Starting new HTTPS connection (1): community.o2.co.uk:443
+2022-09-28 08:02:19,971 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/New-to-02/td-p/1574811/jump-to/first-unread-message HTTP/1.1" 302 0
+2022-09-28 08:02:20,591 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/New-to-02/m-p/1574811 HTTP/1.1" 200 39397
+2022-09-28 08:02:20,936 - DEBUG - Starting new HTTPS connection (1): community.o2.co.uk:443
+2022-09-28 08:02:22,082 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/bd-p/4/page/2 HTTP/1.1" 200 23751
+2022-09-28 08:02:22,286 - DEBUG - Starting new HTTPS connection (1): community.o2.co.uk:443
+2022-09-28 08:02:23,039 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/Poor-service-in-store/td-p/1574095/jump-to/first-unread-message HTTP/1.1" 302 0
+2022-09-28 08:02:23,889 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/Poor-service-in-store/m-p/1574095 HTTP/1.1" 200 47700
+2022-09-28 08:02:24,269 - DEBUG - Starting new HTTPS connection (1): community.o2.co.uk:443
+2022-09-28 08:02:25,125 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/eSIM-QR-Code-via-email/td-p/1573588/jump-to/first-unread-message HTTP/1.1" 302 0
+2022-09-28 08:02:25,949 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/eSIM-QR-Code-via-email/m-p/1573588 HTTP/1.1" 200 46101
+2022-09-28 08:02:26,372 - DEBUG - Starting new HTTPS connection (1): community.o2.co.uk:443
+2022-09-28 08:02:27,155 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/Upgrade/td-p/1573417/jump-to/first-unread-message HTTP/1.1" 302 0
+2022-09-28 08:02:27,828 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/Upgrade/m-p/1573417 HTTP/1.1" 200 41609
+2022-09-28 08:02:28,198 - DEBUG - Starting new HTTPS connection (1): community.o2.co.uk:443
+2022-09-28 08:02:28,954 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/O2-Data-Network-Unavailable-For-Hours-At-A-Time-At-Many-Popular/td-p/1568919/jump-to/first-unread-message HTTP/1.1" 302 0
+2022-09-28 08:02:29,890 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/O2-Data-Network-Unavailable-For-Hours-At-A-Time-At-Many-Popular/m-p/1568919 HTTP/1.1" 200 None
+2022-09-28 08:02:30,478 - DEBUG - Starting new HTTPS connection (1): community.o2.co.uk:443
+2022-09-28 08:02:31,748 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/O2-Data-Network-Unavailable-For-Hours-At-A-Time-At-Many-Popular/td-p/1568919/page/2 HTTP/1.1" 200 None
+2022-09-28 08:02:32,177 - DEBUG - Starting new HTTPS connection (1): community.o2.co.uk:443
+2022-09-28 08:02:32,921 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/Upgrade/td-p/1572602/jump-to/first-unread-message HTTP/1.1" 302 0
+2022-09-28 08:02:33,610 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/Upgrade/m-p/1572602 HTTP/1.1" 200 42342
+2022-09-28 08:02:33,964 - DEBUG - Starting new HTTPS connection (1): community.o2.co.uk:443
+2022-09-28 08:02:34,740 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/Customer-Feedback/td-p/1211473/jump-to/first-unread-message HTTP/1.1" 302 0
+2022-09-28 08:02:35,639 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/Customer-Feedback/m-p/1211473 HTTP/1.1" 200 48019
+2022-09-28 08:02:36,098 - DEBUG - Starting new HTTPS connection (1): community.o2.co.uk:443
+2022-09-28 08:02:36,864 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/Considering-my-options-after-a-stolen-device/td-p/1564326/jump-to/first-unread-message HTTP/1.1" 302 0
+2022-09-28 08:02:37,853 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/Considering-my-options-after-a-stolen-device/m-p/1564326 HTTP/1.1" 200 None
+2022-09-28 08:02:38,279 - DEBUG - Starting new HTTPS connection (1): community.o2.co.uk:443
+2022-09-28 08:02:39,061 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/Scam-alert/td-p/1572504/jump-to/first-unread-message HTTP/1.1" 302 0
+2022-09-28 08:02:39,669 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/Scam-alert/m-p/1572504 HTTP/1.1" 200 39601
+2022-09-28 08:02:40,022 - DEBUG - Starting new HTTPS connection (1): community.o2.co.uk:443
+2022-09-28 08:02:40,809 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/Court-action/td-p/1572318/jump-to/first-unread-message HTTP/1.1" 302 0
+2022-09-28 08:02:41,400 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/Court-action/m-p/1572318 HTTP/1.1" 200 39823
+2022-09-28 08:02:41,758 - DEBUG - Starting new HTTPS connection (1): community.o2.co.uk:443
+2022-09-28 08:02:42,560 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/Changes-to-02-software/td-p/1572203/jump-to/first-unread-message HTTP/1.1" 302 0
+2022-09-28 08:02:43,218 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/Changes-to-02-software/m-p/1572203 HTTP/1.1" 200 41411
+2022-09-28 08:03:33,657 - DEBUG - Starting new HTTPS connection (1): community.o2.co.uk:443
+2022-09-28 08:03:35,459 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/bd-p/4 HTTP/1.1" 200 23183
+2022-09-28 08:03:35,822 - DEBUG - Starting new HTTPS connection (1): community.o2.co.uk:443
+2022-09-28 08:03:36,606 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/Community-platform-bugs-issues-and-suggestions/td-p/1550804/jump-to/first-unread-message HTTP/1.1" 302 0
+2022-09-28 08:03:37,537 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/Community-platform-bugs-issues-and-suggestions/m-p/1550804 HTTP/1.1" 200 None
+2022-09-28 08:03:38,048 - DEBUG - Starting new HTTPS connection (1): community.o2.co.uk:443
+2022-09-28 08:03:39,478 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/Community-platform-bugs-issues-and-suggestions/td-p/1550804/page/2 HTTP/1.1" 200 None
+2022-09-28 08:03:39,963 - DEBUG - Starting new HTTPS connection (1): community.o2.co.uk:443
+2022-09-28 08:03:41,306 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/Community-platform-bugs-issues-and-suggestions/td-p/1550804/page/3 HTTP/1.1" 200 None
+2022-09-28 08:03:41,858 - DEBUG - Starting new HTTPS connection (1): community.o2.co.uk:443
+2022-09-28 08:03:42,881 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/Community-platform-bugs-issues-and-suggestions/td-p/1550804/page/4 HTTP/1.1" 200 44590
+2022-09-28 08:03:43,217 - DEBUG - Starting new HTTPS connection (1): community.o2.co.uk:443
+2022-09-28 08:03:43,923 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/Guide-Updates/td-p/1363682/jump-to/first-unread-message HTTP/1.1" 302 0
+2022-09-28 08:03:44,852 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/Guide-Updates/m-p/1363682 HTTP/1.1" 200 None
+2022-09-28 08:03:45,418 - DEBUG - Starting new HTTPS connection (1): community.o2.co.uk:443
+2022-09-28 08:03:46,746 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/Guide-Updates/td-p/1363682/page/2 HTTP/1.1" 200 None
+2022-09-28 08:03:47,269 - DEBUG - Starting new HTTPS connection (1): community.o2.co.uk:443
+2022-09-28 08:03:48,590 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/Guide-Updates/td-p/1363682/page/3 HTTP/1.1" 200 None
+2022-09-28 08:03:49,082 - DEBUG - Starting new HTTPS connection (1): community.o2.co.uk:443
+2022-09-28 08:03:50,266 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/Guide-Updates/td-p/1363682/page/4 HTTP/1.1" 200 49450
+2022-09-28 08:03:50,720 - DEBUG - Starting new HTTPS connection (1): community.o2.co.uk:443
+2022-09-28 08:03:51,460 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/O2-Customer-Service-Live-Chat-positive-feedback-archive/td-p/1125286/jump-to/first-unread-message HTTP/1.1" 302 0
+2022-09-28 08:03:52,257 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/O2-Customer-Service-Live-Chat-positive-feedback-archive/m-p/1125286 HTTP/1.1" 200 40315
+2022-09-28 08:03:52,716 - DEBUG - Starting new HTTPS connection (1): community.o2.co.uk:443
+2022-09-28 08:03:53,986 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/O2-Customer-Service-Live-Chat-positive-feedback-archive/td-p/1125286/page/2 HTTP/1.1" 200 42768
+2022-09-28 08:03:54,531 - DEBUG - Starting new HTTPS connection (1): community.o2.co.uk:443
+2022-09-28 08:03:55,905 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/O2-Customer-Service-Live-Chat-positive-feedback-archive/td-p/1125286/page/3 HTTP/1.1" 200 44670
+2022-09-28 08:03:56,419 - DEBUG - Starting new HTTPS connection (1): community.o2.co.uk:443
+2022-09-28 08:03:57,740 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/O2-Customer-Service-Live-Chat-positive-feedback-archive/td-p/1125286/page/4 HTTP/1.1" 200 42900
+2022-09-28 08:03:58,248 - DEBUG - Starting new HTTPS connection (1): community.o2.co.uk:443
+2022-09-28 08:03:59,669 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/O2-Customer-Service-Live-Chat-positive-feedback-archive/td-p/1125286/page/5 HTTP/1.1" 200 42871
+2022-09-28 08:04:00,139 - DEBUG - Starting new HTTPS connection (1): community.o2.co.uk:443
+2022-09-28 08:04:01,408 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/O2-Customer-Service-Live-Chat-positive-feedback-archive/td-p/1125286/page/6 HTTP/1.1" 200 42563
+2022-09-28 08:04:02,044 - DEBUG - Starting new HTTPS connection (1): community.o2.co.uk:443
+2022-09-28 08:04:03,385 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/O2-Customer-Service-Live-Chat-positive-feedback-archive/td-p/1125286/page/7 HTTP/1.1" 200 42494
+2022-09-28 08:04:03,874 - DEBUG - Starting new HTTPS connection (1): community.o2.co.uk:443
+2022-09-28 08:04:05,225 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/O2-Customer-Service-Live-Chat-positive-feedback-archive/td-p/1125286/page/8 HTTP/1.1" 200 42869
+2022-09-28 08:04:05,716 - DEBUG - Starting new HTTPS connection (1): community.o2.co.uk:443
+2022-09-28 08:04:07,055 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/O2-Customer-Service-Live-Chat-positive-feedback-archive/td-p/1125286/page/9 HTTP/1.1" 200 41340
+2022-09-28 08:04:07,568 - DEBUG - Starting new HTTPS connection (1): community.o2.co.uk:443
+2022-09-28 08:04:08,731 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/O2-Customer-Service-Live-Chat-positive-feedback-archive/td-p/1125286/page/10 HTTP/1.1" 200 40827
+2022-09-28 08:04:09,294 - DEBUG - Starting new HTTPS connection (1): community.o2.co.uk:443
+2022-09-28 08:04:10,327 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/O2-Customer-Service-Live-Chat-positive-feedback-archive/td-p/1125286/page/11 HTTP/1.1" 200 32153
+2022-09-28 08:06:40,311 - DEBUG - Starting new HTTPS connection (1): community.o2.co.uk:443
+2022-09-28 08:06:41,149 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/Fraudulent-Account-using-my-Identity/td-p/1575901/jump-to/first-unread-message HTTP/1.1" 302 0
+2022-09-28 08:06:41,934 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/Fraudulent-Account-using-my-Identity/m-p/1575901 HTTP/1.1" 200 43677
+2022-09-28 08:06:42,306 - DEBUG - Starting new HTTPS connection (1): community.o2.co.uk:443
+2022-09-28 08:06:43,089 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/Complaints-Department/td-p/1575797/jump-to/first-unread-message HTTP/1.1" 302 0
+2022-09-28 08:06:44,023 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/Complaints-Department/m-p/1575797 HTTP/1.1" 200 51765
+2022-09-28 08:06:44,486 - DEBUG - Starting new HTTPS connection (1): community.o2.co.uk:443
+2022-09-28 08:06:45,537 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/Complaints-Department/td-p/1575797/page/2 HTTP/1.1" 200 44470
+2022-09-28 08:06:45,933 - DEBUG - Starting new HTTPS connection (1): community.o2.co.uk:443
+2022-09-28 08:06:46,646 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/Spam-call/td-p/1575786/jump-to/first-unread-message HTTP/1.1" 302 0
+2022-09-28 08:06:47,265 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/Spam-call/m-p/1575786 HTTP/1.1" 200 39176
+2022-09-28 08:06:47,558 - DEBUG - Starting new HTTPS connection (1): community.o2.co.uk:443
+2022-09-28 08:06:48,289 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/Next-Day-Delivery/td-p/1575568/jump-to/first-unread-message HTTP/1.1" 302 0
+2022-09-28 08:06:48,877 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/Next-Day-Delivery/m-p/1575568 HTTP/1.1" 200 39977
+2022-09-28 08:06:49,178 - DEBUG - Starting new HTTPS connection (1): community.o2.co.uk:443
+2022-09-28 08:06:49,937 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/Australia/td-p/1575501/jump-to/first-unread-message HTTP/1.1" 302 0
+2022-09-28 08:06:50,628 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/Australia/m-p/1575501 HTTP/1.1" 200 41134
+2022-09-28 08:06:51,041 - DEBUG - Starting new HTTPS connection (1): community.o2.co.uk:443
+2022-09-28 08:06:51,751 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/Customer-services/td-p/1575489/jump-to/first-unread-message HTTP/1.1" 302 0
+2022-09-28 08:06:52,374 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/Customer-services/m-p/1575489 HTTP/1.1" 200 39222
+2022-09-28 08:06:52,672 - DEBUG - Starting new HTTPS connection (1): community.o2.co.uk:443
+2022-09-28 08:06:53,566 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/WiFi-calling-Moto-g31/td-p/1574285/jump-to/first-unread-message HTTP/1.1" 302 0
+2022-09-28 08:06:54,200 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/WiFi-calling-Moto-g31/m-p/1574285 HTTP/1.1" 200 39682
+2022-09-28 08:06:54,517 - DEBUG - Starting new HTTPS connection (1): community.o2.co.uk:443
+2022-09-28 08:06:55,229 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/Fraud-Alert/td-p/1574978/jump-to/first-unread-message HTTP/1.1" 302 0
+2022-09-28 08:06:56,080 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/Fraud-Alert/m-p/1574978 HTTP/1.1" 200 None
+2022-09-28 08:06:56,563 - DEBUG - Starting new HTTPS connection (1): community.o2.co.uk:443
+2022-09-28 08:06:57,767 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/Fraud-Alert/td-p/1574978/page/2 HTTP/1.1" 200 49780
+2022-09-28 08:06:58,194 - DEBUG - Starting new HTTPS connection (1): community.o2.co.uk:443
+2022-09-28 08:06:58,912 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/Positive-feedback/td-p/1528153/jump-to/first-unread-message HTTP/1.1" 302 0
+2022-09-28 08:06:59,666 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/Positive-feedback/m-p/1528153 HTTP/1.1" 200 43848
+2022-09-28 08:07:00,009 - DEBUG - Starting new HTTPS connection (1): community.o2.co.uk:443
+2022-09-28 08:07:00,757 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/New-to-02/td-p/1574811/jump-to/first-unread-message HTTP/1.1" 302 0
+2022-09-28 08:07:01,430 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/New-to-02/m-p/1574811 HTTP/1.1" 200 39395
+2022-09-28 08:07:01,733 - DEBUG - Starting new HTTPS connection (1): community.o2.co.uk:443
+2022-09-28 08:07:03,238 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/bd-p/4/page/2 HTTP/1.1" 200 23745
+2022-09-28 08:07:03,459 - DEBUG - Starting new HTTPS connection (1): community.o2.co.uk:443
+2022-09-28 08:07:04,182 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/Poor-service-in-store/td-p/1574095/jump-to/first-unread-message HTTP/1.1" 302 0
+2022-09-28 08:07:05,050 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/Poor-service-in-store/m-p/1574095 HTTP/1.1" 200 47725
+2022-09-28 08:07:05,526 - DEBUG - Starting new HTTPS connection (1): community.o2.co.uk:443
+2022-09-28 08:07:26,778 - ERROR - Internal Server Error: /dashboard/releve/
+Traceback (most recent call last):
+  File "C:\Users\jwick\Documents\Workspace\site_django3\quentin2\site_django\.env\lib\site-packages\urllib3\connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+  File "C:\Users\jwick\Documents\Workspace\site_django3\quentin2\site_django\.env\lib\site-packages\urllib3\util\connection.py", line 95, in create_connection
+    raise err
+  File "C:\Users\jwick\Documents\Workspace\site_django3\quentin2\site_django\.env\lib\site-packages\urllib3\util\connection.py", line 85, in create_connection
+    sock.connect(sa)
+OSError: [WinError 10065] Une opération a été tentée sur un hôte impossible à atteindre
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\jwick\Documents\Workspace\site_django3\quentin2\site_django\.env\lib\site-packages\urllib3\connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "C:\Users\jwick\Documents\Workspace\site_django3\quentin2\site_django\.env\lib\site-packages\urllib3\connectionpool.py", line 386, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\jwick\Documents\Workspace\site_django3\quentin2\site_django\.env\lib\site-packages\urllib3\connectionpool.py", line 1042, in _validate_conn
+    conn.connect()
+  File "C:\Users\jwick\Documents\Workspace\site_django3\quentin2\site_django\.env\lib\site-packages\urllib3\connection.py", line 358, in connect
+    self.sock = conn = self._new_conn()
+  File "C:\Users\jwick\Documents\Workspace\site_django3\quentin2\site_django\.env\lib\site-packages\urllib3\connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x000001AB4DCD8520>: Failed to establish a new connection: [WinError 10065] Une opération a été tentée sur un hôte impossible à atteindre
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\jwick\Documents\Workspace\site_django3\quentin2\site_django\.env\lib\site-packages\requests\adapters.py", line 489, in send
+    resp = conn.urlopen(
+  File "C:\Users\jwick\Documents\Workspace\site_django3\quentin2\site_django\.env\lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    retries = retries.increment(
+  File "C:\Users\jwick\Documents\Workspace\site_django3\quentin2\site_django\.env\lib\site-packages\urllib3\util\retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='community.o2.co.uk', port=443): Max retries exceeded with url: /t5/Discussions-Feedback/eSIM-QR-Code-via-email/td-p/1573588/jump-to/first-unread-message (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x000001AB4DCD8520>: Failed to establish a new connection: [WinError 10065] Une opération a été tentée sur un hôte impossible à atteindre'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\jwick\Documents\Workspace\site_django3\quentin2\site_django\.env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\jwick\Documents\Workspace\site_django3\quentin2\site_django\.env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\jwick\Documents\Workspace\site_django3\quentin2\site_django\src\dashboard\views.py", line 179, in releve
+    soupObject = getSoupObject(domain, thread_url_path) # Va sur la page du thread  et renvoie le contenu de la page
+  File "C:\Users\jwick\Documents\Workspace\site_django3\quentin2\site_django\src\dashboard\views.py", line 33, in getSoupObject
+    page = requests.get(thread_url)
+  File "C:\Users\jwick\Documents\Workspace\site_django3\quentin2\site_django\.env\lib\site-packages\requests\api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+  File "C:\Users\jwick\Documents\Workspace\site_django3\quentin2\site_django\.env\lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Users\jwick\Documents\Workspace\site_django3\quentin2\site_django\.env\lib\site-packages\requests\sessions.py", line 587, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\jwick\Documents\Workspace\site_django3\quentin2\site_django\.env\lib\site-packages\requests\sessions.py", line 701, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\jwick\Documents\Workspace\site_django3\quentin2\site_django\.env\lib\site-packages\requests\adapters.py", line 565, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='community.o2.co.uk', port=443): Max retries exceeded with url: /t5/Discussions-Feedback/eSIM-QR-Code-via-email/td-p/1573588/jump-to/first-unread-message (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x000001AB4DCD8520>: Failed to establish a new connection: [WinError 10065] Une opération a été tentée sur un hôte impossible à atteindre'))
+2022-09-28 08:11:25,041 - INFO - C:\Users\jwick\Documents\Workspace\site_django3\quentin2\site_django\src\dashboard\views.py changed, reloading.
+2022-09-28 08:23:17,238 - ERROR - Internal Server Error: /dashboard/releve/
+Traceback (most recent call last):
+  File "C:\Users\jwick\Documents\Workspace\site_django3\quentin2\site_django\.env\lib\site-packages\urllib3\connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+  File "C:\Users\jwick\Documents\Workspace\site_django3\quentin2\site_django\.env\lib\site-packages\urllib3\util\connection.py", line 95, in create_connection
+    raise err
+  File "C:\Users\jwick\Documents\Workspace\site_django3\quentin2\site_django\.env\lib\site-packages\urllib3\util\connection.py", line 85, in create_connection
+    sock.connect(sa)
+OSError: [WinError 10065] Une opération a été tentée sur un hôte impossible à atteindre
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\jwick\Documents\Workspace\site_django3\quentin2\site_django\.env\lib\site-packages\urllib3\connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "C:\Users\jwick\Documents\Workspace\site_django3\quentin2\site_django\.env\lib\site-packages\urllib3\connectionpool.py", line 386, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\jwick\Documents\Workspace\site_django3\quentin2\site_django\.env\lib\site-packages\urllib3\connectionpool.py", line 1042, in _validate_conn
+    conn.connect()
+  File "C:\Users\jwick\Documents\Workspace\site_django3\quentin2\site_django\.env\lib\site-packages\urllib3\connection.py", line 358, in connect
+    self.sock = conn = self._new_conn()
+  File "C:\Users\jwick\Documents\Workspace\site_django3\quentin2\site_django\.env\lib\site-packages\urllib3\connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x0000021D535EDCF0>: Failed to establish a new connection: [WinError 10065] Une opération a été tentée sur un hôte impossible à atteindre
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\jwick\Documents\Workspace\site_django3\quentin2\site_django\.env\lib\site-packages\requests\adapters.py", line 489, in send
+    resp = conn.urlopen(
+  File "C:\Users\jwick\Documents\Workspace\site_django3\quentin2\site_django\.env\lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    retries = retries.increment(
+  File "C:\Users\jwick\Documents\Workspace\site_django3\quentin2\site_django\.env\lib\site-packages\urllib3\util\retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='community.o2.co.uk', port=443): Max retries exceeded with url: /t5/Discussions-Feedback/Next-Day-Delivery/td-p/1575568/jump-to/first-unread-message (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000021D535EDCF0>: Failed to establish a new connection: [WinError 10065] Une opération a été tentée sur un hôte impossible à atteindre'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\jwick\Documents\Workspace\site_django3\quentin2\site_django\.env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\jwick\Documents\Workspace\site_django3\quentin2\site_django\.env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\jwick\Documents\Workspace\site_django3\quentin2\site_django\src\dashboard\views.py", line 177, in releve
+    soupObject = getSoupObject(domain, thread_url_path) # Va sur la page du thread  et renvoie le contenu de la page
+  File "C:\Users\jwick\Documents\Workspace\site_django3\quentin2\site_django\src\dashboard\views.py", line 33, in getSoupObject
+    page = requests.get(thread_url)
+  File "C:\Users\jwick\Documents\Workspace\site_django3\quentin2\site_django\.env\lib\site-packages\requests\api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+  File "C:\Users\jwick\Documents\Workspace\site_django3\quentin2\site_django\.env\lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Users\jwick\Documents\Workspace\site_django3\quentin2\site_django\.env\lib\site-packages\requests\sessions.py", line 587, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\jwick\Documents\Workspace\site_django3\quentin2\site_django\.env\lib\site-packages\requests\sessions.py", line 701, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\jwick\Documents\Workspace\site_django3\quentin2\site_django\.env\lib\site-packages\requests\adapters.py", line 565, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='community.o2.co.uk', port=443): Max retries exceeded with url: /t5/Discussions-Feedback/Next-Day-Delivery/td-p/1575568/jump-to/first-unread-message (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000021D535EDCF0>: Failed to establish a new connection: [WinError 10065] Une opération a été tentée sur un hôte impossible à atteindre'))
+2022-09-28 08:32:49,395 - ERROR - Internal Server Error: /dashboard/releve/
+Traceback (most recent call last):
+  File "C:\Users\jwick\Documents\Workspace\site_django3\quentin2\site_django\.env\lib\site-packages\urllib3\connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+  File "C:\Users\jwick\Documents\Workspace\site_django3\quentin2\site_django\.env\lib\site-packages\urllib3\util\connection.py", line 72, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "C:\Users\jwick\AppData\Local\Programs\Python\Python310\lib\socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\jwick\Documents\Workspace\site_django3\quentin2\site_django\.env\lib\site-packages\urllib3\connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "C:\Users\jwick\Documents\Workspace\site_django3\quentin2\site_django\.env\lib\site-packages\urllib3\connectionpool.py", line 386, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\jwick\Documents\Workspace\site_django3\quentin2\site_django\.env\lib\site-packages\urllib3\connectionpool.py", line 1042, in _validate_conn
+    conn.connect()
+  File "C:\Users\jwick\Documents\Workspace\site_django3\quentin2\site_django\.env\lib\site-packages\urllib3\connection.py", line 358, in connect
+    self.sock = conn = self._new_conn()
+  File "C:\Users\jwick\Documents\Workspace\site_django3\quentin2\site_django\.env\lib\site-packages\urllib3\connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x0000019A5FDA68C0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\jwick\Documents\Workspace\site_django3\quentin2\site_django\.env\lib\site-packages\requests\adapters.py", line 489, in send
+    resp = conn.urlopen(
+  File "C:\Users\jwick\Documents\Workspace\site_django3\quentin2\site_django\.env\lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    retries = retries.increment(
+  File "C:\Users\jwick\Documents\Workspace\site_django3\quentin2\site_django\.env\lib\site-packages\urllib3\util\retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='community.o2.co.uk', port=443): Max retries exceeded with url: /t5/Discussions-Feedback/bd-p/4 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000019A5FDA68C0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\jwick\Documents\Workspace\site_django3\quentin2\site_django\.env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\jwick\Documents\Workspace\site_django3\quentin2\site_django\.env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\jwick\Documents\Workspace\site_django3\quentin2\site_django\src\dashboard\views.py", line 133, in releve
+    page = requests.get(URL)
+  File "C:\Users\jwick\Documents\Workspace\site_django3\quentin2\site_django\.env\lib\site-packages\requests\api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+  File "C:\Users\jwick\Documents\Workspace\site_django3\quentin2\site_django\.env\lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Users\jwick\Documents\Workspace\site_django3\quentin2\site_django\.env\lib\site-packages\requests\sessions.py", line 587, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\jwick\Documents\Workspace\site_django3\quentin2\site_django\.env\lib\site-packages\requests\sessions.py", line 701, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\jwick\Documents\Workspace\site_django3\quentin2\site_django\.env\lib\site-packages\requests\adapters.py", line 565, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='community.o2.co.uk', port=443): Max retries exceeded with url: /t5/Discussions-Feedback/bd-p/4 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000019A5FDA68C0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))

@@ -101,3 +101,245 @@ nombre de post extrait du thread "guide updates": 39
  Début 
 27_Sep_2022_16_14_12_387903
 URL de la page qui va être traitée: https://community.o2.co.uk/t5/Discussions-Feedback/bd-p/4
+
+ Début 
+28_Sep_2022_07_57_28_401643
+URL de la page qui va être traitée: https://community.o2.co.uk/t5/Discussions-Feedback/bd-p/4
+nombre de post extrait du thread "community platform bugs, issues and suggestions": 34
+nombre de post extrait du thread "guide updates": 39
+nombre de post extrait du thread "o2 customer service/live chat positive feedback archive!": 112
+nombre de post extrait du thread "fraudulent account using my identity": 5
+nombre de post extrait du thread "complaints department": 14
+nombre de post extrait du thread "spam call": 2
+nombre de post extrait du thread "next day delivery": 2
+nombre de post extrait du thread "australia": 3
+nombre de post extrait du thread "customer services": 2
+nombre de post extrait du thread "wifi calling moto g31": 2
+nombre de post extrait du thread "fraud alert!": 17
+nombre de post extrait du thread "positive feedback": 6
+nombre de post extrait du thread "new to 02": 2
+Nombre de threads scrappé:13
+URL de la page qui va être traitée: https://community.o2.co.uk/t5/Discussions-Feedback/bd-p/4/page/2
+nombre de post extrait du thread "poor service in store": 8
+nombre de post extrait du thread "esim qr code via email.": 6
+nombre de post extrait du thread "upgrade": 3
+nombre de post extrait du thread "o2 data network unavailable for hours at a time at many popular summer leisure destinations": 15
+nombre de post extrait du thread "upgrade": 4
+nombre de post extrait du thread "customer feedback": 7
+nombre de post extrait du thread "considering my options after a stolen device": 9
+nombre de post extrait du thread "scam alert": 2
+nombre de post extrait du thread "court action": 2
+nombre de post extrait du thread "changes to 02 software": 3
+Nombre de threads scrappé:10
+Total posts scrappé: 299
+ Fin
+Scrapping terminé à 28_Sep_2022_07_58_56_217611
+ Début 
+28_Sep_2022_08_01_22_887599
+URL de la page qui va être traitée: https://community.o2.co.uk/t5/Discussions-Feedback/bd-p/4
+nombre de post extrait du thread "community platform bugs, issues and suggestions": 34
+nombre de post extrait du thread "guide updates": 39
+nombre de post extrait du thread "o2 customer service/live chat positive feedback archive!": 112
+nombre de post extrait du thread "fraudulent account using my identity": 5
+nombre de post extrait du thread "complaints department": 14
+nombre de post extrait du thread "spam call": 2
+nombre de post extrait du thread "next day delivery": 2
+nombre de post extrait du thread "australia": 3
+nombre de post extrait du thread "customer services": 2
+nombre de post extrait du thread "wifi calling moto g31": 2
+nombre de post extrait du thread "fraud alert!": 17
+nombre de post extrait du thread "positive feedback": 6
+nombre de post extrait du thread "new to 02": 2
+Nombre de threads scrappé:13
+URL de la page qui va être traitée: https://community.o2.co.uk/t5/Discussions-Feedback/bd-p/4/page/2
+nombre de post extrait du thread "poor service in store": 8
+nombre de post extrait du thread "esim qr code via email.": 6
+nombre de post extrait du thread "upgrade": 3
+nombre de post extrait du thread "o2 data network unavailable for hours at a time at many popular summer leisure destinations": 15
+nombre de post extrait du thread "upgrade": 4
+nombre de post extrait du thread "customer feedback": 7
+nombre de post extrait du thread "considering my options after a stolen device": 9
+nombre de post extrait du thread "scam alert": 2
+nombre de post extrait du thread "court action": 2
+nombre de post extrait du thread "changes to 02 software": 3
+Nombre de threads scrappé:10
+Total posts scrappé: 299
+ Fin
+Scrapping terminé à 28_Sep_2022_08_02_43_524632
+ Début 
+28_Sep_2022_08_03_33_642455
+URL de la page qui va être traitée: https://community.o2.co.uk/t5/Discussions-Feedback/bd-p/4
+nombre de post extrait du thread "community platform bugs, issues and suggestions": 34
+nombre de post extrait du thread "guide updates": 39
+nombre de post extrait du thread "o2 customer service/live chat positive feedback archive!": 112
+nombre de post extrait du thread "fraudulent account using my identity": 5
+nombre de post extrait du thread "complaints department": 14
+nombre de post extrait du thread "spam call": 2
+nombre de post extrait du thread "next day delivery": 2
+nombre de post extrait du thread "australia": 3
+nombre de post extrait du thread "customer services": 2
+nombre de post extrait du thread "wifi calling moto g31": 2
+nombre de post extrait du thread "fraud alert!": 17
+nombre de post extrait du thread "positive feedback": 6
+nombre de post extrait du thread "new to 02": 2
+Nombre de threads scrappé:13
+URL de la page qui va être traitée: https://community.o2.co.uk/t5/Discussions-Feedback/bd-p/4/page/2
+nombre de post extrait du thread "poor service in store": 8
+2022-09-28 08:16:13,670 - DEBUG - Starting new HTTPS connection (1): community.o2.co.uk:443
+2022-09-28 08:16:15,769 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/bd-p/4 HTTP/1.1" 200 23197
+2022-09-28 08:16:16,060 - DEBUG - Starting new HTTPS connection (1): community.o2.co.uk:443
+2022-09-28 08:16:16,999 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/Community-platform-bugs-issues-and-suggestions/td-p/1550804/jump-to/first-unread-message HTTP/1.1" 302 0
+2022-09-28 08:16:18,174 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/Community-platform-bugs-issues-and-suggestions/m-p/1550804 HTTP/1.1" 200 None
+2022-09-28 08:16:18,738 - DEBUG - Starting new HTTPS connection (1): community.o2.co.uk:443
+2022-09-28 08:16:20,173 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/Community-platform-bugs-issues-and-suggestions/td-p/1550804/page/2 HTTP/1.1" 200 None
+2022-09-28 08:16:20,791 - DEBUG - Starting new HTTPS connection (1): community.o2.co.uk:443
+2022-09-28 08:16:22,255 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/Community-platform-bugs-issues-and-suggestions/td-p/1550804/page/3 HTTP/1.1" 200 None
+2022-09-28 08:16:22,831 - DEBUG - Starting new HTTPS connection (1): community.o2.co.uk:443
+2022-09-28 08:16:24,053 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/Community-platform-bugs-issues-and-suggestions/td-p/1550804/page/4 HTTP/1.1" 200 44598
+2022-09-28 08:16:24,444 - DEBUG - Starting new HTTPS connection (1): community.o2.co.uk:443
+2022-09-28 08:16:25,332 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/Guide-Updates/td-p/1363682/jump-to/first-unread-message HTTP/1.1" 302 0
+2022-09-28 08:16:26,368 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/Guide-Updates/m-p/1363682 HTTP/1.1" 200 None
+2022-09-28 08:16:26,897 - DEBUG - Starting new HTTPS connection (1): community.o2.co.uk:443
+2022-09-28 08:16:28,378 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/Guide-Updates/td-p/1363682/page/2 HTTP/1.1" 200 None
+2022-09-28 08:16:28,924 - DEBUG - Starting new HTTPS connection (1): community.o2.co.uk:443
+2022-09-28 08:16:30,377 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/Guide-Updates/td-p/1363682/page/3 HTTP/1.1" 200 None
+2022-09-28 08:16:31,029 - DEBUG - Starting new HTTPS connection (1): community.o2.co.uk:443
+2022-09-28 08:16:32,349 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/Guide-Updates/td-p/1363682/page/4 HTTP/1.1" 200 49458
+2022-09-28 08:16:32,781 - DEBUG - Starting new HTTPS connection (1): community.o2.co.uk:443
+2022-09-28 08:16:33,595 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/O2-Customer-Service-Live-Chat-positive-feedback-archive/td-p/1125286/jump-to/first-unread-message HTTP/1.1" 302 0
+2022-09-28 08:16:34,696 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/O2-Customer-Service-Live-Chat-positive-feedback-archive/m-p/1125286 HTTP/1.1" 200 40332
+2022-09-28 08:16:35,120 - DEBUG - Starting new HTTPS connection (1): community.o2.co.uk:443
+2022-09-28 08:16:36,702 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/O2-Customer-Service-Live-Chat-positive-feedback-archive/td-p/1125286/page/2 HTTP/1.1" 200 42758
+2022-09-28 08:16:37,223 - DEBUG - Starting new HTTPS connection (1): community.o2.co.uk:443
+2022-09-28 08:16:38,689 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/O2-Customer-Service-Live-Chat-positive-feedback-archive/td-p/1125286/page/3 HTTP/1.1" 200 44668
+2022-09-28 08:16:39,240 - DEBUG - Starting new HTTPS connection (1): community.o2.co.uk:443
+2022-09-28 08:16:40,613 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/O2-Customer-Service-Live-Chat-positive-feedback-archive/td-p/1125286/page/4 HTTP/1.1" 200 42927
+2022-09-28 08:16:41,397 - DEBUG - Starting new HTTPS connection (1): community.o2.co.uk:443
+2022-09-28 08:16:42,893 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/O2-Customer-Service-Live-Chat-positive-feedback-archive/td-p/1125286/page/5 HTTP/1.1" 200 42858
+2022-09-28 08:16:43,401 - DEBUG - Starting new HTTPS connection (1): community.o2.co.uk:443
+2022-09-28 08:16:44,855 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/O2-Customer-Service-Live-Chat-positive-feedback-archive/td-p/1125286/page/6 HTTP/1.1" 200 42547
+2022-09-28 08:16:45,381 - DEBUG - Starting new HTTPS connection (1): community.o2.co.uk:443
+2022-09-28 08:16:46,808 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/O2-Customer-Service-Live-Chat-positive-feedback-archive/td-p/1125286/page/7 HTTP/1.1" 200 42506
+2022-09-28 08:16:47,321 - DEBUG - Starting new HTTPS connection (1): community.o2.co.uk:443
+2022-09-28 08:16:48,789 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/O2-Customer-Service-Live-Chat-positive-feedback-archive/td-p/1125286/page/8 HTTP/1.1" 200 42850
+2022-09-28 08:16:49,388 - DEBUG - Starting new HTTPS connection (1): community.o2.co.uk:443
+2022-09-28 08:16:50,862 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/O2-Customer-Service-Live-Chat-positive-feedback-archive/td-p/1125286/page/9 HTTP/1.1" 200 41344
+2022-09-28 08:16:51,350 - DEBUG - Starting new HTTPS connection (1): community.o2.co.uk:443
+2022-09-28 08:16:52,973 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/O2-Customer-Service-Live-Chat-positive-feedback-archive/td-p/1125286/page/10 HTTP/1.1" 200 40847
+2022-09-28 08:16:53,467 - DEBUG - Starting new HTTPS connection (1): community.o2.co.uk:443
+2022-09-28 08:16:54,634 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/O2-Customer-Service-Live-Chat-positive-feedback-archive/td-p/1125286/page/11 HTTP/1.1" 200 32152
+2022-09-28 08:16:55,039 - DEBUG - Starting new HTTPS connection (1): community.o2.co.uk:443
+2022-09-28 08:16:55,881 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/Fraudulent-Account-using-my-Identity/td-p/1575901/jump-to/first-unread-message HTTP/1.1" 302 0
+2022-09-28 08:16:56,574 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/Fraudulent-Account-using-my-Identity/m-p/1575901 HTTP/1.1" 200 43663
+2022-09-28 08:16:57,043 - DEBUG - Starting new HTTPS connection (1): community.o2.co.uk:443
+2022-09-28 08:16:57,866 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/Complaints-Department/td-p/1575797/jump-to/first-unread-message HTTP/1.1" 302 0
+2022-09-28 08:16:58,879 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/Complaints-Department/m-p/1575797 HTTP/1.1" 200 51761
+2022-09-28 08:16:59,487 - DEBUG - Starting new HTTPS connection (1): community.o2.co.uk:443
+2022-09-28 08:17:00,704 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/Complaints-Department/td-p/1575797/page/2 HTTP/1.1" 200 44468
+2022-09-28 08:17:01,094 - DEBUG - Starting new HTTPS connection (1): community.o2.co.uk:443
+2022-09-28 08:17:01,925 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/Spam-call/td-p/1575786/jump-to/first-unread-message HTTP/1.1" 302 0
+2022-09-28 08:17:02,693 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/Spam-call/m-p/1575786 HTTP/1.1" 200 39160
+2022-09-28 08:17:03,017 - DEBUG - Starting new HTTPS connection (1): community.o2.co.uk:443
+2022-09-28 08:17:03,885 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/Next-Day-Delivery/td-p/1575568/jump-to/first-unread-message HTTP/1.1" 302 0
+2022-09-28 08:17:04,585 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/Next-Day-Delivery/m-p/1575568 HTTP/1.1" 200 39979
+2022-09-28 08:17:04,867 - DEBUG - Starting new HTTPS connection (1): community.o2.co.uk:443
+2022-09-28 08:17:05,768 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/Australia/td-p/1575501/jump-to/first-unread-message HTTP/1.1" 302 0
+2022-09-28 08:17:06,649 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/Australia/m-p/1575501 HTTP/1.1" 200 41126
+2022-09-28 08:17:07,020 - DEBUG - Starting new HTTPS connection (1): community.o2.co.uk:443
+2022-09-28 08:17:07,867 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/Customer-services/td-p/1575489/jump-to/first-unread-message HTTP/1.1" 302 0
+2022-09-28 08:17:08,498 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/Customer-services/m-p/1575489 HTTP/1.1" 200 39241
+2022-09-28 08:17:08,815 - DEBUG - Starting new HTTPS connection (1): community.o2.co.uk:443
+2022-09-28 08:17:09,647 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/WiFi-calling-Moto-g31/td-p/1574285/jump-to/first-unread-message HTTP/1.1" 302 0
+2022-09-28 08:17:10,383 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/WiFi-calling-Moto-g31/m-p/1574285 HTTP/1.1" 200 39679
+2022-09-28 08:17:10,750 - DEBUG - Starting new HTTPS connection (1): community.o2.co.uk:443
+2022-09-28 08:17:11,591 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/Fraud-Alert/td-p/1574978/jump-to/first-unread-message HTTP/1.1" 302 0
+2022-09-28 08:17:12,582 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/Fraud-Alert/m-p/1574978 HTTP/1.1" 200 None
+2022-09-28 08:17:13,081 - DEBUG - Starting new HTTPS connection (1): community.o2.co.uk:443
+2022-09-28 08:17:14,406 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/Fraud-Alert/td-p/1574978/page/2 HTTP/1.1" 200 49789
+2022-09-28 08:17:14,930 - DEBUG - Starting new HTTPS connection (1): community.o2.co.uk:443
+2022-09-28 08:17:15,796 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/Positive-feedback/td-p/1528153/jump-to/first-unread-message HTTP/1.1" 302 0
+2022-09-28 08:17:16,583 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/Positive-feedback/m-p/1528153 HTTP/1.1" 200 43861
+2022-09-28 08:17:16,946 - DEBUG - Starting new HTTPS connection (1): community.o2.co.uk:443
+2022-09-28 08:17:17,653 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/New-to-02/td-p/1574811/jump-to/first-unread-message HTTP/1.1" 302 0
+2022-09-28 08:17:18,278 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/New-to-02/m-p/1574811 HTTP/1.1" 200 39383
+2022-09-28 08:17:18,553 - DEBUG - Starting new HTTPS connection (1): community.o2.co.uk:443
+2022-09-28 08:17:20,324 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/bd-p/4/page/2 HTTP/1.1" 200 23755
+2022-09-28 08:17:20,497 - DEBUG - Starting new HTTPS connection (1): community.o2.co.uk:443
+2022-09-28 08:17:21,312 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/Poor-service-in-store/td-p/1574095/jump-to/first-unread-message HTTP/1.1" 302 0
+2022-09-28 08:17:22,256 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/Poor-service-in-store/m-p/1574095 HTTP/1.1" 200 47704
+2022-09-28 08:17:22,687 - DEBUG - Starting new HTTPS connection (1): community.o2.co.uk:443
+2022-09-28 08:17:23,397 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/eSIM-QR-Code-via-email/td-p/1573588/jump-to/first-unread-message HTTP/1.1" 302 0
+2022-09-28 08:17:24,151 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/eSIM-QR-Code-via-email/m-p/1573588 HTTP/1.1" 200 46096
+2022-09-28 08:17:24,524 - DEBUG - Starting new HTTPS connection (1): community.o2.co.uk:443
+2022-09-28 08:17:25,254 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/Upgrade/td-p/1573417/jump-to/first-unread-message HTTP/1.1" 302 0
+2022-09-28 08:17:25,917 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/Upgrade/m-p/1573417 HTTP/1.1" 200 41610
+2022-09-28 08:17:26,263 - DEBUG - Starting new HTTPS connection (1): community.o2.co.uk:443
+2022-09-28 08:17:26,981 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/O2-Data-Network-Unavailable-For-Hours-At-A-Time-At-Many-Popular/td-p/1568919/jump-to/first-unread-message HTTP/1.1" 302 0
+2022-09-28 08:17:27,870 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/O2-Data-Network-Unavailable-For-Hours-At-A-Time-At-Many-Popular/m-p/1568919 HTTP/1.1" 200 None
+2022-09-28 08:17:28,428 - DEBUG - Starting new HTTPS connection (1): community.o2.co.uk:443
+2022-09-28 08:17:29,620 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/O2-Data-Network-Unavailable-For-Hours-At-A-Time-At-Many-Popular/td-p/1568919/page/2 HTTP/1.1" 200 None
+2022-09-28 08:17:29,998 - DEBUG - Starting new HTTPS connection (1): community.o2.co.uk:443
+2022-09-28 08:17:30,775 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/Upgrade/td-p/1572602/jump-to/first-unread-message HTTP/1.1" 302 0
+2022-09-28 08:17:31,412 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/Upgrade/m-p/1572602 HTTP/1.1" 200 42359
+2022-09-28 08:17:31,741 - DEBUG - Starting new HTTPS connection (1): community.o2.co.uk:443
+2022-09-28 08:17:32,456 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/Customer-Feedback/td-p/1211473/jump-to/first-unread-message HTTP/1.1" 302 0
+2022-09-28 08:17:33,286 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/Customer-Feedback/m-p/1211473 HTTP/1.1" 200 48040
+2022-09-28 08:17:33,729 - DEBUG - Starting new HTTPS connection (1): community.o2.co.uk:443
+2022-09-28 08:17:34,480 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/Considering-my-options-after-a-stolen-device/td-p/1564326/jump-to/first-unread-message HTTP/1.1" 302 0
+2022-09-28 08:17:35,263 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/Considering-my-options-after-a-stolen-device/m-p/1564326 HTTP/1.1" 200 None
+2022-09-28 08:17:35,732 - DEBUG - Starting new HTTPS connection (1): community.o2.co.uk:443
+2022-09-28 08:17:36,452 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/Scam-alert/td-p/1572504/jump-to/first-unread-message HTTP/1.1" 302 0
+2022-09-28 08:17:37,043 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/Scam-alert/m-p/1572504 HTTP/1.1" 200 39628
+2022-09-28 08:17:37,375 - DEBUG - Starting new HTTPS connection (1): community.o2.co.uk:443
+2022-09-28 08:17:38,134 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/Court-action/td-p/1572318/jump-to/first-unread-message HTTP/1.1" 302 0
+2022-09-28 08:17:38,761 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/Court-action/m-p/1572318 HTTP/1.1" 200 39839
+2022-09-28 08:17:39,031 - DEBUG - Starting new HTTPS connection (1): community.o2.co.uk:443
+2022-09-28 08:17:39,753 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/Changes-to-02-software/td-p/1572203/jump-to/first-unread-message HTTP/1.1" 302 0
+2022-09-28 08:17:40,522 - DEBUG - https://community.o2.co.uk:443 "GET /t5/Discussions-Feedback/Changes-to-02-software/m-p/1572203 HTTP/1.1" 200 41414
+
+ Début 
+28_Sep_2022_08_16_13_663655
+URL de la page qui va être traitée: https://community.o2.co.uk/t5/Discussions-Feedback/bd-p/4
+nombre de post extrait du thread "community platform bugs, issues and suggestions": 34
+nombre de post extrait du thread "guide updates": 39
+nombre de post extrait du thread "o2 customer service/live chat positive feedback archive!": 112
+nombre de post extrait du thread "fraudulent account using my identity": 5
+nombre de post extrait du thread "complaints department": 14
+nombre de post extrait du thread "spam call": 2
+nombre de post extrait du thread "next day delivery": 2
+nombre de post extrait du thread "australia": 3
+nombre de post extrait du thread "customer services": 2
+nombre de post extrait du thread "wifi calling moto g31": 2
+nombre de post extrait du thread "fraud alert!": 17
+nombre de post extrait du thread "positive feedback": 6
+nombre de post extrait du thread "new to 02": 2
+Nombre de threads scrappé:13
+URL de la page qui va être traitée: https://community.o2.co.uk/t5/Discussions-Feedback/bd-p/4/page/2
+nombre de post extrait du thread "poor service in store": 8
+nombre de post extrait du thread "esim qr code via email.": 6
+nombre de post extrait du thread "upgrade": 3
+nombre de post extrait du thread "o2 data network unavailable for hours at a time at many popular summer leisure destinations": 15
+nombre de post extrait du thread "upgrade": 4
+nombre de post extrait du thread "customer feedback": 7
+nombre de post extrait du thread "considering my options after a stolen device": 9
+nombre de post extrait du thread "scam alert": 2
+nombre de post extrait du thread "court action": 2
+nombre de post extrait du thread "changes to 02 software": 3
+Nombre de threads scrappé:10
+Total posts scrappé: 299
+ Fin
+Scrapping terminé à 28_Sep_2022_08_17_40_8001242022-09-28 08:21:52,741 - INFO - C:\Users\jwick\Documents\Workspace\site_django3\quentin2\site_django\src\dashboard\views.py changed, reloading.
+
+ Début 
+28_Sep_2022_08_22_11_871477
+URL de la page qui va être traitée: https://community.o2.co.uk/t5/Discussions-Feedback/bd-p/4
+nombre de post extrait du thread "community platform bugs, issues and suggestions": 34
+nombre de post extrait du thread "guide updates": 39
+nombre de post extrait du thread "o2 customer service/live chat positive feedback archive!": 112
+nombre de post extrait du thread "fraudulent account using my identity": 5
+nombre de post extrait du thread "complaints department": 14
+nombre de post extrait du thread "spam call": 2
+
+ Début 
+28_Sep_2022_08_32_38_176357
+URL de la page qui va être traitée: https://community.o2.co.uk/t5/Discussions-Feedback/bd-p/4

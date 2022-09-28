@@ -26,7 +26,7 @@ def releve(request):
     import logging
     
     id_de_thread_a_traitee = 1678
-    logging.basicConfig(level=logging.DEBUG)
+    logging.basicConfig(level=logging.WARNING, filename="script.log", filemode="a",format='%(asctime)s - %(levelname)s - %(message)s')
 
     def getSoupObject(domain, url_path): # Va sur la page et renvoie son contenu
         thread_url = urlunparse(('https', domain, url_path, "", "", "")) # construct the url to access the posts for each thread
@@ -155,8 +155,6 @@ def releve(request):
         threads = recupInfoThreads(results,threads)
         
         #icicicicicicicicicicicicicicicicicciciicciiciiiiiiiiiiiiiiiiccccccccccccccccciiiiiiiiiiiiiiii Entrée BDD Table Threads
-        
-        
         
 
         for elt in threads:
