@@ -1,14 +1,9 @@
 from tkinter.tix import Select
 from django.shortcuts import render
-<<<<<<< .merge_file_x1mNtC
 from dashboard.models import Histo
 from dashboard.models import Projet
-from django.db.models import Max
-=======
 from django.http import HttpResponse
 from django.template import loader
-from dashboard.models import Projet
->>>>>>> .merge_file_zSYsfk
 
 # Create your views here.
 def home(request):
@@ -20,13 +15,8 @@ def home(request):
         projets.add(Histo.objects.filter(projetId = projet).order_by('-dateRel')[0]) # récupere le dernier histo des ce projet
     
     if not request.user.is_authenticated:
-<<<<<<< .merge_file_x1mNtC
         return render(request, 'home/public.html', context= context)
     return render(request, 'home/private.html', {'projets': projets})
-
-=======
-        return render(request, 'home/public.html')
-    return render(request, 'home/private.html')
 
 def dashboard(request, id_projet):
     # Si l'utilisateur n'est pas authentifié, ...
@@ -41,7 +31,7 @@ def dashboard(request, id_projet):
         projet_a_afficher = Projet.objects.get(codePr=id_projet)
 
         # Je récupère le template accueil dashboard (dans lequel le projet va être affiché)
-        template_accueil_dashboard = loader.get_template('dashboard_accueil.html')
+        template_accueil_dashboard = loader.get_template('dashboard/accueil.html')
 
         # Je crée l'objet à injecter dans le template accueil dashboard
         context = {
@@ -50,4 +40,3 @@ def dashboard(request, id_projet):
 
         # L'utilisateur est renvoyé vers la page d'accueil du dashboard (qui contient le projet à afficher)
         return HttpResponse(template_accueil_dashboard.render(context, request))
->>>>>>> .merge_file_zSYsfk
