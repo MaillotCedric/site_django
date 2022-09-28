@@ -1,5 +1,7 @@
 {% extends 'base.html' %}
 
+{% load i18n %}
+
 {% block content %}
 <table class="table">
     <thead>
@@ -13,12 +15,12 @@
       {% for projet in projets %}
         <tr>
           <th scope="col"><a href="dashboard/{{projet.projetId_id}}">{{projet.projetId}}</a></th>
-          <th scope="col">{{projet.dateRel}}</th>
+          {% language 'fr' %}
+          <th scope="col">{{projet.dateRel | date:"d F Y"}}</th>
+          {% endlanguage %}
           <th scope="col">{{projet.nbThreadsRel}}</th>
         </tr>
       {% endfor %}
     </tbody>
   </table>
 {% endblock %}
-
-

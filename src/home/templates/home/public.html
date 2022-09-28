@@ -1,5 +1,7 @@
 {% extends 'base.html' %}
 
+{% load i18n %}
+
 {% block content %}
 <table class="table">
   <thead>
@@ -13,7 +15,9 @@
     {% for histo in histos %}
       <tr>
         <th scope="col">{{histo.projetId}}</th>
-        <th scope="col">{{histo.dateRel}}</th>
+        {% language 'fr' %}
+        <th scope="col">{{histo.dateRel | date:"d F Y"}}</th>
+        {% endlanguage %}
         {% if histo.status %}
           <td><i class="bi bi-check-lg"></i></td>
         {% else %}
@@ -25,4 +29,3 @@
 </table>
   
 {% endblock %}
-
