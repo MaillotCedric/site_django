@@ -1,6 +1,11 @@
 from django.shortcuts import render, redirect
 from django.http import HttpResponse
 from django.template import loader
+from django.db import models
+from dashboard.models import Histo
+import datetime
+from datetime import date
+
 
 # Create your views here.
 def index(request):
@@ -207,10 +212,22 @@ def releve(request):
 
 
 
-
 #graph
 
 def pagegraph(request):
   template = loader.get_template('pagegraph.html')
+  test=Histo.objects.filter(dateRel__year=2022,dateRel__month__gte=7,)
   return HttpResponse(template.render())
- 
+  
+
+""" 
+Histo.objects.filter(dateRel__year=2022,dateRel__month__lt=7)
+
+Histo.objects.filter(dateRel__range=["2022-01-01","2022-06-31"])
+
+Histo.objects.filter(dateRel__gte=datetime.date(2022-1-1),
+                     dateRel__lte=datetime.date(2022-6-31))
+
+
+Histo.objects.filter(dateRel__year=2022,dateRel__month__gte=7,)
+ """
