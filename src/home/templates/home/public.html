@@ -2,45 +2,27 @@
 
 {% block content %}
 <table class="table">
-    <thead>
+  <thead>
+    <tr>
+      <th scope="col">Projet</th>
+      <th scope="col">Date</th>
+      <th scope="col">Etat</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for histo in histos %}
       <tr>
-        <th scope="col">#</th>
-        <th scope="col">Projet</th>
-        <th scope="col">Date</th>
-        <th scope="col">Etat</th>
+        <th scope="col">{{histo.projetId}}</th>
+        <th scope="col">{{histo.dateRel}}</th>
+        {% if histo.status %}
+          <td><i class="bi bi-check-lg"></i></td>
+        {% else %}
+          <td><i class="bi bi-exclamation-triangle"></i></td>
+        {% endif %}
       </tr>
-    </thead>
-    <tbody>
-      <tr>
-            <th scope="row">1</th>
-            <th scope="col">O2</th>
-            <th scope="col">17/08</th>
-            <td><i class="bi bi-check-lg"></i></td>
-        </tr>
-        <tr>
-            <th scope="row">2</th>
-            <th scope="col">O2</th>
-            <th scope="col">18/08</th>
-            <td><i class="bi bi-exclamation-triangle"></i></td>
-        </tr>
-        <tr>
-            <th scope="row">3</th>
-            <th scope="col">TF2</th>
-            <th scope="col">17/08</th>
-            <td><i class="bi bi-check-lg"></i></td>
-        </tr>
-        <tr>
-            <th scope="row">4</th>
-            <th scope="col">O2</th>
-            <th scope="col">25/08</th>
-            <td><i class="bi bi-check-lg"></i></td>
-        </tr>
-        <tr>
-            <th scope="row">5</th>
-            <th scope="col">TF2</th>
-            <th scope="col">27/08</th>
-            <td><i class="bi bi-exclamation-triangle"></i></td>
-        </tr>
-    </tbody>
-  </table>
+    {% endfor %}
+  </tbody>
+</table>
+  
 {% endblock %}
+
