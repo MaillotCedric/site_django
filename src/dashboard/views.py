@@ -203,3 +203,14 @@ def releve(request):
     if not request.user.is_authenticated:
         return redirect('login')
     return render(request, 'dashboard_accueil.html')
+
+
+
+
+
+#graph
+
+def graph(request):
+  template = loader.get_template('pagegraph.html')
+  return HttpResponse(template.render())
+ 
