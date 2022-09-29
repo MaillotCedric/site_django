@@ -244,49 +244,23 @@ def releve(request):
 
 #graph
 
-def pageGraph(request,projet):
+def pageGraph(request,id_projet):
     
-    Histos =Histo.objects.filter(projetId=projet,dateRel__year=2022,dateRel__month__gte=7).annotate(month=ExtractMonth('dateRel'),year=ExtractYear('dateRel')).order_by().values('month','year').annotate(average=Avg('nbThreadsRel'),nbRel=Count('nbThreadsRel')).values('month','year','average','nbRel')
-    #Histos =Histo.objects.all().values("dateRel")
+    Histos =Histo.objects.filter(projetId = id_projet,dateRel__year=2022,dateRel__month__gte=7).annotate(month=ExtractMonth('dateRel'),year=ExtractYear('dateRel')).order_by().values('month','year').annotate(average=Avg('nbThreadsRel'),nbRel=Count('nbThreadsRel')).values('month','year','average','nbRel')
     date=[]
     nbThreads=[]
     nbRel=[]
     print(Histos)
-   # print(Histos[0]['dateRel'])
     for Hist in Histos:
         date.append(str(Hist['month'])+"/"+str(Hist['year']))
         nbThreads.append(Hist['average'])
         nbRel.append(Hist['nbRel'])
     context={'dates':date,'nbThreads':nbThreads,'nbRel':nbRel}
     print(context) 
-        
-            
-    #     date.append(Hist.month)
-    #     nbThreads.append(Hist.nbThreadsRel)
-    # context={'dates':date,'nbThreads':nbThreads}
-    # print(context)    
-   
-    
-    return render(request,'pageGraph.html',context = context)
+    return render(request,'dashboard/pageGraph.html',context = context)
 
+#Historique
 
-
-
-""" Histo.objects.filter(dateRel__year=2022,dateRel__month__lt=7)
-
-Histo.objects.filter(dateRel__range=["2022-01-01","2022-06-31"])
-
-Histo.objects.filter(dateRel__gte=datetime.date(2022-1-1),
-                     dateRel__lte=datetime.date(2022-6-31))
-                     
- """
-
-
-
-
-
-""" Histo.objects.filter(dateRel__year=2022,dateRel__month=1).aggregate(Avg('nbThreadsRel'))
-Histo.objects.aggregate(Avg('NbThreadsRel')) """
 def historique(request,id_projet):
 
     if not request.user.is_authenticated:

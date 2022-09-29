@@ -13,8 +13,9 @@ def home(request):
     context["histos"] = Histo.objects.all()[:10]
 
     projets = set()
+    
+    print(Projet.objects.order_by())
     for projet in Projet.objects.order_by(): #récupére tous les projets
-        #projets.add(Histo.objects.filter(projetId = projet).order_by('-dateRel')[0]) # récupere le dernier histo des ce projet
         projets.add(Histo.objects.filter(projetId = projet).order_by('-dateRel')[0])
 
     projetRels = Histo.objects.values("projetId").annotate(hcount=Count("projetId"))
