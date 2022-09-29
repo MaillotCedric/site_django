@@ -34,9 +34,16 @@
 <div class="card" style="width: 18rem;">
     <div class="card-body">
         <h5 class="card-title">
+            {% if statut != "En cours"%}
             <button type="button" class="btn btn-primary">
                 <a href="releve/">Relevé</a>
             </button>
+            {% else %}
+            <button type="button" class="btn btn-secondary">
+                <a>Relevé</a>
+            </button>
+            {% endif %}
+
             <p id="statut">Statut :{{ statut }}</p>
         </h5>
         <p class="card-text">

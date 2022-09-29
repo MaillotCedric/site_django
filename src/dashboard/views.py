@@ -42,11 +42,15 @@ def releve(request):
     from dashboard.models import Comments
     from dashboard.models import Projet
     from dashboard.models import Histo
+    from dashboard.models import Statut
     import logging
     
-    from threading import Thread
-    import subprocess
-    from time import sleep
+    #Suppression contenu table Threads et Comments et valeur d'init ???? a faire ou pas????
+    #temporaire = Threads.objects.all()
+    #temporaire.delete()
+    #temporaire2 = Comments.objects.all()
+    #temporaire2.delete()
+    #return redirect ('index')
     
     id_de_thread_a_traitee = 1678
     logging.basicConfig(level=logging.WARNING, filename="script.log", filemode="a",format='%(asctime)s - %(levelname)s - %(message)s')
@@ -64,7 +68,7 @@ def releve(request):
         for page_posts_content in thread_results:
             body_content = page_posts_content.get_text()   
             #Entrée bdd table Comments
-            entreComment = Comments(comment = body_content, threadId_id = der_id_de_thread )
+            entreComment = Comments(comment = body_content, threadId_id = der_id_de_thread_plus )
             entreComment.save()
             posts_content.append(body_content)
         return posts_content
@@ -131,18 +135,18 @@ def releve(request):
                 nouveauStatutReleve("Echec")
                 print('The server couldn\'t fulfill the request.')
                 print('Error code: ', e.code)
-                sleep(0.5)
+                return
                 return  redirect("index")
             except URLError as e:
                 nouveauStatutReleve("Echec")
                 print('We failed to reach a server.(yield)')
                 print('Reason: ', e.reason)
-                sleep(0.5)
+                return
                 return  redirect("index")
                 print("return ne break pas")
             else:
                 print ('Website is working fine def')
-                sleep(3)
+                return
 
     
 
@@ -175,8 +179,8 @@ def releve(request):
     threadsEpinglés = 0 
 
     der_id_de_thread = (Threads.objects.last()).idThread
-    der_id_de_thread = der_id_de_thread + 1
-    print(der_id_de_thread)
+    der_id_de_thread_plus = der_id_de_thread + 1
+    print(der_id_de_thread_plus)
 
     x = 0
     derPage = 2 # Valeur 2 permet seulement d'entrer dans la boucle, modifié systematiquement à la suite
@@ -223,7 +227,7 @@ def releve(request):
             return redirect('index')
         else:
             print ('Website is working fine')
-        #--------------------------------------------------------------------------
+        #---------------------------------------------------------------------------
         
 
             
@@ -275,6 +279,26 @@ def releve(request):
         for thread in threads:      
             thread_posts = []
             thread_url_path = thread[1]
+
+            #---------------------------------------------------------------------------
+            #testDeCo(URL)
+            req = Request(URL)
+            try:
+                response = urlopen(req)
+            except HTTPError as e:
+                nouveauStatutReleve("Echec")
+                print('The server couldn\'t fulfill the request.')
+                print('Error code: ', e.code)
+                return redirect ('index')
+            except URLError as e:
+                nouveauStatutReleve("Echec")
+                print('We failed to reach a server.ici')
+                print('Reason: ', e.reason)
+                return redirect('index')
+            else:
+                print ('Website is working fine')
+            #---------------------------------------------------------------------------
+
             soupObject = getSoupObject(domain, thread_url_path) # Va sur la page du thread  et renvoie le contenu de la page 
 
             thread_posts = getPostsFromPage(soupObject, thread_posts) # Renvoi le contenu des comm (même un peu plus...)
@@ -285,6 +309,26 @@ def releve(request):
             while next_page_url:
                 # get all posts for given a page
                 next_page_url_path = urlparse(next_page_url).path
+
+                #---------------------------------------------------------------------------
+                #testDeCo(URL)
+                req = Request(URL)
+                try:
+                    response = urlopen(req)
+                except HTTPError as e:
+                    nouveauStatutReleve("Echec")
+                    print('The server couldn\'t fulfill the request.')
+                    print('Error code: ', e.code)
+                    return redirect ('index')
+                except URLError as e:
+                    nouveauStatutReleve("Echec")
+                    print('We failed to reach a server.ici')
+                    print('Reason: ', e.reason)
+                    return redirect('index')
+                else:
+                    print ('Website is working fine')
+                #---------------------------------------------------------------------------
+
                 soupObject = getSoupObject(domain, next_page_url_path)
                 thread_posts = getPostsFromPage(soupObject, thread_posts)
                 next_page_url = getNextPageUrl(soupObject)
@@ -292,7 +336,7 @@ def releve(request):
             id_de_thread_a_traitee += 1
 
             
-            der_id_de_thread += 1
+            der_id_de_thread_plus += 1
 
             logNbPosts = f'Nombre de post extrait du thread "{thread[0]}": {len(thread_posts)}' # Logs
             all_thread_posts.append((thread[0], thread_posts)) # adding tuples with the title of a thread and the array containing all the posts content of a thread, pas compris
@@ -338,23 +382,49 @@ def releve(request):
     dateRelev = datetime.datetime.now()
     nbRelCom = str(logTotalPosts)
     
-    entreeHisto = Histo(dateRel = dateRelev, nbThreadsRel = nbRelThreads, nbCommRel = nbRelCom, projetId_id = 1, status = True )
-    entreeHisto.save()
-    
-    # template = loader.get_template('dashboard_accueil.html')
-    # return HttpResponse(template.render())
-    
-    
-    nouveauStatutReleve("Terminé le " + str(dateRelev))
-    
+    #Supression des valerus ajouté dans les tables Threads et Comments quand manque de données relevé => Echec------------------------------------------------------------------------
+    if nbRelThreads < 9*x: #nbRelThreads à la place de 2 
+        entreeHisto = Histo(dateRel = dateRelev, nbThreadsRel = nbRelThreads, nbCommRel = nbRelCom, projetId_id = 1, status = False )# Ducoup pas enregistrer dans thread et comm ?
+        entreeHisto.save()
+        nouveauStatutReleve("Echec")
+        #supprimer les entrée liées dans threads et commentaires !!!!!!!!
+        repet = ((Threads.objects.last()).idThread) - der_id_de_thread
+        repet += 1 #nb de fois que boucle doit s'éxecuter
+        
+        der_id_a_suppr = (Threads.objects.last()).idThread
+        id_a_suppr = der_id_de_thread + 1
+        id_a_suppr_comms = der_id_de_thread + 1
+        
+        #while id_a_suppr <= der_id_a_suppr:
+        #    a_suppr = Threads.objects.get(idThread=id_a_suppr)
+        #    a_suppr.delete()
+        #    id_a_suppr += 1
 
-    if not request.user.is_authenticated:
-        return redirect('login')
-    return redirect('index')
-    #return render(request, 'dashboard_accueil.html')
-    
-    #template = loader.get_template('dashboard_accueil.html')
-    #context ={
-    #    'statut' : statutReleve,
-    #}
-    #return HttpResponse(template.render(context, request))
+        while id_a_suppr_comms < der_id_a_suppr:
+            a_suppr = Comments.objects.get(threadId_id = id_a_suppr_comms)
+            a_suppr.delete()
+            id_a_suppr_comms += 1
+
+        return redirect ('index')
+    else:
+
+        entreeHisto = Histo(dateRel = dateRelev, nbThreadsRel = nbRelThreads, nbCommRel = nbRelCom, projetId_id = 1, status = True )
+        entreeHisto.save()
+        
+        # template = loader.get_template('dashboard_accueil.html')
+        # return HttpResponse(template.render())
+        
+        
+        nouveauStatutReleve("Terminé le " + str(dateRelev))
+        
+
+        if not request.user.is_authenticated:
+            return redirect('login')
+        return redirect('index')
+        #return render(request, 'dashboard_accueil.html')
+        
+        #template = loader.get_template('dashboard_accueil.html')
+        #context ={
+        #    'statut' : statutReleve,
+        #}
+        #return HttpResponse(template.render(context, request))
