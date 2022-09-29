@@ -184,7 +184,7 @@ def releve(request):
 
     x = 0
     derPage = 2 # Valeur 2 permet seulement d'entrer dans la boucle, modifié systematiquement à la suite
-    while x < 2 : #Déterminer le nombre de pages à scrapper manuellement #ici derPage à mettre!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    while x < 1 : #Déterminer le nombre de pages à scrapper manuellement #ici derPage à mettre!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
         x += 1
 
         #Aller sur la page -----------------------
@@ -395,14 +395,16 @@ def releve(request):
         id_a_suppr = der_id_de_thread + 1
         id_a_suppr_comms = der_id_de_thread + 1
         
-        #while id_a_suppr <= der_id_a_suppr:
-        #    a_suppr = Threads.objects.get(idThread=id_a_suppr)
-        #    a_suppr.delete()
-        #    id_a_suppr += 1
-
-        while id_a_suppr_comms < der_id_a_suppr:
-            a_suppr = Comments.objects.get(threadId_id = id_a_suppr_comms)
+        while id_a_suppr <= der_id_a_suppr:
+            a_suppr = Threads.objects.get(idThread=id_a_suppr)
             a_suppr.delete()
+            id_a_suppr += 1
+
+        while id_a_suppr_comms <= der_id_a_suppr:
+            #a_suppr = Comments.objects.all().get(threadId_id = id_a_suppr_comms)
+            #a_suppr.delete()
+            Comments.objects.filter(threadId_id = id_a_suppr_comms).delete()
+            print(id_a_suppr_comms)
             id_a_suppr_comms += 1
 
         return redirect ('index')
