@@ -32,7 +32,7 @@
  const ctx = document.getElementById('myChart').getContext('2d');
  const myChart = new Chart(ctx, {    
     data: {
-        labels: [{% for date in dates%}'{{date|date:"M Y"}}', {%endfor%} ],
+        labels: [{% for date in dates%}'{{date}}', {%endfor%} ],
         datasets: [{
           type: 'bar',
             label: 'Nombre de threads', 
@@ -54,6 +54,7 @@
                 'rgba(255, 159, 64, 1)'
             ],
             borderWidth: 2,
+            
             yAxisID:'y' ,       
            datalabels:{
               color:'black',
@@ -68,7 +69,7 @@
       {
         type:'line',
         label: 'Nombre de relevés',
-        data:datay2,
+        data:{{nbRel}},
         borderWidth: 5,
         borderColor: 'rgb(58, 5, 17)',
         backgroundColor: 'rgb(58, 5, 17)',
@@ -129,7 +130,8 @@
                 }, 
               },
                         
-            }
+            },
+          
         }
           
         } 

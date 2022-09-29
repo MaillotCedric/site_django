@@ -6,7 +6,8 @@ from django.db import models
 from dashboard.models import Histo
 import datetime
 from datetime import date
-from django.db.models import Avg
+from django.db.models import Avg,Count
+from django.db.models.functions import ExtractMonth,ExtractYear
 import json
 from json import dumps
 
@@ -219,37 +220,45 @@ def releve(request):
 
 #graph
 
-def pageGraph(request):
+def pageGraph(request,projet):
     
-    Histos = Histo.objects.filter(dateRel__year=2022,dateRel__month__gte=7)
+    Histos =Histo.objects.filter(projetId=projet,dateRel__year=2022,dateRel__month__gte=7).annotate(month=ExtractMonth('dateRel'),year=ExtractYear('dateRel')).order_by().values('month','year').annotate(average=Avg('nbThreadsRel'),nbRel=Count('nbThreadsRel')).values('month','year','average','nbRel')
+    #Histos =Histo.objects.all().values("dateRel")
     date=[]
     nbThreads=[]
     nbRel=[]
-    
-   
+    print(Histos)
+   # print(Histos[0]['dateRel'])
     for Hist in Histos:
-        date.append(Hist.dateRel)
-        nbThreads.append(Hist.nbThreadsRel)
-    context={'dates':date,'nbThreads':nbThreads}    
+        date.append(str(Hist['month'])+"/"+str(Hist['year']))
+        nbThreads.append(Hist['average'])
+        nbRel.append(Hist['nbRel'])
+    context={'dates':date,'nbThreads':nbThreads,'nbRel':nbRel}
+    print(context) 
+        
+            
+    #     date.append(Hist.month)
+    #     nbThreads.append(Hist.nbThreadsRel)
+    # context={'dates':date,'nbThreads':nbThreads}
+    # print(context)    
    
     
-    return render(request,'pageGraph.html', context = context)
+    return render(request,'pageGraph.html',context = context)
 
 
 
 
-""" 
-Histo.objects.filter(dateRel__year=2022,dateRel__month__lt=7)
+""" Histo.objects.filter(dateRel__year=2022,dateRel__month__lt=7)
 
 Histo.objects.filter(dateRel__range=["2022-01-01","2022-06-31"])
 
 Histo.objects.filter(dateRel__gte=datetime.date(2022-1-1),
                      dateRel__lte=datetime.date(2022-6-31))
                      
-
-
-Histo.objects.filter(dateRel__year=2022,dateRel__month__gte=7,)
  """
+
+
+
 
 
 """ Histo.objects.filter(dateRel__year=2022,dateRel__month=1).aggregate(Avg('nbThreadsRel'))
