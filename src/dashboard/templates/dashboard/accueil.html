@@ -2,6 +2,9 @@
 
 {% block content %}
 
+{% load static %}
+<script src="{% static 'script_scrap.js' %}"></script>
+
 <div class="container text-center my-2">
     <!-- Titre page -->
     <div class="row">
@@ -42,8 +45,11 @@
             </a>
         </div>
         <!-- Relevé -->
-        <div class="col-md-6 col-sm-12 my-2">
-            <a href="releve/{{projet.codePr}}" class="text-decoration-none">
+        {% if statut != "En cours" %}
+        <!--<input href="releve/{{projet.codePr}}" type="button" value="Reload Page" onClick="window.location.reload(true)">
+        <a onclick="actualiser()">Refresh this page in 2 seconds</a>-->
+        <div class="col-md-6 col-sm-12 my-2" >
+            <a onclick="timedRefresh(1000)" href="releve/{{projet.codePr}}" class="text-decoration-none">
                 <div class="card">
                     <div class="card-body">
                         <h5 class="card-title">
@@ -56,6 +62,24 @@
                 </div>
             </a>
         </div>
+        {% else %}
+
+        <div class="col-md-6 col-sm-12 my-2">
+            <a class="text-decoration-none">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            Relevé
+                        </h5>
+                        <p class="card-text">
+                            <i class="bi bi-arrow-down-circle" style="font-size: 2rem;"></i>
+                        </p>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        {% endif %}
         <!-- Détails derniers relevés -->
         <div class="col-md-6 col-sm-12 my-2">
             <a href="" class="text-decoration-none">

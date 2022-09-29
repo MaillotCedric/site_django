@@ -81,6 +81,7 @@ def releve(request, id_projet):
     import csv 
     from cleantext import clean
     from django.http import HttpResponseRedirect
+    import js2py
     #from django.test import Client
     
     import urllib.request
@@ -520,6 +521,11 @@ def releve(request, id_projet):
             return redirect('login')
         #return HttpResponseRedirect(reverse('dashboard', args=(1)))
         #return HttpResponseRedirect(template_accueil_dashboard.render(context, request))
+        
+        #TestJS 01
+        #result, tempfile = js2py.run_file("dashboard\static\script_scrap.js")
+        #result = tempfile.actualiser()
+        
         return redirect('../1') 
         #return render(request, 'dashboard_accueil.html')
         
