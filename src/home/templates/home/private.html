@@ -14,7 +14,7 @@
       </tr>
     </thead>
     <tbody class="table-group-divider">
-      {% for projet in projets %}
+      {% for projet,projetRel in histo %}
         <tr class="text-center align-middle">
           <th scope="col"><a href="dashboard/{{projet.projetId_id}}">{{projet.projetId}}</a></th>
           {% language 'fr' %}
@@ -25,7 +25,7 @@
           {% else %}
             <td><i class="bi bi-exclamation-triangle text-danger" style="font-size: 25px; font-weight: bold;"></i></td>
           {% endif %}
-          <th scope="col">{{projet.nbThreadsRel}}</th>
+          <th scope="col">{{projetRel.hcount}}</th>
         </tr>
       {% endfor %}
     </tbody>
