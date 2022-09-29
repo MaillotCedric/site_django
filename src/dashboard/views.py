@@ -9,11 +9,12 @@ from sqlite3 import Date
 from turtle import goto
 from urllib import response
 from multiprocessing import context
+from xml.etree.ElementTree import Comment
 from django.shortcuts import render, redirect
 from django.http import HttpResponse
 from django.template import loader
 from django.db import models
-from dashboard.models import Histo
+from dashboard.models import Comments, Histo
 import datetime
 from datetime import date
 from django.db.models import Avg,Count
@@ -29,13 +30,22 @@ from dashboard.models import Stopgo
 
 
 
+
 def annulation(request):
     stopgo = Stopgo.objects.get(idStopgo = 1)
     stopgo.statutStopgo = "Stop"
     stopgo.save()
     return redirect('../1')
 
-# Create your views here.
+def details(request):
+    template = loader.get_template('dashboard/pageDetails.html')
+    commentaire = Comments.objects.last()
+    context = {
+        'commentaire' : commentaire
+    }
+    return render (request, "dashboard/pageDetails.html", context=context)
+    #return HttpResponse(template.render(context, request))
+
 def index(request):
     # return HttpResponse("Page dashboard !")
     statut = Statut.objects.all().get(idStatut = 1).statut #idStatut = 1 => projet o2, rendre dynamique ?

@@ -2694,3 +2694,21 @@ Traceback (most recent call last):
   File "C:\Users\jwick\Documents\Workspace\site_django3\quentin2\site_django\.env\lib\site-packages\django\core\handlers\base.py", line 332, in check_response
     raise ValueError(
 ValueError: The view dashboard.views.releve didn't return an HttpResponse object. It returned None instead.
+2022-09-30 01:29:34,477 - ERROR - Internal Server Error: /home/dashboard/releve/1
+Traceback (most recent call last):
+  File "C:\Users\jwick\Documents\Workspace\site_django3\quentin2\site_django\.env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\jwick\Documents\Workspace\site_django3\quentin2\site_django\.env\lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\Users\jwick\Documents\Workspace\site_django3\quentin2\site_django\.env\lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view dashboard.views.releve didn't return an HttpResponse object. It returned None instead.
+2022-09-30 01:30:18,520 - ERROR - Internal Server Error: /home/dashboard/releve/1
+Traceback (most recent call last):
+  File "C:\Users\jwick\Documents\Workspace\site_django3\quentin2\site_django\.env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\jwick\Documents\Workspace\site_django3\quentin2\site_django\.env\lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\Users\jwick\Documents\Workspace\site_django3\quentin2\site_django\.env\lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view dashboard.views.releve didn't return an HttpResponse object. It returned None instead.
