@@ -25,9 +25,15 @@ from dashboard.models import Histo
 from dashboard.models import Projet
 
 from dashboard.models import Statut
+from dashboard.models import Stopgo
 
-#Permet d'annuler le scraping
-stop = True
+
+
+def annulation(request):
+    stopgo = Stopgo.objects.get(idStopgo = 1)
+    stopgo.statutStopgo = "Stop"
+    stopgo.save()
+    return redirect('../1')
 
 # Create your views here.
 def index(request):
@@ -383,7 +389,7 @@ def releve(request, id_projet):
             while next_page_url:
                 
                 #Cancel le relevé si user clique sur annuler
-                if stop == False:
+                if Stopgo.objects.get(idStopgo=1).statutStopgo == "Stop":
                     #Entrée dans table Statut
                     nouveauStatutReleve("Echec")
                     #Entrée dans table Histo
@@ -421,7 +427,9 @@ def releve(request, id_projet):
                             Comments.objects.filter(threadId_id = id_a_suppr_comms0).delete()
                             print(id_a_suppr_comms0)
                             id_a_suppr_comms0 += 1
-
+                        stopgo = Stopgo.objects.get(idStopgo = 1)
+                        stopgo.statutStopgo = "Go"
+                        stopgo.save() 
                         return
 
 

@@ -44,3 +44,10 @@ class Statut(models.Model):
     def __str__(self):
         return self.statut
     
+class Stopgo(models.Model):
+    idStopgo = models.AutoField(primary_key=True)
+    statutStopgo = models.TextField()
+
+    def __str__(self):
+        return self.statutStopgo
+#Remplacer idStopgo par codeProjet pour dynamisme
