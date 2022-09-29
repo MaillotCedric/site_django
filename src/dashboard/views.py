@@ -23,11 +23,19 @@ def index(request):
 def dashboard(request, id_projet):
     # Si l'utilisateur n'est pas authentifié, ...
     if not request.user.is_authenticated:
+        # Je récupère les 10 derniers relevés
+        derniers_releves = Histo.objects.all()[:10]
+        
         # Je récupère le template de l'accueil publique
         template_accueil_public = loader.get_template('home/public.html')
+
+        # Je crée l'objet à injecter dans le template accueil public
+        context = {
+            "histos": derniers_releves
+        }
         
         # L'utilisateur est renvoyé vers la page d'accueil publique
-        return HttpResponse(template_accueil_public.render({}, request))
+        return HttpResponse(template_accueil_public.render(context, request))
     else:
         # Je récupère le projet à afficher
         projet_a_afficher = Projet.objects.get(codePr=id_projet)
@@ -255,7 +263,7 @@ def pageGraph(request,id_projet):
         date.append(str(Hist['month'])+"/"+str(Hist['year']))
         nbThreads.append(Hist['average'])
         nbRel.append(Hist['nbRel'])
-    context={'dates':date,'nbThreads':nbThreads,'nbRel':nbRel}
+    context={'dates':date,'nbThreads':nbThreads,'nbRel':nbRel,'idProjet':id_projet}
     print(context) 
     return render(request,'dashboard/pageGraph.html',context = context)
 
