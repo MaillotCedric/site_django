@@ -26,6 +26,9 @@ from dashboard.models import Projet
 
 from dashboard.models import Statut
 
+#Permet d'annuler le scraping
+stop = True
+
 # Create your views here.
 def index(request):
     # return HttpResponse("Page dashboard !")
@@ -207,6 +210,7 @@ def releve(request, id_projet):
     
 
     nbRelThreads = 0
+    nbRelCom = 0
     
     #Statut du relevé------
     nouveauStatutReleve("En cours")
@@ -329,7 +333,7 @@ def releve(request, id_projet):
         
         #icicicicicicicicicicicicicicicicicciciicciiciiiiiiiiiiiiiiiiccccccccccccccccciiiiiiiiiiiiiiii Entrée BDD Table Threads
         
-
+        print("test"+ str(der_id_de_thread_plus))
         for elt in threads:
             entreeThreads = Threads(nomThread = elt[0], projetId_id = 1 ) #projetId_id ? #ajouter dynamisme id projet non fixe
             entreeThreads.save()
@@ -377,6 +381,63 @@ def releve(request, id_projet):
 
             #Récup de tout les comm d'un thread
             while next_page_url:
+                
+                #Cancel le relevé si user clique sur annuler
+                if stop == False:
+                    #Entrée dans table Statut
+                    nouveauStatutReleve("Echec")
+                    #Entrée dans table Histo
+                    dateRelev = datetime.datetime.now()
+                    entreeHisto = Histo(dateRel = dateRelev, nbThreadsRel = nbRelThreads, nbCommRel = nbRelCom, projetId_id = 1, status = False )# Ducoup pas enregistrer dans thread et comm ?
+                    entreeHisto.save()
+                    #Vérification si données ont été scraped
+                    print(der_id_de_thread)
+                    print((Threads.objects.last()).idThread)
+                    if der_id_de_thread - (Threads.objects.last()).idThread <0: # ou  der_id_de_thread + (Threads.objects.last()).idThread == der_id_de_thread / 2 pour éviter erreur proche de 0. [der_id_de_thread - (Threads.objects.last()).idThread == 0]
+                        #La suppression cause un bug au niveau de l'identifiant => les valeurs sont supprimé mais leurs id utilisé ne sont pas reinitialisé => faire une variable = nbDeThreadsScrappedBugOccured qui sera ajouté a der_id_plus au niveau des comms pour éviter le FK introuvé
+                        '''
+                        #Suppression des éléments scraped
+                        der_id_a_suppr0 = (Threads.objects.last()).idThread
+                        id_a_suppr0 = der_id_de_thread + 1
+                        id_a_suppr_comms0 = der_id_de_thread + 1
+                        
+                        #Suppression des Threads
+                        while id_a_suppr0 <= der_id_a_suppr0:
+                            a_suppr0 = Threads.objects.get(idThread=id_a_suppr0)
+                            a_suppr0.delete()
+                            id_a_suppr0 += 1
+                        '''
+
+                        print("entré dans condition 0 cassecouille")#ATTENTION => PAS LE RESULTAT ATTENDU MAIS -13 JUSTE AU DESSUS
+                        return
+                    else:
+                        #Suppression des éléments scraped
+                        der_id_a_suppr0 = (Threads.objects.last()).idThread
+                        id_a_suppr0 = der_id_de_thread + 1
+                        id_a_suppr_comms0 = der_id_de_thread + 1
+                        
+                        #Suppression des Threads
+                        while id_a_suppr0 <= der_id_a_suppr0:
+                            a_suppr0 = Threads.objects.get(idThread=id_a_suppr0)
+                            a_suppr0.delete()
+                            id_a_suppr0 += 1
+
+                        #Suppression des Comments
+                        while id_a_suppr_comms0 <= der_id_a_suppr0:
+                            #a_suppr = Comments.objects.all().get(threadId_id = id_a_suppr_comms)
+                            #a_suppr.delete()
+                            Comments.objects.filter(threadId_id = id_a_suppr_comms0).delete()
+                            print(id_a_suppr_comms0)
+                            id_a_suppr_comms0 += 1
+
+                        return
+
+
+                    
+
+                
+                
+                
                 # get all posts for given a page
                 next_page_url_path = urlparse(next_page_url).path
 
@@ -462,6 +523,7 @@ def releve(request, id_projet):
         entreeHisto.save()
         #Entrée dans table Statut
         nouveauStatutReleve("Echec")
+
         #supprimer les entrée liées dans threads et commentaires !!!!!!!!
         repet = ((Threads.objects.last()).idThread) - der_id_de_thread
         repet += 1 #nb de fois que boucle doit s'éxecuter
