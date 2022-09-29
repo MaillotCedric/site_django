@@ -395,22 +395,10 @@ def releve(request, id_projet):
                     print((Threads.objects.last()).idThread)
                     if der_id_de_thread - (Threads.objects.last()).idThread <0: # ou  der_id_de_thread + (Threads.objects.last()).idThread == der_id_de_thread / 2 pour éviter erreur proche de 0. [der_id_de_thread - (Threads.objects.last()).idThread == 0]
                         #La suppression cause un bug au niveau de l'identifiant => les valeurs sont supprimé mais leurs id utilisé ne sont pas reinitialisé => faire une variable = nbDeThreadsScrappedBugOccured qui sera ajouté a der_id_plus au niveau des comms pour éviter le FK introuvé
-                        '''
-                        #Suppression des éléments scraped
-                        der_id_a_suppr0 = (Threads.objects.last()).idThread
-                        id_a_suppr0 = der_id_de_thread + 1
-                        id_a_suppr_comms0 = der_id_de_thread + 1
-                        
-                        #Suppression des Threads
-                        while id_a_suppr0 <= der_id_a_suppr0:
-                            a_suppr0 = Threads.objects.get(idThread=id_a_suppr0)
-                            a_suppr0.delete()
-                            id_a_suppr0 += 1
-                        '''
 
                         print("entré dans condition 0 cassecouille")#ATTENTION => PAS LE RESULTAT ATTENDU MAIS -13 JUSTE AU DESSUS
-                        return
-                    else:
+                        
+                    
                         #Suppression des éléments scraped
                         der_id_a_suppr0 = (Threads.objects.last()).idThread
                         id_a_suppr0 = der_id_de_thread + 1
@@ -421,6 +409,10 @@ def releve(request, id_projet):
                             a_suppr0 = Threads.objects.get(idThread=id_a_suppr0)
                             a_suppr0.delete()
                             id_a_suppr0 += 1
+                        
+                        #Bouclier anti-bug
+                        bouclier = Threads(nomThread = "Bouclier anti-bug", projetId_id = 1)
+                        bouclier.save()
 
                         #Suppression des Comments
                         while id_a_suppr_comms0 <= der_id_a_suppr0:
