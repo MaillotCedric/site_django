@@ -101,7 +101,7 @@ def releve(request, id_projet):
     #temporaire.delete()
     #temporaire2 = Comments.objects.all()
     #temporaire2.delete()
-    #return redirect ('dashboard')
+    #return redirect('../1')
     #Il faut ajouter 3 valeurs dans Threads pour la première execution dans une table Threads vide
     
     id_de_thread_a_traitee = 1678
@@ -187,12 +187,12 @@ def releve(request, id_projet):
                 nouveauStatutReleve("Echec")
                 print('The server couldn\'t fulfill the request.')
                 print('Error code: ', e.code)
-                return HttpResponse(template_accueil_dashboard.render(context, request))
+                return redirect('../1')
             except URLError as e:
                 nouveauStatutReleve("Echec")
                 print('We failed to reach a server.(yield)')
                 print('Reason: ', e.reason)
-                return HttpResponse(template_accueil_dashboard.render(context, request))
+                return redirect('../1')
                 print("return ne break pas")
             else:
                 print ('Website is working fine def')
@@ -251,7 +251,7 @@ def releve(request, id_projet):
         #if testCo1 != 200:
         #    nouveauStatutReleve("Echec!!!!!")
         #    log.write("Code erreur" + str(testCo1))
-        #    return redirect('dashboard')
+        #    return redirect('../1')
 
         #Vérifier connexion au site essai 2--------------------
         #r = requests.head(URL).status_code
@@ -269,12 +269,12 @@ def releve(request, id_projet):
             nouveauStatutReleve("Echec")
             print('The server couldn\'t fulfill the request.')
             print('Error code: ', e.code)
-            return HttpResponse(template_accueil_dashboard.render(context, request))
+            return redirect('../1')
         except URLError as e:
             nouveauStatutReleve("Echec")
             print('We failed to reach a server.ici')
             print('Reason: ', e.reason)
-            return HttpResponse(template_accueil_dashboard.render(context, request))
+            return redirect('../1')
         else:
             print ('Website is working fine')
         #---------------------------------------------------------------------------
@@ -339,12 +339,12 @@ def releve(request, id_projet):
                 nouveauStatutReleve("Echec")
                 print('The server couldn\'t fulfill the request.')
                 print('Error code: ', e.code)
-                return HttpResponse(template_accueil_dashboard.render(context, request))
+                return redirect('../1')
             except URLError as e:
                 nouveauStatutReleve("Echec")
                 print('We failed to reach a server.ici')
                 print('Reason: ', e.reason)
-                return HttpResponse(template_accueil_dashboard.render(context, request))
+                return redirect('../1')
             else:
                 print ('Website is working fine')
             #---------------------------------------------------------------------------
@@ -369,12 +369,12 @@ def releve(request, id_projet):
                     nouveauStatutReleve("Echec")
                     print('The server couldn\'t fulfill the request.')
                     print('Error code: ', e.code)
-                    return HttpResponse(template_accueil_dashboard.render(context, request))
+                    return redirect('../1')
                 except URLError as e:
                     nouveauStatutReleve("Echec")
                     print('We failed to reach a server.ici')
                     print('Reason: ', e.reason)
-                    return HttpResponse(template_accueil_dashboard.render(context, request))
+                    return redirect('../1')
                 else:
                     print ('Website is working fine')
                 #---------------------------------------------------------------------------
@@ -462,7 +462,7 @@ def releve(request, id_projet):
             print(id_a_suppr_comms)
             id_a_suppr_comms += 1
 
-        return HttpResponse(template_accueil_dashboard.render(context, request))
+        return redirect('../1')
     
     #Supression des données antécedantes car nouvelles données considéré comme bonnes
     else:
@@ -499,7 +499,7 @@ def releve(request, id_projet):
             return redirect('login')
         #return HttpResponseRedirect(reverse('dashboard', args=(1)))
         #return HttpResponseRedirect(template_accueil_dashboard.render(context, request))
-        return redirect('dashboard', ) 
+        return redirect('../1') 
         #return render(request, 'dashboard_accueil.html')
         
         #template = loader.get_template('dashboard_accueil.html')
