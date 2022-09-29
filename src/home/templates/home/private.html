@@ -6,15 +6,21 @@
       <tr>
         <th scope="col">Projet</th>
         <th scope="col">Date</th>
+        <th scope="col">Status</th>
         <th scope="col">Nombre</th>
       </tr>
     </thead>
     <tbody>
-      {% for projet in projets %}
+      {% for projet,projetRel in histo %}
         <tr>
           <th scope="col"><a href="dashboard/{{projet.projetId_id}}">{{projet.projetId}}</a></th>
           <th scope="col">{{projet.dateRel}}</th>
-          <th scope="col">{{projet.nbThreadsRel}}</th>
+          {% if projet.status %}
+          <td><i class="bi bi-check-lg"></i></td>
+          {% else %}
+          <td><i class="bi bi-exclamation-triangle"></i></td>
+          {% endif %}
+          <th scope="col">{{projetRel.hcount}}</th>
         </tr>
       {% endfor %}
     </tbody>
