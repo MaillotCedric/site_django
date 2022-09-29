@@ -1,13 +1,17 @@
 {% extends 'base.html' %}
-
+{% load static %}
 {% block content %}
+<script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.js"></script>
+<script src="{% static 'js/histo.js' %}"></script>
 <h2>Historiques</h2>
-<table class="table">
+<table id="tabHisto" class="table table-striped table-bordered" style="width:100%">
     <thead>
         <tr>
             <th scope="col">Date</th>
             <th scope="col">Etat</th>
-            <th scope="col">Nombre</th>
+            <th scope="col">Nombre Thread</th>
+            <th scope="col">Nombre Coms</th>
         </tr>
     </thead>
     <tbody>
@@ -19,11 +23,16 @@
             {% else %}
                 <td><i class="bi bi-exclamation-triangle"></i></td>
             {% endif %}
+            <th scope="col">{{historique.nbThreadsRel}}</th>
             <th scope="col">{{historique.nbCommRel}}</th>
         </tr>
         {% endfor %}
     </tbody>
 </table>
-  
+<div class="row text-end">
+    <div class="col">
+        <a type="button" class="btn btn-warning" href="../{{idProjet}}">Retour</a>
+    </div>
+</div>
 {% endblock %}
 
