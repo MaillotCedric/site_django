@@ -1,28 +1,32 @@
 {% extends 'base.html' %}
 
+{% load i18n %}
+
 {% block content %}
-<table class="table">
+<div class="py-2">
+  <table class="table">
     <thead>
-        <tr>
-            <th scope="col">Projet</th>
-            <th scope="col">Date</th>
-            <th scope="col">Etat</th>
-        </tr>
+      <tr class="text-center align-middle fs-5">
+        <th scope="col">Projet</th>
+        <th scope="col">Date du relevé</th>
+        <th scope="col">Etat du relevé</th>
+      </tr>
     </thead>
-    <tbody>
+    <tbody class="table-group-divider">
       {% for histo in histos %}
-          <tr>
-              <th scope="col">{{histo.projetId}}</th>
-              <th scope="col">{{histo.dateRel}}</th>
-              {% if histo.status %}
-                  <td><i class="bi bi-check-lg"></i></td>
-              {% else %}
-                  <td><i class="bi bi-exclamation-triangle"></i></td>
-              {% endif %}
-          </tr>
+        <tr class="text-center align-middle">
+          <th scope="col">{{histo.projetId}}</th>
+          {% language 'fr' %}
+          <th scope="col">{{histo.dateRel | date:"d F Y"}}</th>
+          {% endlanguage %}
+          {% if histo.status %}
+            <td><i class="bi bi-check-lg text-success" style="font-size: 25px; font-weight: bold;"></i></td>
+          {% else %}
+            <td><i class="bi bi-exclamation-triangle text-danger" style="font-size: 25px; font-weight: bold;"></i></td>
+          {% endif %}
+        </tr>
       {% endfor %}
     </tbody>
-</table>
-  
+  </table>
+</div>  
 {% endblock %}
-
