@@ -3704,3 +3704,95 @@ Nombre de threads scrappé:13
 Total posts scrappé: 244
  Fin
 Scrapping terminé à 30_Sep_2022_00_06_48_939188
+ Début 
+30_Sep_2022_00_10_28_619199
+URL de la page qui va être traitée: https://community.o2.co.uk/t5/Discussions-Feedback/bd-p/4
+
+ Début 
+30_Sep_2022_00_10_45_905601
+URL de la page qui va être traitée: https://community.o2.co.uk/t5/Discussions-Feedback/bd-p/4
+nombre de post extrait du thread "community platform bugs, issues and suggestions": 34
+nombre de post extrait du thread "guide updates": 39
+nombre de post extrait du thread "o2 customer service/live chat positive feedback archive!": 112
+nombre de post extrait du thread "text messages only arriving randomly": 3
+nombre de post extrait du thread "considering my options after a stolen device": 12
+nombre de post extrait du thread "complaints department": 14
+nombre de post extrait du thread "no caller id": 2
+nombre de post extrait du thread "spam call": 2
+nombre de post extrait du thread "next day delivery": 2
+nombre de post extrait du thread "australia": 3
+nombre de post extrait du thread "customer services": 2
+nombre de post extrait du thread "wifi calling moto g31": 2
+nombre de post extrait du thread "fraud alert!": 17
+Nombre de threads scrappé:13
+Total posts scrappé: 244
+ Fin
+Scrapping terminé à 30_Sep_2022_00_11_46_142168
+ Début 
+30_Sep_2022_00_30_16_442785
+URL de la page qui va être traitée: https://community.o2.co.uk/t5/Discussions-Feedback/bd-p/4
+
+ Début 
+30_Sep_2022_00_30_42_689870
+URL de la page qui va être traitée: https://community.o2.co.uk/t5/Discussions-Feedback/bd-p/4
+nombre de post extrait du thread "community platform bugs, issues and suggestions": 34
+nombre de post extrait du thread "guide updates": 39
+nombre de post extrait du thread "o2 customer service/live chat positive feedback archive!": 112
+nombre de post extrait du thread "text messages only arriving randomly": 3
+nombre de post extrait du thread "considering my options after a stolen device": 12
+nombre de post extrait du thread "complaints department": 14
+nombre de post extrait du thread "no caller id": 2
+nombre de post extrait du thread "spam call": 2
+nombre de post extrait du thread "next day delivery": 2
+nombre de post extrait du thread "australia": 3
+nombre de post extrait du thread "customer services": 2
+nombre de post extrait du thread "wifi calling moto g31": 2
+nombre de post extrait du thread "fraud alert!": 17
+Nombre de threads scrappé:13
+Total posts scrappé: 244
+ Fin
+Scrapping terminé à 30_Sep_2022_00_31_43_390487
+ Début 
+30_Sep_2022_00_32_22_303429
+URL de la page qui va être traitée: https://community.o2.co.uk/t5/Discussions-Feedback/bd-p/4
+nombre de post extrait du thread "community platform bugs, issues and suggestions": 34
+nombre de post extrait du thread "guide updates": 39
+nombre de post extrait du thread "o2 customer service/live chat positive feedback archive!": 112
+nombre de post extrait du thread "text messages only arriving randomly": 3
+nombre de post extrait du thread "considering my options after a stolen device": 12
+nombre de post extrait du thread "complaints department": 14
+nombre de post extrait du thread "no caller id": 2
+nombre de post extrait du thread "spam call": 2
+nombre de post extrait du thread "next day delivery": 2
+nombre de post extrait du thread "australia": 3
+nombre de post extrait du thread "customer services": 2
+nombre de post extrait du thread "wifi calling moto g31": 2
+nombre de post extrait du thread "fraud alert!": 17
+Nombre de threads scrappé:13
+Total posts scrappé: 244
+ Fin
+Scrapping terminé à 30_Sep_2022_00_33_21_851548
+ Début 
+30_Sep_2022_00_34_06_743186
+URL de la page qui va être traitée: https://community.o2.co.uk/t5/Discussions-Feedback/bd-p/4
+
+ Début 
+30_Sep_2022_00_34_45_349999
+URL de la page qui va être traitée: https://community.o2.co.uk/t5/Discussions-Feedback/bd-p/4
+nombre de post extrait du thread "community platform bugs, issues and suggestions": 34
+nombre de post extrait du thread "guide updates": 39
+nombre de post extrait du thread "o2 customer service/live chat positive feedback archive!": 112
+nombre de post extrait du thread "text messages only arriving randomly": 3
+nombre de post extrait du thread "considering my options after a stolen device": 12
+nombre de post extrait du thread "complaints department": 14
+nombre de post extrait du thread "no caller id": 2
+nombre de post extrait du thread "spam call": 2
+nombre de post extrait du thread "next day delivery": 2
+nombre de post extrait du thread "australia": 3
+nombre de post extrait du thread "customer services": 2
+nombre de post extrait du thread "wifi calling moto g31": 2
+nombre de post extrait du thread "fraud alert!": 17
+Nombre de threads scrappé:13
+Total posts scrappé: 244
+ Fin
+Scrapping terminé à 30_Sep_2022_00_35_48_178305

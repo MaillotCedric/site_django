@@ -548,9 +548,12 @@ def releve(request, id_projet):
         id_a_suppr = first_id_thread
         
         while id_a_suppr <= der_id_de_thread:
-            Threads.objects.get(idThread = id_a_suppr).delete()
-            print(id_a_suppr)
-            id_a_suppr += 1
+            if Threads.objects.filter(idThread = id_a_suppr).exists() == False:
+                break
+            else:
+                Threads.objects.get(idThread = id_a_suppr).delete()
+                print(id_a_suppr)
+                id_a_suppr += 1
         
         #Suppression des Comments
         
