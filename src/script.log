@@ -1526,3 +1526,320 @@ Traceback (most recent call last):
     raise self.model.DoesNotExist(
 dashboard.models.Threads.DoesNotExist: Threads matching query does not exist.
 2022-09-29 14:19:38,796 - INFO - C:\Users\jwick\Documents\Workspace\site_django3\quentin2\site_django\src\dashboard\views.py changed, reloading.
+2022-09-29 14:59:16,809 - ERROR - Internal Server Error: /home/dashboard/releve/
+Traceback (most recent call last):
+  File "C:\Users\jwick\Documents\Workspace\site_django3\quentin2\site_django\.env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\jwick\Documents\Workspace\site_django3\quentin2\site_django\.env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\jwick\Documents\Workspace\site_django3\quentin2\site_django\src\dashboard\views.py", line 477, in releve
+    return redirect('dashboard')
+  File "C:\Users\jwick\Documents\Workspace\site_django3\quentin2\site_django\.env\lib\site-packages\django\shortcuts.py", line 48, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+  File "C:\Users\jwick\Documents\Workspace\site_django3\quentin2\site_django\.env\lib\site-packages\django\shortcuts.py", line 145, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+  File "C:\Users\jwick\Documents\Workspace\site_django3\quentin2\site_django\.env\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\jwick\Documents\Workspace\site_django3\quentin2\site_django\.env\lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'dashboard' with no arguments not found. 1 pattern(s) tried: ['home/dashboard/(?P<id_projet>[0-9]+)\\Z']
+2022-09-29 15:00:39,495 - ERROR - Internal Server Error: /home/dashboard/
+Traceback (most recent call last):
+  File "C:\Users\jwick\Documents\Workspace\site_django3\quentin2\site_django\.env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\jwick\Documents\Workspace\site_django3\quentin2\site_django\.env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\jwick\Documents\Workspace\site_django3\quentin2\site_django\src\dashboard\views.py", line 23, in index
+    template = loader.get_template('dashboard_accueil.html')
+  File "C:\Users\jwick\Documents\Workspace\site_django3\quentin2\site_django\.env\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: dashboard_accueil.html
+2022-09-29 15:02:08,174 - INFO - C:\Users\jwick\Documents\Workspace\site_django3\quentin2\site_django\src\dashboard\urls.py changed, reloading.
+2022-09-29 15:15:59,012 - INFO - C:\Users\jwick\Documents\Workspace\site_django3\quentin2\site_django\src\dashboard\views.py changed, reloading.
+2022-09-29 15:18:24,306 - WARNING - Not Found: /home/dashboard/releve/<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.css">
+
+    
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand">Telephonica</a>
+            <form class="d-flex">
+                
+                    <a class="btn btn-danger" href="/account/logout">Déconnexion</a>
+                
+            </form>
+        </div>
+    </nav>
+    <section class="container">
+        
+
+<div class="container text-center my-2">
+    <!-- Titre page -->
+    <div class="row">
+        <div class="col">
+            <h2>Projet : O2</h2>
+        </div>
+    </div>
+    <!-- Cartes -->
+    <div class="row">
+        <!-- Historique -->
+        <div class="col-md-6 col-sm-12 my-2">
+            <a href="./historique/1" class="text-decoration-none">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            Historique
+                        </h5>
+                        <p class="card-text">
+                            <i class="bi-stopwatch" style="font-size: 2rem;"></i>
+                        </p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <!-- Graphique -->
+        <div class="col-md-6 col-sm-12 my-2">
+            <a href="" class="text-decoration-none">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            Graphique
+                        </h5>
+                        <p class="card-text">
+                            <i class="bi-bar-chart" style="font-size: 2rem;"></i>
+                        </p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <!-- Relevé -->
+        <div class="col-md-6 col-sm-12 my-2">
+            <a href="releve/1" class="text-decoration-none">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            Relevé
+                        </h5>
+                        <p class="card-text">
+                            <i class="bi bi-arrow-down-circle" style="font-size: 2rem;"></i>
+                        </p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <!-- Détails derniers relevés -->
+        <div class="col-md-6 col-sm-12 my-2">
+            <a href="" class="text-decoration-none">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            Détails derniers relevés
+                        </h5>
+                        <p class="card-text">
+                            <i class="bi bi-file-earmark-text" style="font-size: 2rem;"></i>
+                        </p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="row text-end">
+        <div class="col">
+            <a type="button" class="btn btn-warning" href="../">Retour</a>
+        </div>
+    </div>
+</div>
+
+<!-- <h2>Projet : O2</h2> -->
+
+<!-- Lien vers la page 'Historique' -->
+<!-- <a href="">Historique</a> -->
+<!-- <div class="card" style="width: 18rem;">
+    <div class="card-body">
+        <h5 class="card-title">
+            <a href="">Historique</a>
+        </h5>
+        <p class="card-text">
+            <i class="bi-stopwatch" style="font-size: 2rem; color: cornflowerblue;"></i>
+        </p>
+    </div>
+</div> -->
+
+<!-- Lien vers la page 'Graphique' -->
+<!-- <a href="">Graphique</a> -->
+<!-- <div class="card" style="width: 18rem;">
+    <div class="card-body">
+        <h5 class="card-title">
+            <a href="">Graphique</a>
+        </h5>
+        <p class="card-text">
+            <i class="bi-bar-chart" style="font-size: 2rem; color: cornflowerblue;"></i>
+        </p>
+    </div>
+</div> -->
+
+<!-- Bouton qui va lancer le SCRAP du projet affiché -->
+<!-- <button>Relevé</button> -->
+<!-- <div class="card" style="width: 18rem;">
+    <div class="card-body">
+        <h5 class="card-title">
+            <button type="button" class="btn btn-primary">
+                <a href="releve/">Relevé</a>
+            </button>
+        </h5>
+        <p class="card-text">
+            <i class="bi bi-arrow-down-circle" style="font-size: 2rem; color: cornflowerblue;"></i>
+        </p>
+    </div>
+</div> -->
+
+<!-- Lien vers la page 'Détails des derniers relevés' -->
+<!-- <a href="">Détails derniers relevés</a> -->
+<!-- <div class="card" style="width: 18rem;">
+    <div class="card-body">
+        <h5 class="card-title">
+            <a href="">Détails derniers relevés</a>
+        </h5>
+        <p class="card-text">
+            <i class="bi bi-file-earmark-text" style="font-size: 2rem; color: cornflowerblue;"></i>
+        </p>
+    </div>
+</div> -->
+
+<!-- Bouton de retour vers la page d'accueil privée -->
+<!-- <button> -->
+<!-- <a type="button" class="btn btn-warning" href="../">Retour</a> -->
+<!-- </button> -->
+
+    </section>
+</body>
+</html>
+
+2022-09-29 15:24:31,576 - INFO - C:\Users\jwick\Documents\Workspace\site_django3\quentin2\site_django\src\dashboard\views.py changed, reloading.
+2022-09-29 15:26:46,868 - ERROR - Internal Server Error: /home/dashboard/releve/1
+Traceback (most recent call last):
+  File "C:\Users\jwick\Documents\Workspace\site_django3\quentin2\site_django\.env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\jwick\Documents\Workspace\site_django3\quentin2\site_django\.env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\jwick\Documents\Workspace\site_django3\quentin2\site_django\src\dashboard\views.py", line 483, in releve
+    return HttpResponseRedirect(reverse('dashboard'))
+TypeError: reverse expected 2 arguments, got 1
+2022-09-29 15:27:32,659 - INFO - C:\Users\jwick\Documents\Workspace\site_django3\quentin2\site_django\src\dashboard\views.py changed, reloading.
+2022-09-29 15:29:23,679 - ERROR - Internal Server Error: /home/dashboard/releve/1
+Traceback (most recent call last):
+  File "C:\Users\jwick\Documents\Workspace\site_django3\quentin2\site_django\.env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\jwick\Documents\Workspace\site_django3\quentin2\site_django\.env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\jwick\Documents\Workspace\site_django3\quentin2\site_django\src\dashboard\views.py", line 483, in releve
+    return HttpResponseRedirect(reverse('dashboard', context))
+TypeError: a bytes-like object is required, not 'str'
+2022-09-29 15:29:45,829 - INFO - C:\Users\jwick\Documents\Workspace\site_django3\quentin2\site_django\src\dashboard\views.py changed, reloading.
+2022-09-29 15:31:47,167 - ERROR - Internal Server Error: /home/dashboard/releve/1
+Traceback (most recent call last):
+  File "C:\Users\jwick\Documents\Workspace\site_django3\quentin2\site_django\.env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\jwick\Documents\Workspace\site_django3\quentin2\site_django\.env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\jwick\Documents\Workspace\site_django3\quentin2\site_django\src\dashboard\views.py", line 483, in releve
+    return HttpResponseRedirect(reverse('dashboard/1'))
+TypeError: reverse expected 2 arguments, got 1
+2022-09-29 15:32:08,049 - INFO - C:\Users\jwick\Documents\Workspace\site_django3\quentin2\site_django\src\dashboard\views.py changed, reloading.
+2022-09-29 15:32:57,220 - ERROR - Internal Server Error: /home/dashboard/releve/1
+Traceback (most recent call last):
+  File "C:\Users\jwick\Documents\Workspace\site_django3\quentin2\site_django\.env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\jwick\Documents\Workspace\site_django3\quentin2\site_django\.env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\jwick\Documents\Workspace\site_django3\quentin2\site_django\src\dashboard\views.py", line 350, in releve
+    response = urlopen(req)
+  File "C:\Users\jwick\AppData\Local\Programs\Python\Python310\lib\urllib\request.py", line 216, in urlopen
+    return opener.open(url, data, timeout)
+  File "C:\Users\jwick\AppData\Local\Programs\Python\Python310\lib\urllib\request.py", line 519, in open
+    response = self._open(req, data)
+  File "C:\Users\jwick\AppData\Local\Programs\Python\Python310\lib\urllib\request.py", line 536, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+  File "C:\Users\jwick\AppData\Local\Programs\Python\Python310\lib\urllib\request.py", line 496, in _call_chain
+    result = func(*args)
+  File "C:\Users\jwick\AppData\Local\Programs\Python\Python310\lib\urllib\request.py", line 1391, in https_open
+    return self.do_open(http.client.HTTPSConnection, req,
+  File "C:\Users\jwick\AppData\Local\Programs\Python\Python310\lib\urllib\request.py", line 1352, in do_open
+    r = h.getresponse()
+  File "C:\Users\jwick\AppData\Local\Programs\Python\Python310\lib\http\client.py", line 1374, in getresponse
+    response.begin()
+  File "C:\Users\jwick\AppData\Local\Programs\Python\Python310\lib\http\client.py", line 318, in begin
+    version, status, reason = self._read_status()
+  File "C:\Users\jwick\AppData\Local\Programs\Python\Python310\lib\http\client.py", line 287, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+http.client.RemoteDisconnected: Remote end closed connection without response
+2022-09-29 15:35:04,893 - ERROR - Internal Server Error: /home/dashboard/releve/1
+Traceback (most recent call last):
+  File "C:\Users\jwick\Documents\Workspace\site_django3\quentin2\site_django\.env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\jwick\Documents\Workspace\site_django3\quentin2\site_django\.env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\jwick\Documents\Workspace\site_django3\quentin2\site_django\src\dashboard\views.py", line 483, in releve
+    return HttpResponseRedirect(reverse('dashboard/1',context))
+TypeError: a bytes-like object is required, not 'str'
+2022-09-29 15:37:31,273 - INFO - C:\Users\jwick\Documents\Workspace\site_django3\quentin2\site_django\src\dashboard\views.py changed, reloading.
+2022-09-29 15:39:16,035 - ERROR - Internal Server Error: /home/dashboard/releve/1
+Traceback (most recent call last):
+  File "C:\Users\jwick\Documents\Workspace\site_django3\quentin2\site_django\.env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\jwick\Documents\Workspace\site_django3\quentin2\site_django\.env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\jwick\Documents\Workspace\site_django3\quentin2\site_django\src\dashboard\views.py", line 483, in releve
+    return HttpResponseRedirect(reverse('../1'))
+TypeError: reverse expected 2 arguments, got 1
+2022-09-29 15:41:43,017 - ERROR - Internal Server Error: /home/dashboard/releve/1
+Traceback (most recent call last):
+  File "C:\Users\jwick\Documents\Workspace\site_django3\quentin2\site_django\.env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\jwick\Documents\Workspace\site_django3\quentin2\site_django\.env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\jwick\Documents\Workspace\site_django3\quentin2\site_django\src\dashboard\views.py", line 483, in releve
+    return HttpResponseRedirect(reverse('../1'))
+TypeError: reverse expected 2 arguments, got 1
+2022-09-29 15:42:15,933 - INFO - C:\Users\jwick\Documents\Workspace\site_django3\quentin2\site_django\src\dashboard\views.py changed, reloading.
+2022-09-29 15:44:23,475 - ERROR - Internal Server Error: /home/dashboard/releve/1
+Traceback (most recent call last):
+  File "C:\Users\jwick\Documents\Workspace\site_django3\quentin2\site_django\.env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\jwick\Documents\Workspace\site_django3\quentin2\site_django\.env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\jwick\Documents\Workspace\site_django3\quentin2\site_django\src\dashboard\views.py", line 483, in releve
+    return HttpResponseRedirect(reverse('dashboard', context))
+TypeError: a bytes-like object is required, not 'str'
+2022-09-29 15:48:43,147 - INFO - C:\Users\jwick\Documents\Workspace\site_django3\quentin2\site_django\src\dashboard\views.py changed, reloading.
+2022-09-29 15:50:57,991 - ERROR - Internal Server Error: /home/dashboard/releve/1
+Traceback (most recent call last):
+  File "C:\Users\jwick\Documents\Workspace\site_django3\quentin2\site_django\.env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\jwick\Documents\Workspace\site_django3\quentin2\site_django\.env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\jwick\Documents\Workspace\site_django3\quentin2\site_django\src\dashboard\views.py", line 483, in releve
+    return HttpResponseRedirect(reverse('dashboard', args=[1]))
+TypeError: audioop.reverse() takes no keyword arguments
+2022-09-29 15:52:39,431 - INFO - C:\Users\jwick\Documents\Workspace\site_django3\quentin2\site_django\src\dashboard\views.py changed, reloading.
+2022-09-29 15:54:37,921 - ERROR - Internal Server Error: /home/dashboard/releve/1
+Traceback (most recent call last):
+  File "C:\Users\jwick\Documents\Workspace\site_django3\quentin2\site_django\.env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\jwick\Documents\Workspace\site_django3\quentin2\site_django\.env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\jwick\Documents\Workspace\site_django3\quentin2\site_django\src\dashboard\views.py", line 483, in releve
+    return HttpResponseRedirect(reverse('dashboard', args=(1)))
+TypeError: audioop.reverse() takes no keyword arguments
+2022-09-29 15:54:51,291 - INFO - C:\Users\jwick\Documents\Workspace\site_django3\quentin2\site_django\src\dashboard\views.py changed, reloading.

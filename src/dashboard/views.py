@@ -1,4 +1,5 @@
 from ast import Yield
+from audioop import reverse
 from cProfile import label
 from cgi import test
 from datetime import date
@@ -49,7 +50,7 @@ def dashboard(request, id_projet):
         # L'utilisateur est renvoyé vers la page d'accueil du dashboard (qui contient le projet à afficher)
         return HttpResponse(template_accueil_dashboard.render(context, request))
 
-def releve(request):
+def releve(request, id_projet):
     import datetime
     import requests
     from urllib.parse import urlparse
@@ -57,6 +58,7 @@ def releve(request):
     from bs4 import BeautifulSoup
     import csv 
     from cleantext import clean
+    from django.http import HttpResponseRedirect
     #from django.test import Client
     
     import urllib.request
@@ -71,6 +73,12 @@ def releve(request):
     from dashboard.models import Statut
     import logging
     
+    template_accueil_dashboard = loader.get_template('dashboard/accueil.html')
+    projet_a_afficher = Projet.objects.get(codePr=id_projet)
+    context = {
+            'projet': projet_a_afficher
+        }
+
     #Suppression contenu table Threads et Comments et valeur d'init ???? a faire ou pas????
     #temporaire = Threads.objects.all()
     #temporaire.delete()
@@ -162,14 +170,12 @@ def releve(request):
                 nouveauStatutReleve("Echec")
                 print('The server couldn\'t fulfill the request.')
                 print('Error code: ', e.code)
-                return
-                return  redirect("index")
+                return HttpResponse(template_accueil_dashboard.render(context, request))
             except URLError as e:
                 nouveauStatutReleve("Echec")
                 print('We failed to reach a server.(yield)')
                 print('Reason: ', e.reason)
-                return
-                return  redirect("index")
+                return HttpResponse(template_accueil_dashboard.render(context, request))
                 print("return ne break pas")
             else:
                 print ('Website is working fine def')
@@ -246,12 +252,12 @@ def releve(request):
             nouveauStatutReleve("Echec")
             print('The server couldn\'t fulfill the request.')
             print('Error code: ', e.code)
-            return redirect ('dashboard')
+            return HttpResponse(template_accueil_dashboard.render(context, request))
         except URLError as e:
             nouveauStatutReleve("Echec")
             print('We failed to reach a server.ici')
             print('Reason: ', e.reason)
-            return redirect('dashboard')
+            return HttpResponse(template_accueil_dashboard.render(context, request))
         else:
             print ('Website is working fine')
         #---------------------------------------------------------------------------
@@ -316,12 +322,12 @@ def releve(request):
                 nouveauStatutReleve("Echec")
                 print('The server couldn\'t fulfill the request.')
                 print('Error code: ', e.code)
-                return redirect ('dashboard')
+                return HttpResponse(template_accueil_dashboard.render(context, request))
             except URLError as e:
                 nouveauStatutReleve("Echec")
                 print('We failed to reach a server.ici')
                 print('Reason: ', e.reason)
-                return redirect('dashboard')
+                return HttpResponse(template_accueil_dashboard.render(context, request))
             else:
                 print ('Website is working fine')
             #---------------------------------------------------------------------------
@@ -346,12 +352,12 @@ def releve(request):
                     nouveauStatutReleve("Echec")
                     print('The server couldn\'t fulfill the request.')
                     print('Error code: ', e.code)
-                    return redirect ('dashboard')
+                    return HttpResponse(template_accueil_dashboard.render(context, request))
                 except URLError as e:
                     nouveauStatutReleve("Echec")
                     print('We failed to reach a server.ici')
                     print('Reason: ', e.reason)
-                    return redirect('dashboard')
+                    return HttpResponse(template_accueil_dashboard.render(context, request))
                 else:
                     print ('Website is working fine')
                 #---------------------------------------------------------------------------
@@ -439,7 +445,7 @@ def releve(request):
             print(id_a_suppr_comms)
             id_a_suppr_comms += 1
 
-        return redirect ('dashboard')
+        return HttpResponse(template_accueil_dashboard.render(context, request))
     
     #Supression des données antécedantes car nouvelles données considéré comme bonnes
     else:
@@ -474,7 +480,9 @@ def releve(request):
 
         if not request.user.is_authenticated:
             return redirect('login')
-        return redirect('dashboard')
+        return HttpResponseRedirect(reverse('dashboard', args=(1)))
+        #return HttpResponseRedirect(template_accueil_dashboard.render(context, request))
+        #return redirect('dashboard') 
         #return render(request, 'dashboard_accueil.html')
         
         #template = loader.get_template('dashboard_accueil.html')
