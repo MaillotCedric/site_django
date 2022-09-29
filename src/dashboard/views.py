@@ -480,9 +480,9 @@ def releve(request, id_projet):
 
         if not request.user.is_authenticated:
             return redirect('login')
-        return HttpResponseRedirect(reverse('dashboard', args=(1)))
+        #return HttpResponseRedirect(reverse('dashboard', args=(1)))
         #return HttpResponseRedirect(template_accueil_dashboard.render(context, request))
-        #return redirect('dashboard') 
+        return redirect('dashboard', ) 
         #return render(request, 'dashboard_accueil.html')
         
         #template = loader.get_template('dashboard_accueil.html')

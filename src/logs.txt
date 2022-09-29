@@ -2292,3 +2292,43 @@ Nombre de threads scrappé:13
 Total posts scrappé: 247
  Fin
 Scrapping terminé à 29_Sep_2022_15_54_37_559113
+ Début 
+29_Sep_2022_15_57_45_108467
+URL de la page qui va être traitée: https://community.o2.co.uk/t5/Discussions-Feedback/bd-p/4
+nombre de post extrait du thread "community platform bugs, issues and suggestions": 34
+nombre de post extrait du thread "guide updates": 39
+nombre de post extrait du thread "o2 customer service/live chat positive feedback archive!": 112
+nombre de post extrait du thread "considering my options after a stolen device": 12
+nombre de post extrait du thread "complaints department": 14
+nombre de post extrait du thread "no caller id": 2
+nombre de post extrait du thread "spam call": 2
+nombre de post extrait du thread "next day delivery": 2
+nombre de post extrait du thread "australia": 3
+nombre de post extrait du thread "customer services": 2
+nombre de post extrait du thread "wifi calling moto g31": 2
+nombre de post extrait du thread "fraud alert!": 17
+nombre de post extrait du thread "positive feedback": 6
+Nombre de threads scrappé:13
+Total posts scrappé: 247
+ Fin
+Scrapping terminé à 29_Sep_2022_15_59_25_731318
+ Début 
+29_Sep_2022_16_03_12_788795
+URL de la page qui va être traitée: https://community.o2.co.uk/t5/Discussions-Feedback/bd-p/4
+nombre de post extrait du thread "community platform bugs, issues and suggestions": 34
+nombre de post extrait du thread "guide updates": 39
+nombre de post extrait du thread "o2 customer service/live chat positive feedback archive!": 112
+nombre de post extrait du thread "considering my options after a stolen device": 12
+nombre de post extrait du thread "complaints department": 14
+nombre de post extrait du thread "no caller id": 2
+nombre de post extrait du thread "spam call": 2
+nombre de post extrait du thread "next day delivery": 2
+nombre de post extrait du thread "australia": 3
+nombre de post extrait du thread "customer services": 2
+nombre de post extrait du thread "wifi calling moto g31": 2
+nombre de post extrait du thread "fraud alert!": 17
+nombre de post extrait du thread "positive feedback": 6
+Nombre de threads scrappé:13
+Total posts scrappé: 247
+ Fin
+Scrapping terminé à 29_Sep_2022_16_04_55_742435

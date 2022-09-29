@@ -1843,3 +1843,23 @@ Traceback (most recent call last):
     return HttpResponseRedirect(reverse('dashboard', args=(1)))
 TypeError: audioop.reverse() takes no keyword arguments
 2022-09-29 15:54:51,291 - INFO - C:\Users\jwick\Documents\Workspace\site_django3\quentin2\site_django\src\dashboard\views.py changed, reloading.
+2022-09-29 15:59:26,054 - ERROR - Internal Server Error: /home/dashboard/releve/1
+Traceback (most recent call last):
+  File "C:\Users\jwick\Documents\Workspace\site_django3\quentin2\site_django\.env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\jwick\Documents\Workspace\site_django3\quentin2\site_django\.env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\jwick\Documents\Workspace\site_django3\quentin2\site_django\src\dashboard\views.py", line 485, in releve
+    return redirect('dashboard')
+  File "C:\Users\jwick\Documents\Workspace\site_django3\quentin2\site_django\.env\lib\site-packages\django\shortcuts.py", line 48, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+  File "C:\Users\jwick\Documents\Workspace\site_django3\quentin2\site_django\.env\lib\site-packages\django\shortcuts.py", line 145, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+  File "C:\Users\jwick\Documents\Workspace\site_django3\quentin2\site_django\.env\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\jwick\Documents\Workspace\site_django3\quentin2\site_django\.env\lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'dashboard' with no arguments not found. 1 pattern(s) tried: ['home/dashboard/(?P<id_projet>[0-9]+)\\Z']
+2022-09-29 16:03:04,885 - INFO - C:\Users\jwick\Documents\Workspace\site_django3\quentin2\site_django\src\dashboard\views.py changed, reloading.
+2022-09-29 16:04:56,009 - WARNING - Not Found: /home/dashboard/releve/home/dashboard/1
+2022-09-29 16:08:21,091 - INFO - C:\Users\jwick\Documents\Workspace\site_django3\quentin2\site_django\src\dashboard\views.py changed, reloading.
