@@ -1,5 +1,6 @@
 {% extends 'base.html' %}
 {% load static %}
+{% load i18n %}
 {% block content %}
 <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
 <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.js"></script>
@@ -10,18 +11,20 @@
         <tr>
             <th scope="col">Date</th>
             <th scope="col">Etat</th>
-            <th scope="col">Nombre Thread</th>
-            <th scope="col">Nombre Coms</th>
+            <th scope="col">Nombre d'article</th>
+            <th scope="col">Nombre de commentaire</th>
         </tr>
     </thead>
     <tbody>
         {% for historique in historiques %}
         <tr>
-            <th scope="col">{{historique.dateRel}}</th>
+            {% language 'fr' %}
+            <th scope="col">{{historique.dateRel | date:"d F Y"}}</th>
+            {% endlanguage %}
             {% if historique.status %}
-                <td><i class="bi bi-check-lg"></i></td>
+                <td><i class="bi bi-check-lg text-success" style="font-size: 25px; font-weight: bold;"></i></td>
             {% else %}
-                <td><i class="bi bi-exclamation-triangle"></i></td>
+                <td><i class="bi bi-exclamation-triangle text-danger" style="font-size: 25px; font-weight: bold;"></i></td>
             {% endif %}
             <th scope="col">{{historique.nbThreadsRel}}</th>
             <th scope="col">{{historique.nbCommRel}}</th>
