@@ -335,6 +335,7 @@ def releve(request, id_projet):
             thread_posts = []
             thread_url_path = thread[1]
 
+            '''
             #---------------------------------------------------------------------------
             #testDeCo(URL)
             req = Request(URL)
@@ -353,6 +354,7 @@ def releve(request, id_projet):
             else:
                 print ('Website is working fine')
             #---------------------------------------------------------------------------
+            '''
 
             soupObject = getSoupObject(domain, thread_url_path) # Va sur la page du thread  et renvoie le contenu de la page 
 
@@ -365,6 +367,7 @@ def releve(request, id_projet):
                 # get all posts for given a page
                 next_page_url_path = urlparse(next_page_url).path
 
+                '''
                 #---------------------------------------------------------------------------
                 #testDeCo(URL)
                 req = Request(URL)
@@ -383,6 +386,7 @@ def releve(request, id_projet):
                 else:
                     print ('Website is working fine')
                 #---------------------------------------------------------------------------
+                '''
 
                 soupObject = getSoupObject(domain, next_page_url_path)
                 thread_posts = getPostsFromPage(soupObject, thread_posts)
