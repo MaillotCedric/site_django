@@ -1511,3 +1511,18 @@ Traceback (most recent call last):
   File "C:\Users\jwick\Documents\Workspace\site_django3\quentin2\site_django\.env\lib\site-packages\django\db\utils.py", line 98, in inner
     return func(*args, **kwargs)
 django.db.utils.IntegrityError: FOREIGN KEY constraint failed
+2022-09-29 13:25:39,873 - INFO - C:\Users\jwick\Documents\Workspace\site_django3\quentin2\site_django\src\dashboard\views.py changed, reloading.
+2022-09-29 13:57:32,501 - ERROR - Internal Server Error: /dashboard/releve/
+Traceback (most recent call last):
+  File "C:\Users\jwick\Documents\Workspace\site_django3\quentin2\site_django\.env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\jwick\Documents\Workspace\site_django3\quentin2\site_django\.env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\jwick\Documents\Workspace\site_django3\quentin2\site_django\src\dashboard\views.py", line 425, in releve
+    Threads.objects.get(idThread = id_a_suppr).delete()
+  File "C:\Users\jwick\Documents\Workspace\site_django3\quentin2\site_django\.env\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\jwick\Documents\Workspace\site_django3\quentin2\site_django\.env\lib\site-packages\django\db\models\query.py", line 650, in get
+    raise self.model.DoesNotExist(
+dashboard.models.Threads.DoesNotExist: Threads matching query does not exist.
+2022-09-29 14:19:38,796 - INFO - C:\Users\jwick\Documents\Workspace\site_django3\quentin2\site_django\src\dashboard\views.py changed, reloading.

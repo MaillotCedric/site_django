@@ -51,6 +51,7 @@ def releve(request):
     #temporaire2 = Comments.objects.all()
     #temporaire2.delete()
     #return redirect ('index')
+    #Il faut ajouter 3 valeurs dans Threads pour la première execution dans une table Threads vide
     
     id_de_thread_a_traitee = 1678
     logging.basicConfig(level=logging.WARNING, filename="script.log", filemode="a",format='%(asctime)s - %(levelname)s - %(message)s')
@@ -383,9 +384,12 @@ def releve(request):
     nbRelCom = str(logTotalPosts)
     
     #Supression des valerus ajouté dans les tables Threads et Comments quand manque de données relevé => Echec------------------------------------------------------------------------
-    if nbRelThreads < 9*x: #nbRelThreads à la place de 2 
+    if nbRelThreads < 9*x: #nbRelThreads à la place de 2 => (test)
+        
+        #Entrée dans table Histo
         entreeHisto = Histo(dateRel = dateRelev, nbThreadsRel = nbRelThreads, nbCommRel = nbRelCom, projetId_id = 1, status = False )# Ducoup pas enregistrer dans thread et comm ?
         entreeHisto.save()
+        #Entrée dans table Statut
         nouveauStatutReleve("Echec")
         #supprimer les entrée liées dans threads et commentaires !!!!!!!!
         repet = ((Threads.objects.last()).idThread) - der_id_de_thread
@@ -395,11 +399,13 @@ def releve(request):
         id_a_suppr = der_id_de_thread + 1
         id_a_suppr_comms = der_id_de_thread + 1
         
+        #Suppression des Threads
         while id_a_suppr <= der_id_a_suppr:
             a_suppr = Threads.objects.get(idThread=id_a_suppr)
             a_suppr.delete()
             id_a_suppr += 1
 
+        #Suppression des Comments
         while id_a_suppr_comms <= der_id_a_suppr:
             #a_suppr = Comments.objects.all().get(threadId_id = id_a_suppr_comms)
             #a_suppr.delete()
@@ -408,7 +414,27 @@ def releve(request):
             id_a_suppr_comms += 1
 
         return redirect ('index')
+    
+    #Supression des données antécedantes car nouvelles données considéré comme bonnes
     else:
+        #Suppression des Threads
+        first_id_thread = (Threads.objects.first()).idThread
+        print("first_id_thread = " + str(first_id_thread))
+        id_a_suppr = first_id_thread
+        
+        while id_a_suppr <= der_id_de_thread:
+            Threads.objects.get(idThread = id_a_suppr).delete()
+            print(id_a_suppr)
+            id_a_suppr += 1
+        
+        #Suppression des Comments
+        
+        while id_a_suppr <= der_id_de_thread:
+            Comments.objects.filter(threadId_id = id_a_suppr).delete()
+            print(id_a_suppr)
+            id_a_suppr += 1
+
+
 
         entreeHisto = Histo(dateRel = dateRelev, nbThreadsRel = nbRelThreads, nbCommRel = nbRelCom, projetId_id = 1, status = True )
         entreeHisto.save()
