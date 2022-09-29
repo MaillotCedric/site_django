@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Historiques</h2>
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Date</th>
+            <th scope="col">Etat</th>
+            <th scope="col">Nombre</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for historique in historiques %}
+        <tr>
+            <th scope="col">{{historique.dateRel}}</th>
+            {% if historique.status %}
+                <td><i class="bi bi-check-lg"></i></td>
+            {% else %}
+                <td><i class="bi bi-exclamation-triangle"></i></td>
+            {% endif %}
+            <th scope="col">{{historique.nbCommRel}}</th>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+  
+{% endblock %}
+
