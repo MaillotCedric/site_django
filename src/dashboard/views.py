@@ -7,9 +7,12 @@ from re import T, template
 from sqlite3 import Date
 from turtle import goto
 from urllib import response
+from multiprocessing import context
 from django.shortcuts import render, redirect
 from django.http import HttpResponse
 from django.template import loader
+from dashboard.models import Histo
+from dashboard.models import Projet
 
 from dashboard.models import Statut
 
@@ -22,6 +25,29 @@ def index(request):
         'statut' : statut
     }
     return HttpResponse(template.render(context, request))
+
+def dashboard(request, id_projet):
+    # Si l'utilisateur n'est pas authentifié, ...
+    if not request.user.is_authenticated:
+        # Je récupère le template de l'accueil publique
+        template_accueil_public = loader.get_template('home/public.html')
+        
+        # L'utilisateur est renvoyé vers la page d'accueil publique
+        return HttpResponse(template_accueil_public.render({}, request))
+    else:
+        # Je récupère le projet à afficher
+        projet_a_afficher = Projet.objects.get(codePr=id_projet)
+
+        # Je récupère le template accueil dashboard (dans lequel le projet va être affiché)
+        template_accueil_dashboard = loader.get_template('dashboard/accueil.html')
+
+        # Je crée l'objet à injecter dans le template accueil dashboard
+        context = {
+            'projet': projet_a_afficher
+        }
+
+        # L'utilisateur est renvoyé vers la page d'accueil du dashboard (qui contient le projet à afficher)
+        return HttpResponse(template_accueil_dashboard.render(context, request))
 
 def releve(request):
     import datetime
@@ -50,7 +76,7 @@ def releve(request):
     #temporaire.delete()
     #temporaire2 = Comments.objects.all()
     #temporaire2.delete()
-    #return redirect ('index')
+    #return redirect ('dashboard')
     #Il faut ajouter 3 valeurs dans Threads pour la première execution dans une table Threads vide
     
     id_de_thread_a_traitee = 1678
@@ -202,7 +228,7 @@ def releve(request):
         #if testCo1 != 200:
         #    nouveauStatutReleve("Echec!!!!!")
         #    log.write("Code erreur" + str(testCo1))
-        #    return redirect('index')
+        #    return redirect('dashboard')
 
         #Vérifier connexion au site essai 2--------------------
         #r = requests.head(URL).status_code
@@ -220,12 +246,12 @@ def releve(request):
             nouveauStatutReleve("Echec")
             print('The server couldn\'t fulfill the request.')
             print('Error code: ', e.code)
-            return redirect ('index')
+            return redirect ('dashboard')
         except URLError as e:
             nouveauStatutReleve("Echec")
             print('We failed to reach a server.ici')
             print('Reason: ', e.reason)
-            return redirect('index')
+            return redirect('dashboard')
         else:
             print ('Website is working fine')
         #---------------------------------------------------------------------------
@@ -290,12 +316,12 @@ def releve(request):
                 nouveauStatutReleve("Echec")
                 print('The server couldn\'t fulfill the request.')
                 print('Error code: ', e.code)
-                return redirect ('index')
+                return redirect ('dashboard')
             except URLError as e:
                 nouveauStatutReleve("Echec")
                 print('We failed to reach a server.ici')
                 print('Reason: ', e.reason)
-                return redirect('index')
+                return redirect('dashboard')
             else:
                 print ('Website is working fine')
             #---------------------------------------------------------------------------
@@ -320,12 +346,12 @@ def releve(request):
                     nouveauStatutReleve("Echec")
                     print('The server couldn\'t fulfill the request.')
                     print('Error code: ', e.code)
-                    return redirect ('index')
+                    return redirect ('dashboard')
                 except URLError as e:
                     nouveauStatutReleve("Echec")
                     print('We failed to reach a server.ici')
                     print('Reason: ', e.reason)
-                    return redirect('index')
+                    return redirect('dashboard')
                 else:
                     print ('Website is working fine')
                 #---------------------------------------------------------------------------
@@ -413,7 +439,7 @@ def releve(request):
             print(id_a_suppr_comms)
             id_a_suppr_comms += 1
 
-        return redirect ('index')
+        return redirect ('dashboard')
     
     #Supression des données antécedantes car nouvelles données considéré comme bonnes
     else:
@@ -448,7 +474,7 @@ def releve(request):
 
         if not request.user.is_authenticated:
             return redirect('login')
-        return redirect('index')
+        return redirect('dashboard')
         #return render(request, 'dashboard_accueil.html')
         
         #template = loader.get_template('dashboard_accueil.html')
@@ -456,3 +482,18 @@ def releve(request):
         #    'statut' : statutReleve,
         #}
         #return HttpResponse(template.render(context, request))
+    #ferner logs !!
+    # template = loader.get_template('dashboard_accueil.html')
+    # return HttpResponse(template.render())
+
+def historique(request,id_projet):
+
+    if not request.user.is_authenticated:
+        return render(request, 'home/public.html', context= context)
+
+    context = {}
+    context["historiques"] = Histo.objects.filter(projetId = id_projet)
+    context["idProjet"] = id_projet
+    
+
+    return render(request, 'dashboard/historique.html', context = context)
