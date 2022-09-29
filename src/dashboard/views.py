@@ -1,3 +1,4 @@
+from multiprocessing import context
 from django.shortcuts import render, redirect
 from django.http import HttpResponse
 from django.template import loader
@@ -5,6 +6,10 @@ from django.db import models
 from dashboard.models import Histo
 import datetime
 from datetime import date
+from django.db.models import Avg
+import json
+from json import dumps
+
 
 
 # Create your views here.
@@ -214,11 +219,24 @@ def releve(request):
 
 #graph
 
-def pagegraph(request):
-  template = loader.get_template('pagegraph.html')
-  test=Histo.objects.filter(dateRel__year=2022,dateRel__month__gte=7,)
-  return HttpResponse(template.render())
-  
+def pageGraph(request):
+    
+    Histos = Histo.objects.filter(dateRel__year=2022,dateRel__month__gte=7)
+    date=[]
+    nbThreads=[]
+    nbRel=[]
+    
+   
+    for Hist in Histos:
+        date.append(Hist.dateRel)
+        nbThreads.append(Hist.nbThreadsRel)
+    context={'dates':date,'nbThreads':nbThreads}    
+   
+    
+    return render(request,'pageGraph.html', context = context)
+
+
+
 
 """ 
 Histo.objects.filter(dateRel__year=2022,dateRel__month__lt=7)
@@ -227,7 +245,12 @@ Histo.objects.filter(dateRel__range=["2022-01-01","2022-06-31"])
 
 Histo.objects.filter(dateRel__gte=datetime.date(2022-1-1),
                      dateRel__lte=datetime.date(2022-6-31))
+                     
 
 
 Histo.objects.filter(dateRel__year=2022,dateRel__month__gte=7,)
  """
+
+
+""" Histo.objects.filter(dateRel__year=2022,dateRel__month=1).aggregate(Avg('nbThreadsRel'))
+Histo.objects.aggregate(Avg('NbThreadsRel')) """

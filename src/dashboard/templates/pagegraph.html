@@ -10,26 +10,33 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="{% static 'chart.css' %}">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-datalabels/2.1.0/chartjs-plugin-datalabels.min.js" integrity="sha512-Tfw6etYMUhL4RTki37niav99C6OHwMDB2iBT5S5piyHO+ltK2YX8Hjy9TXxhE1Gm/TmAV0uaykSpnHKFIAif/A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 <body>
 
-    test
+   
     <div class="chart-container" >
  <canvas id="myChart" style="width:500px;height:500px"></canvas>
     </div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-datalabels/2.1.0/chartjs-plugin-datalabels.min.js" integrity="sha512-Tfw6etYMUhL4RTki37niav99C6OHwMDB2iBT5S5piyHO+ltK2YX8Hjy9TXxhE1Gm/TmAV0uaykSpnHKFIAif/A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+   
+
 <script>
-    const datay= [200, 221, 258, 282, 313, 325]
-const datay2= [3,5,7,6,7,5]
-const ctx = document.getElementById('myChart').getContext('2d');
-const myChart = new Chart(ctx, {    
+{% comment %}   {% regroup date in dates by dates|date:"Y d" as date1  %} {% endcomment %}
+
+ const labelx=['Janvier', 'Février', 'Mars', 'Avril', 'Mai', 'Juin']   
+{% comment %}  const datay= [200, 221, 258, 282, 313, 325] {% endcomment %}
+ const datay2= [3,5,7,6,7,5]
+ const ctx = document.getElementById('myChart').getContext('2d');
+ const myChart = new Chart(ctx, {    
     data: {
-        labels: ['Janvier', 'Février', 'Mars', 'Avril', 'Mai', 'Juin'],
+        labels: [{% for date in dates%}'{{date|date:"M Y"}}', {%endfor%} ],
         datasets: [{
           type: 'bar',
             label: 'Nombre de threads', 
-            data: datay,
+            data: {{nbThreads}},
             backgroundColor: [
                 'rgba(255, 99, 132, 0.2)',
                 'rgba(54, 162, 235, 0.2)',
@@ -128,6 +135,7 @@ const myChart = new Chart(ctx, {
         } 
 }); 
 </script>
+
 </body>
 </html>
 
