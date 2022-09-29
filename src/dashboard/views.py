@@ -263,7 +263,7 @@ def pageGraph(request,id_projet):
         date.append(str(Hist['month'])+"/"+str(Hist['year']))
         nbThreads.append(Hist['average'])
         nbRel.append(Hist['nbRel'])
-    context={'dates':date,'nbThreads':nbThreads,'nbRel':nbRel}
+    context={'dates':date,'nbThreads':nbThreads,'nbRel':nbRel,'idProjet':id_projet}
     print(context) 
     return render(request,'dashboard/pageGraph.html',context = context)
 
