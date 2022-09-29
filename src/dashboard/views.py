@@ -8,16 +8,40 @@ import datetime
 from datetime import date
 from django.db.models import Avg,Count
 from django.db.models.functions import ExtractMonth,ExtractYear
-import json
-from json import dumps
 
 
+
+from dashboard.models import Histo
+from dashboard.models import Projet
 
 # Create your views here.
 def index(request):
     # return HttpResponse("Page dashboard !")
     template = loader.get_template('dashboard_accueil.html')
     return HttpResponse(template.render())
+
+def dashboard(request, id_projet):
+    # Si l'utilisateur n'est pas authentifié, ...
+    if not request.user.is_authenticated:
+        # Je récupère le template de l'accueil publique
+        template_accueil_public = loader.get_template('home/public.html')
+        
+        # L'utilisateur est renvoyé vers la page d'accueil publique
+        return HttpResponse(template_accueil_public.render({}, request))
+    else:
+        # Je récupère le projet à afficher
+        projet_a_afficher = Projet.objects.get(codePr=id_projet)
+
+        # Je récupère le template accueil dashboard (dans lequel le projet va être affiché)
+        template_accueil_dashboard = loader.get_template('dashboard/accueil.html')
+
+        # Je crée l'objet à injecter dans le template accueil dashboard
+        context = {
+            'projet': projet_a_afficher
+        }
+
+        # L'utilisateur est renvoyé vers la page d'accueil du dashboard (qui contient le projet à afficher)
+        return HttpResponse(template_accueil_dashboard.render(context, request))
 
 def releve(request):
     import datetime
@@ -263,3 +287,14 @@ Histo.objects.filter(dateRel__gte=datetime.date(2022-1-1),
 
 """ Histo.objects.filter(dateRel__year=2022,dateRel__month=1).aggregate(Avg('nbThreadsRel'))
 Histo.objects.aggregate(Avg('NbThreadsRel')) """
+def historique(request,id_projet):
+
+    if not request.user.is_authenticated:
+        return render(request, 'home/public.html', context= context)
+
+    context = {}
+    context["historiques"] = Histo.objects.filter(projetId = id_projet)
+    context["idProjet"] = id_projet
+    
+
+    return render(request, 'dashboard/historique.html', context = context)
