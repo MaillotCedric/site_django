@@ -16,6 +16,7 @@ def releve(request):
     from bs4 import BeautifulSoup
     import csv 
     from cleantext import clean
+    from .models import Members
 
     def getSoupObject(domain, url_path): # Va sur la page et renvoie son contenu
         thread_url = urlunparse(('https', domain, url_path, "", "", "")) # construct the url to access the posts for each thread
@@ -29,7 +30,10 @@ def releve(request):
 
         for page_posts_content in thread_results:
             body_content = page_posts_content.get_text()   
+            entreComs = Members(content = body_content)
+            entreComs.save()
             posts_content.append(body_content)
+
         return posts_content
 
     def getNextPageUrl(soup): # Passe à la page de commentaire suivant dans un thread
@@ -177,6 +181,9 @@ def releve(request):
             writer = csv.writer(contenu_des_posts)
             for elements in all_thread_posts:
                 writer.writerow(elements)
+                #Entré dans BDD
+                #entreBdd = Members(title = elements[0], content = elements[1])
+                #entreBdd.save()
             contenu_des_posts.close()
 
             #Extraction vers BDD
@@ -197,6 +204,7 @@ def releve(request):
     log.write('Total posts scrappé: ' + str(logTotalPosts))
     log.write(logFin)
     print(logFin)
+    log.close()
     #ferner logs !!
     # template = loader.get_template('dashboard_accueil.html')
     # return HttpResponse(template.render())
