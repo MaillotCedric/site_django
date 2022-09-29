@@ -42,12 +42,14 @@ def dashboard(request, id_projet):
         # Je récupère les 10 derniers relevés
         derniers_releves = Histo.objects.all()[:10]
         
+        
         # Je récupère le template de l'accueil publique
         template_accueil_public = loader.get_template('home/public.html')
 
         # Je crée l'objet à injecter dans le template accueil public
         context = {
             "histos": derniers_releves
+            
         }
         
         # L'utilisateur est renvoyé vers la page d'accueil publique
@@ -58,10 +60,13 @@ def dashboard(request, id_projet):
 
         # Je récupère le template accueil dashboard (dans lequel le projet va être affiché)
         template_accueil_dashboard = loader.get_template('dashboard/accueil.html')
+        # Je récupère le statut du scraping
+        statut = Statut.objects.all().get(idStatut = 1).statut #idStatut = 1 => projet o2, rendre dynamique ?
 
         # Je crée l'objet à injecter dans le template accueil dashboard
         context = {
-            'projet': projet_a_afficher
+            'projet': projet_a_afficher,
+            "statut": statut
         }
 
         # L'utilisateur est renvoyé vers la page d'accueil du dashboard (qui contient le projet à afficher)

@@ -1899,3 +1899,4 @@ Traceback (most recent call last):
 django.urls.exceptions.NoReverseMatch: Reverse for 'dashboard' with no arguments not found. 1 pattern(s) tried: ['home/dashboard/(?P<id_projet>[0-9]+)\\Z']
 2022-09-29 16:21:15,791 - INFO - C:\Users\jwick\Documents\Workspace\site_django3\quentin2\site_django\src\dashboard\views.py changed, reloading.
 2022-09-29 16:24:56,071 - INFO - C:\Users\jwick\Documents\Workspace\site_django3\quentin2\site_django\src\dashboard\views.py changed, reloading.
+2022-09-29 16:47:34,939 - INFO - C:\Users\jwick\Documents\Workspace\site_django3\quentin2\site_django\src\dashboard\views.py changed, reloading.
