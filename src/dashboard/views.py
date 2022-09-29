@@ -272,11 +272,23 @@ def releve(request, id_projet):
             response = urlopen(req)
         except HTTPError as e:
             nouveauStatutReleve("Echec")
+            
+            #Entrée dans table Histo
+            dateRelev = datetime.datetime.now()
+            entreeHisto = Histo(dateRel = dateRelev, nbThreadsRel = 0, nbCommRel = 0, projetId_id = 1, status = False )# Ducoup pas enregistrer dans thread et comm ?
+            entreeHisto.save()
+            
             print('The server couldn\'t fulfill the request.')
             print('Error code: ', e.code)
             return redirect('../1')
         except URLError as e:
             nouveauStatutReleve("Echec")
+            
+            #Entrée dans table Histo
+            dateRelev = datetime.datetime.now()
+            entreeHisto = Histo(dateRel = dateRelev, nbThreadsRel = 0, nbCommRel = 0, projetId_id = 1, status = False )# Ducoup pas enregistrer dans thread et comm ?
+            entreeHisto.save()
+            
             print('We failed to reach a server.ici')
             print('Reason: ', e.reason)
             return redirect('../1')

@@ -1960,3 +1960,4 @@ Traceback (most recent call last):
     raise ConnectionError(e, request=request)
 requests.exceptions.ConnectionError: HTTPSConnectionPool(host='community.o2.co.uk', port=443): Max retries exceeded with url: /t5/Discussions-Feedback/Community-platform-bugs-issues-and-suggestions/td-p/1550804/page/4 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000020DE08E4A00>: Failed to establish a new connection: [WinError 10065] Une opération a été tentée sur un hôte impossible à atteindre'))
 2022-09-29 17:07:43,242 - INFO - C:\Users\jwick\Documents\Workspace\site_django3\quentin2\site_django\src\dashboard\views.py changed, reloading.
+2022-09-29 17:19:45,643 - INFO - C:\Users\jwick\Documents\Workspace\site_django3\quentin2\site_django\src\dashboard\views.py changed, reloading.

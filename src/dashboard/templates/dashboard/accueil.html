@@ -73,6 +73,12 @@
         </div>
     </div>
     <p>Statut du relevé : {{statut}}</p>
+    
+    {% if statut == "En cours" %}
+    <div class="spinner-border" role="status">
+        <span class="visually-hidden">Loading...</span>
+    </div>
+    {% endif %}
     <div class="row text-end">
         <div class="col">
             <a type="button" class="btn btn-warning" href="../">Retour</a>
