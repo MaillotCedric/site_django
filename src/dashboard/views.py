@@ -2,6 +2,15 @@ from multiprocessing import context
 from django.shortcuts import render, redirect
 from django.http import HttpResponse
 from django.template import loader
+from django.db import models
+from dashboard.models import Histo
+import datetime
+from datetime import date
+from django.db.models import Avg,Count
+from django.db.models.functions import ExtractMonth,ExtractYear
+
+
+
 from dashboard.models import Histo
 from dashboard.models import Projet
 
@@ -229,6 +238,28 @@ def releve(request):
     if not request.user.is_authenticated:
         return redirect('login')
     return render(request, 'dashboard_accueil.html')
+
+
+
+
+#graph
+
+def pageGraph(request,id_projet):
+    
+    Histos =Histo.objects.filter(projetId = id_projet,dateRel__year=2022,dateRel__month__gte=7).annotate(month=ExtractMonth('dateRel'),year=ExtractYear('dateRel')).order_by().values('month','year').annotate(average=Avg('nbThreadsRel'),nbRel=Count('nbThreadsRel')).values('month','year','average','nbRel')
+    date=[]
+    nbThreads=[]
+    nbRel=[]
+    print(Histos)
+    for Hist in Histos:
+        date.append(str(Hist['month'])+"/"+str(Hist['year']))
+        nbThreads.append(Hist['average'])
+        nbRel.append(Hist['nbRel'])
+    context={'dates':date,'nbThreads':nbThreads,'nbRel':nbRel}
+    print(context) 
+    return render(request,'dashboard/pageGraph.html',context = context)
+
+#Historique
 
 def historique(request,id_projet):
 
