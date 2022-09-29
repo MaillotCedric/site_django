@@ -236,7 +236,8 @@ def historique(request,id_projet):
         return render(request, 'home/public.html', context= context)
 
     context = {}
-    context["historiques"] = Histo.object.get(projetId = id_projet)
+    context["historiques"] = Histo.objects.filter(projetId = id_projet)
+    context["idProjet"] = id_projet
     
 
     return render(request, 'dashboard/historique.html', context = context)
