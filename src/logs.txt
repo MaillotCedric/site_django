@@ -4177,3 +4177,23 @@ Nombre de threads scrappé:13
 Total posts scrappé: 290
  Fin
 Scrapping terminé à 03_Oct_2022_15_35_05_441119
+ Début 
+03_Oct_2022_15_47_55_852570
+URL de la page qui va être traitée: https://community.o2.co.uk/t5/Discussions-Feedback/bd-p/4
+nombre de post extrait du thread "community platform bugs, issues and suggestions": 47
+nombre de post extrait du thread "guide updates": 39
+nombre de post extrait du thread "o2 customer service/live chat positive feedback archive!": 112
+nombre de post extrait du thread "porting": 3
+nombre de post extrait du thread "dro - what happens next?": 4
+nombre de post extrait du thread "received the "get excited. your orders on its way" email from o2.": 2
+nombre de post extrait du thread "wrong charges": 3
+nombre de post extrait du thread "community platform bugs, issues and suggestions": 47
+nombre de post extrait du thread "o2 appalling customer service": 3
+nombre de post extrait du thread "considering my options after a stolen device": 12
+nombre de post extrait du thread "complaints department": 14
+nombre de post extrait du thread "no caller id": 2
+nombre de post extrait du thread "spam call": 2
+Nombre de threads scrappé:13
+Total posts scrappé: 290
+ Fin
+Scrapping terminé à 03_Oct_2022_15_49_09_484229

@@ -620,7 +620,7 @@ def releve(request, id_projet):
 
 def pageGraph(request,id_projet):
     
-    Histos =Histo.objects.filter(projetId = id_projet,dateRel__year=2022,dateRel__month__gte=7).annotate(month=ExtractMonth('dateRel'),year=ExtractYear('dateRel')).order_by().values('month','year').annotate(average=Avg('nbThreadsRel'),nbRel=Count('nbThreadsRel')).values('month','year','average','nbRel')
+    Histos =Histo.objects.filter(status=1,projetId = id_projet,dateRel__year=2022,dateRel__month__gte=7).annotate(month=ExtractMonth('dateRel'),year=ExtractYear('dateRel')).order_by().values('month','year').annotate(average=Avg('nbThreadsRel'),nbRel=Count('nbThreadsRel')).values('month','year','average','nbRel')
     date=[]
     nbThreads=[]
     nbRel=[]
