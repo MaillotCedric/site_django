@@ -411,7 +411,7 @@ def releve(request, id_projet):
                     if der_id_de_thread - (Threads.objects.last()).idThread <0: # ou  der_id_de_thread + (Threads.objects.last()).idThread == der_id_de_thread / 2 pour éviter erreur proche de 0. [der_id_de_thread - (Threads.objects.last()).idThread == 0]
                         #La suppression cause un bug au niveau de l'identifiant => les valeurs sont supprimé mais leurs id utilisé ne sont pas reinitialisé => faire une variable = nbDeThreadsScrappedBugOccured qui sera ajouté a der_id_plus au niveau des comms pour éviter le FK introuvé
 
-                        print("entré dans condition 0 cassecouille")#ATTENTION => PAS LE RESULTAT ATTENDU MAIS -13 JUSTE AU DESSUS
+                        print("entré dans condition 0 ")#ATTENTION => PAS LE RESULTAT ATTENDU MAIS -13 JUSTE AU DESSUS
                         
                     
                         #Suppression des éléments scraped

@@ -2721,3 +2721,49 @@ Traceback (most recent call last):
   File "D:\DIA\site_django\.env\lib\site-packages\django\core\handlers\base.py", line 332, in check_response
     raise ValueError(
 ValueError: The view dashboard.views.releve didn't return an HttpResponse object. It returned None instead.
+2022-10-03 15:12:31,271 - ERROR - Internal Server Error: /home/dashboard/releve/1
+Traceback (most recent call last):
+  File "D:\DIA\site_django\.env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\DIA\site_django\.env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\DIA\site_django\src\dashboard\views.py", line 489, in releve
+    sansEmoji = clean(logNbPosts, no_emoji=True) #Enleve les emoji pour eviter les erreurs
+TypeError: clean() got an unexpected keyword argument 'no_emoji'
+2022-10-03 15:17:48,065 - ERROR - Internal Server Error: /home/dashboard/releve/1
+Traceback (most recent call last):
+  File "D:\DIA\site_django\.env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\DIA\site_django\.env\lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "D:\DIA\site_django\.env\lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view dashboard.views.releve didn't return an HttpResponse object. It returned None instead.
+2022-10-03 15:18:22,605 - ERROR - Internal Server Error: /home/dashboard/releve/1
+Traceback (most recent call last):
+  File "D:\DIA\site_django\.env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\DIA\site_django\.env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\DIA\site_django\src\dashboard\views.py", line 489, in releve
+    sansEmoji = clean(logNbPosts, no_emoji=True) #Enleve les emoji pour eviter les erreurs
+TypeError: clean() got an unexpected keyword argument 'no_emoji'
+2022-10-03 15:19:04,706 - INFO - D:\DIA\site_django\src\dashboard\views.py changed, reloading.
+2022-10-03 15:28:14,085 - ERROR - Internal Server Error: /home/dashboard/releve/1
+Traceback (most recent call last):
+  File "D:\DIA\site_django\.env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\DIA\site_django\.env\lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "D:\DIA\site_django\.env\lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view dashboard.views.releve didn't return an HttpResponse object. It returned None instead.
+2022-10-03 15:30:43,639 - ERROR - Internal Server Error: /home/dashboard/releve/1
+Traceback (most recent call last):
+  File "D:\DIA\site_django\.env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\DIA\site_django\.env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\DIA\site_django\src\dashboard\views.py", line 489, in releve
+    sansEmoji = clean(logNbPosts, no_emoji=True) #Enleve les emoji pour eviter les erreurs
+TypeError: clean() got an unexpected keyword argument 'no_emoji'
