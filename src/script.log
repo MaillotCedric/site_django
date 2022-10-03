@@ -2712,3 +2712,44 @@ Traceback (most recent call last):
   File "C:\Users\jwick\Documents\Workspace\site_django3\quentin2\site_django\.env\lib\site-packages\django\core\handlers\base.py", line 332, in check_response
     raise ValueError(
 ValueError: The view dashboard.views.releve didn't return an HttpResponse object. It returned None instead.
+2022-09-30 02:23:42,578 - ERROR - Internal Server Error: /home/dashboard/
+Traceback (most recent call last):
+  File "C:\Users\jwick\Documents\Workspace\site_django3\quentin2\site_django\.env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\jwick\Documents\Workspace\site_django3\quentin2\site_django\.env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\jwick\Documents\Workspace\site_django3\quentin2\site_django\src\dashboard\views.py", line 52, in index
+    template = loader.get_template('dashboard_accueil.html')
+  File "C:\Users\jwick\Documents\Workspace\site_django3\quentin2\site_django\.env\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: dashboard_accueil.html
+2022-09-30 02:23:43,394 - ERROR - Internal Server Error: /home/dashboard/
+Traceback (most recent call last):
+  File "C:\Users\jwick\Documents\Workspace\site_django3\quentin2\site_django\.env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\jwick\Documents\Workspace\site_django3\quentin2\site_django\.env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\jwick\Documents\Workspace\site_django3\quentin2\site_django\src\dashboard\views.py", line 52, in index
+    template = loader.get_template('dashboard_accueil.html')
+  File "C:\Users\jwick\Documents\Workspace\site_django3\quentin2\site_django\.env\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: dashboard_accueil.html
+2022-09-30 02:27:10,615 - ERROR - Internal Server Error: /home/dashboard/releve/1
+Traceback (most recent call last):
+  File "C:\Users\jwick\Documents\Workspace\site_django3\quentin2\site_django\.env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\jwick\Documents\Workspace\site_django3\quentin2\site_django\.env\lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\Users\jwick\Documents\Workspace\site_django3\quentin2\site_django\.env\lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view dashboard.views.releve didn't return an HttpResponse object. It returned None instead.
+2022-09-30 09:29:02,070 - ERROR - Internal Server Error: /home/dashboard/releve/1
+Traceback (most recent call last):
+  File "C:\Users\jwick\Documents\Workspace\site_django3\quentin2\site_django\.env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\jwick\Documents\Workspace\site_django3\quentin2\site_django\.env\lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\Users\jwick\Documents\Workspace\site_django3\quentin2\site_django\.env\lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view dashboard.views.releve didn't return an HttpResponse object. It returned None instead.
+2022-09-30 09:34:58,083 - WARNING - Not Found: /home/account/login
