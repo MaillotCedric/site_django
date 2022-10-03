@@ -35,3 +35,19 @@ class Comments(models.Model):
 
     def __str__(self):
         return self.comment
+
+class Statut(models.Model):
+    idStatut = models.AutoField(primary_key=True)
+    projetId = models.ForeignKey(Projet, on_delete=models.CASCADE)
+    statut = models.TextField()
+
+    def __str__(self):
+        return self.statut
+    
+class Stopgo(models.Model):
+    idStopgo = models.AutoField(primary_key=True)
+    statutStopgo = models.TextField()
+
+    def __str__(self):
+        return self.statutStopgo
+#Remplacer idStopgo par codeProjet pour dynamisme

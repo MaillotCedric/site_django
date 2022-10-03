@@ -12,7 +12,9 @@
     
     <title>Document</title>
 </head>
-<body>
+{% load static %}
+<script src="{% static 'script_scrap.js' %}"></script>
+<body onload="timedRefresh(1000)">
     <nav class="navbar navbar-dark bg-dark">
         <div class="container-fluid">
             <a class="navbar-brand">Telefónica</a>
@@ -26,8 +28,21 @@
         </div>
     </nav>
     <section class="container">
-        {% block content %}
-        {% endblock %}
+
+        <div class="card">
+            <div class="card-body">
+            {{ commentaire.comment }}
+            </div>
+        </div>
+        <div class="row text-end">
+            <div class="col">
+                <a type="button" class="btn btn-warning" href="../1">Retour</a>
+            </div>
+        </div>
+
     </section>
 </body>
 </html>
+
+
+
